@@ -108,4 +108,121 @@ Last change:    00/00/00
 	$(document).ready(function() {
 		$('.ed-option select').niceSelect();
 	});
+	// Featured Class Slider
+	const initializeSwipers = () => {
+		var slider = new Swiper('.ed-ft-class-slider', {
+			spaceBetween: 30,
+			slidesPerView: 4,
+			loop: true,
+			speed: 1000,
+			observer: true,
+			observeParents: true,
+			observeSlideChildren: true,
+			navigation: {
+				prevEl: ".ed-ft-button-prev",
+				nextEl: ".ed-ft-button-next",
+			},
+			breakpoints: {
+				'1600': {
+					slidesPerView: 4,
+				},
+				'1500': {
+					slidesPerView: 3,
+				},
+				'1400': {
+					slidesPerView: 3,
+				},
+				'1300': {
+					slidesPerView: 3,
+				},
+				'992': {
+					slidesPerView: 2,
+				},
+				'650': {
+					slidesPerView: 2,
+				},
+				'576': {
+					slidesPerView: 1,
+				},
+				'0': {
+					slidesPerView: 1,
+				},
+			},
+		});
+	};
+	const tabs = document.querySelectorAll('[data-bs-toggle="tab"]');
+	tabs.forEach(tab => {
+		tab.addEventListener('shown.bs.tab', () => {
+			initializeSwipers();
+		});
+	});
+	window.addEventListener('load', initializeSwipers);
+
+// Team Class Slider
+	if($('.ed-team-slide').length) {
+		let slider = new Swiper('.ed-team-slide', {
+			loop: true,
+			speed: 500,
+			spaceBetween: 0,
+			spaceBetween: 38,
+			autoplay: {
+				delay: 5000,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				576: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1200: {
+					slidesPerView: 4,
+				},
+				1400: {
+					slidesPerView: 5,
+				},
+				1600: {
+					slidesPerView: 5,
+				},
+			},
+
+		});
+	};
+	if($('.ed-testimonial-slide').length) {
+		let slider = new Swiper('.ed-testimonial-slide', {
+			loop: true,
+			spaceBetween: 48,
+			speed: 700,
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				576: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 1,
+				},
+				992: {
+					slidesPerView: 1,
+				},
+				1200: {
+					slidesPerView: 2,
+				},
+				1400: {
+					slidesPerView: 2,
+				},
+				1600: {
+					slidesPerView: 2,
+				},
+			},
+
+		});
+	};
 })(jQuery);

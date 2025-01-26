@@ -28,3 +28,10 @@ $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
 $xs:'(max-width: 767px)';
 $xxs:'(max-width: 480px)';
 $xxxs:'(max-width: 360px)';
+
+%gradient-text {
+	background: var(--ed-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200%, 1px;
+}

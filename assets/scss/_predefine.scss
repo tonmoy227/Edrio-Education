@@ -240,15 +240,21 @@ select:visited {
 		color: var(--ed-tt-color);
 	}
 	.subtitle {
-		list-style: 1;
+		line-height: 1;
 		font-size: 16px;
 		font-weight: 800;
 		padding: 12px 26px;
-		margin-bottom: 12px; 
+		margin-bottom: 15px; 
 		border-radius: 50px;
 		display: inline-block;
 		border: 3px solid var(--ed-tt-color);
 		box-shadow: 0 4px 0 0 var(--ed-tt-color);
+		@media #{$xs} {
+			padding: 0;
+			border: none;
+			box-shadow: none;
+			background-color: transparent;
+		}
 	}
 	.sec_title {
 		font-size: 60px;
@@ -281,7 +287,7 @@ select:visited {
 		line-height: 1;
 		font-size: 18px;
 		font-weight: 800;
-		padding: 25px 50px;
+		padding: 22px 50px;
 		border-radius: 100px;
 		color: var(--ed-tt-color);
 		background: var(--ed-gradient);
