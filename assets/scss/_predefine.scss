@@ -62,6 +62,12 @@ body::-webkit-scrollbar-thumb {
 	.container {
 		max-width: 1424px;
 	}
+	.ed-scrollup {
+		background: var(--ed-gradient);
+		i {
+			color: var(--ed-tt-color);
+		}
+	}
 }
 .ul-li ul {
 	margin: 0;
@@ -91,6 +97,17 @@ body::-webkit-scrollbar-thumb {
 	line-height: 1.25;
 	font-family: var(--ed-heading);
 }
+@keyframes zoom-in-zoom-out {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
 #preloader { 
 	position: fixed; 
 	left: 0;
@@ -108,8 +125,14 @@ body::-webkit-scrollbar-thumb {
 		position: absolute;
 		transform: translateY(-50%);
 		img {
-			animation: TXTImgIn 1500ms ease-in-out infinite;
+			animation: zoom-in-zoom-out 2s ease-out infinite;
 		}
+	}
+}
+@keyframes ed-spin {
+	50% {
+		-webkit-transform: rotate(30deg) scaleX(0);
+		transform: rotate(30deg) scaleX(0)
 	}
 }
 
@@ -230,6 +253,20 @@ select:visited {
 		display: inherit;
 	}
 }
+.ed-scrollup {
+	width: 55px;
+	right: 20px;
+	z-index: 5;
+	height: 55px;
+	bottom: 20px;
+	display: none;
+	position: fixed;
+	border-radius: 100%;
+	line-height: 55px;
+	i {
+		color: #fff;
+	}
+}
 .ed-sec-title {
 	.rate-slug {
 		padding-bottom: 10px;
@@ -292,7 +329,28 @@ select:visited {
 		color: var(--ed-tt-color);
 		background: var(--ed-gradient);
 		box-shadow: 0 4px 0 0 var(--ed-tt-color);
+		span {
+			display: inline-block;
+			pointer-events: none;
+			&.ed-spin {
+				-webkit-animation: ed-spin .5s 1;
+				-khtml-animation: ed-spin .5s 1;
+				-moz-animation: ed-spin .5s 1;
+				-ms-animation: ed-spin .5s 1;
+				-o-animation: ed-spin .5s 1;
+				animation: ed-spin .5s 1;
+				-webkit-transform-origin: bottom;
+				transform-origin: bottom
+			}
+		}
+		&:hover {
+			background-position: 150%;
+			box-shadow: 0 -4px 0 0 var(--ed-tt-color);
+		}
 	}
+}
+.split-line {
+	overflow: hidden;
 }
 // txa-common-css-start
 

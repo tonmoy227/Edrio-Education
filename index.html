@@ -26,12 +26,15 @@
   			<img src="assets/img/logo/logo-1.png" alt="">
   		</div>
   	</div>
+  	<div class="ed-up">
+  		<a href="#" class="ed-scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+  	</div>
   	<div class="cursor1"></div>
   	<div class="cursor2"></div>
 
 <!-- Start of Header section
 	============================================= -->
-	<header id="ed-header" class="ed-header-section header_style_one">
+	<header id="ed-header" class="ed-header-section header_style_one txa_sticky_header">
 		<div class="ed-header-content d-flex align-items-center justify-content-between">
 			<div class="logo-action d-flex align-items-center">
 				<div class="brand-logo">
@@ -50,67 +53,13 @@
 			<div class="header-navigation-cta d-flex align-items-center">
 				<nav class="main-navigation clearfix ul-li">
 					<ul id="main-nav" class="nav navbar-nav clearfix">
-						<li class="dropdown agt-has-megamenu">
+						<li class="dropdown active">
 							<a href="!#">Home</a>
 							<ul class="dropdown-menu clearfix">
-								<li>
-									<a href="index.html">Light Home Page</a>
-									<ul class="dropdown-menu clearfix">
-										<li><a href="#">Creative Agency</a></li>
-										<li><a href="#">Corporate Agency</a></li>
-										<li><a href="#">Financial Agency</a></li>
-										<li><a href="#">Modern Agency</a></li>
-										<li><a href="#">Law Firm Agency</a></li>
-										<li><a href="#">Web Agency</a></li>
-										<li><a href="#">Event Management </a></li>
-										<li><a href="#">IT Service Agency</a></li>
-										<li><a href="#">Insurance Agency</a></li>
-										<li><a href="#">Startup Agency</a></li>
-										<li><a href="#">Photography Studio</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="index.html">Dark Home Page</a>
-									<ul class="dropdown-menu clearfix">
-										<li><a href="#">Creative Agency</a></li>
-										<li><a href="#">Corporate Agency</a></li>
-										<li><a href="#">Financial Agency</a></li>
-										<li><a href="#">Modern Agency</a></li>
-										<li><a href="#">Law Firm Agency</a></li>
-										<li><a href="#">Web Agency</a></li>
-										<li><a href="#">Event Management </a></li>
-										<li><a href="#">IT Service Agency</a></li>
-										<li><a href="#">Insurance Agency</a></li>
-										<li><a href="#">Startup Agency</a></li>
-										<li><a href="#">Photography Studio</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="index.html">Light Home Page</a>
-									<ul class="dropdown-menu clearfix">
-										<li><a href="#">Travel Agency</a></li>
-										<li><a href="#">Portfolio Agency</a></li>
-										<li><a href="#">IT Consulting Agency</a></li>
-										<li><a href="#">Interior Designer</a></li>
-										<li><a href="#">Business Agency</a></li>
-										<li><a href="#">Freelancer</a></li>
-										<li><a href="#">Real Estate Agency</a></li>
-										<li><a href="#">Charity Agency</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="index.html">Dark Home Page</a>
-									<ul class="dropdown-menu clearfix">
-										<li><a href="#">Travel Agency</a></li>
-										<li><a href="#">Portfolio Agency</a></li>
-										<li><a href="#">IT Consulting Agency</a></li>
-										<li><a href="#">Interior Designer</a></li>
-										<li><a href="#">Business Agency</a></li>
-										<li><a href="#">Freelancer</a></li>
-										<li><a href="#">Real Estate Agency</a></li>
-										<li><a href="#">Charity Agency</a></li>
-									</ul>
-								</li>
+								<li><a class="active" href="index.html">Home Page One</a></li>
+								<li><a href="index-2.html">Home Page Two</a></li>
+								<li><a href="index-3.html">Home Page Three</a></li>
+								<li><a href="index-4.html">Home Page Four</a></li>
 							</ul>
 						</li>
 						<li><a href="about.html">Solutions</a></li>
@@ -159,8 +108,8 @@
 					</ul>
 				</nav>
 				<div class="cart-btn d-flex align-items-center">
-					<button class="hd-cart"><i class="fa-solid fa-cart-shopping"></i></button>
-					<div class="header-cta-btn">
+					<button class="hd-cart header-cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+					<div class="header-cta-btn btn-spin">
 						<a href="#">Get Quote Now</a>
 					</div>
 				</div>
@@ -170,6 +119,73 @@
 			</div>
 		</div>
 	</header>
+	<!-- sidebar cart start -->
+	<div class="cart_sidebar">
+		<div class="cart_sidebar_top">
+			<h2 class="heading_title">Cart</h2>
+			<button type="button" class="cart_close_btn tx-close"><i class="fa-solid fa-xmark"></i></button>
+		</div>
+		<div class="cart_items_list">
+			<div class="cart_item">
+				<div class="item_image">
+					<img src="assets/img/shop/pr1.jpg" alt="image_not_found">
+				</div>
+				<div class="item_content headline">
+					<h4 class="item_title">
+						Rorem ipsum dolor sit amet.
+					</h4>
+					<span class="item_price">$19.00</span>
+					<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+				</div>
+			</div>
+			<div class="cart_item">
+				<div class="item_image">
+					<img src="assets/img/shop/pr2.jpg" alt="image_not_found">
+				</div>
+				<div class="item_content headline">
+					<h4 class="item_title">
+						Rorem ipsum dolor sit amet.
+					</h4>
+					<span class="item_price">$22.00</span>
+					<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+				</div>
+			</div>
+			<div class="cart_item">
+				<div class="item_image">
+					<img src="assets/img/shop/pr3.jpg" alt="image_not_found">
+				</div>
+				<div class="item_content headline">
+					<h4 class="item_title">
+						Rorem ipsum dolor sit amet.
+					</h4>
+					<span class="item_price">$43.00</span>
+					<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+				</div>
+			</div>
+			<div class="cart_item">
+				<div class="item_image">
+					<img src="assets/img/shop/pr4.jpg" alt="image_not_found">
+				</div>
+				<div class="item_content headline">
+					<h4 class="item_title">
+						Rorem ipsum dolor sit amet.
+					</h4>
+					<span class="item_price">$14.00</span>
+					<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="cart_sidebar_bottom">
+			<div class="total_price">
+				<span>Sub Total:</span>
+				<span>$87.00</span>
+			</div>
+			<div class="cart_sidebar_button">
+				<a  href="#">View Cart</a>
+				<a  href="#">Checkout</a>
+			</div>
+		</div>
+	</div>
 <!-- End of Header section
 	============================================= -->
 
@@ -182,19 +198,19 @@
 		<div class="container">
 			<div class="ed-h1-content position-relative">
 				<div class="h1-img-wrap">
-					<span class="ed-img-shape1 position-absolute"><img src="assets/img/hero/shp1.png" alt=""></span>
-					<span class="ed-img-shape2 position-absolute"><img src="assets/img/hero/shp2.png" alt=""></span>
-					<span class="ed-img-shape3 position-absolute"><img src="assets/img/hero/shp3.png" alt=""></span>
-					<span class="ed-img-shape4 position-absolute"><img src="assets/img/hero/shp4.png" alt=""></span>
-					<span class="ed-img-shape5 position-absolute"><img src="assets/img/hero/shp5.png" alt=""></span>
+					<div class="ed-img-shape1 position-absolute"><span><img src="assets/img/hero/shp1.png" alt=""></span></div>
+					<div class="ed-img-shape2 position-absolute"><span><img src="assets/img/hero/shp2.png" alt=""></span></div>
+					<div class="ed-img-shape3 position-absolute"><span><img src="assets/img/hero/shp3.png" alt=""></span></div>
+					<div class="ed-img-shape4 position-absolute"><span><img src="assets/img/hero/shp4.png" alt=""></span></div>
+					<div class="ed-img-shape5 position-absolute"><span><img src="assets/img/hero/shp5.png" alt=""></span></div>
 					<div class="item-img">
 						<img src="assets/img/hero/hm1.jpg" alt="">
 					</div>
 				</div>
 				<div class="h1-text-wrap headline pera-content">
-					<div class="h1-text-area">
+					<div class="h1-text-area edh-text">
 						<span class="h1_slug">100% Satusfaction Gurantee</span>
-						<h1 class="hero_title_1">Find Your 
+						<h1 class="hero_title_1 banner_title agt_hero_title">Find Your 
 						Perfect Course</h1>
 						<p>Choose from over 210,000 online video courses with new additions 
 						Published every month ourses and learn how to code.</p>
@@ -231,7 +247,7 @@
 		<div class="container">
 			<div class="ed-course-cate-content">
 				<div class="row justify-content-center">
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic1.png" alt="">
@@ -242,7 +258,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic2.png" alt="">
@@ -253,7 +269,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic3.png" alt="">
@@ -264,7 +280,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic4.png" alt="">
@@ -275,7 +291,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic5.png" alt="">
@@ -286,7 +302,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="350ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic6.png" alt="">
@@ -297,7 +313,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic7.png" alt="">
@@ -308,7 +324,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="450ms" data-wow-duration="1000ms">
 						<div class="ed-coc-item text-center">
 							<div class="item-img">
 								<img src="assets/img/icon/ic8.png" alt="">
@@ -332,13 +348,13 @@
 	<section id="ed-about-1" class="ed-about-sec-1 pt-30 pb-85">
 		<div class="container">
 			<div class="ed-about-content d-flex align-items-center">
-				<div class="ed-ab-img1">
+				<div class="ed-ab-img1 ed_left_img">
 					<img src="assets/img/about/ab1.png" alt="">
 				</div>
 				<div class="ed-ab-text1">
-					<div class="ed-sec-title headline pera-content">
-						<div class="rate-slug"><i class="fa-solid fa-star"></i> Top Rated Company</div>
-						<h2 class="sec_title">We Develop & Create 
+					<div class="ed-sec-title ed-text headline pera-content">
+						<div class="rate-slug wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms"><i class="fa-solid fa-star"></i> Top Rated Company</div>
+						<h2 class="sec_title ed-sec-tt-anim ed-has-anim">We Develop & Create 
 						Digital Future</h2>
 						<p>Every pleasure is to be welcomed and every pain avoided. But in certain 
 							circumstances and owing to the <a href="#">claims of duty obligations of business</a> it will 
@@ -359,13 +375,13 @@
 						</div>
 						<div class="ed-ab-review-list ul-li-block">
 							<ul>
-								<li><i class="fa-solid fa-circle-check"></i> Data Storage and Analysis</li>
-								<li><i class="fa-solid fa-circle-check"></i> International Online Support</li>
-								<li><i class="fa-solid fa-circle-check"></i> Branding Project Development</li>
+								<li class="top_view"><i class="fa-solid fa-circle-check"></i> Data Storage and Analysis</li>
+								<li class="top_view"><i class="fa-solid fa-circle-check"></i> International Online Support</li>
+								<li class="top_view"><i class="fa-solid fa-circle-check"></i> Branding Project Development</li>
 							</ul>
 						</div>
 					</div>
-					<div class="ed-btn-1">
+					<div class="ed-btn-1 btn-spin">
 						<a href="#">Get Quote Now</a>
 					</div>
 				</div>
@@ -381,8 +397,8 @@
 		<div class="container">
 			<div class="ed-ft-class-top-content d-flex align-items-end justify-content-between">
 				<div class="ed-sec-title headline pera-content">
-					<div class="subtitle">Top Rated Company</div>
-					<h2 class="sec_title">Featured Classes</h2>
+					<div class="subtitle wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">Top Rated Company</div>
+					<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Featured Classes</h2>
 				</div>
 				<div class="ed-ft-class-top-btn tx-tab-btn ul-li">
 					<ul class="nav nav-tabs" id="mt-about-tab" role="tablist">
@@ -422,10 +438,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
+											<h3 class="href-underline"><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -443,10 +459,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
+											<h3 class="href-underline"><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -464,10 +480,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
+											<h3 class="href-underline"><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -485,10 +501,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Making Sense of Data in the Media</a></h3>
+											<h3 class="href-underline"><a href="#">Making Sense of Data in the Media</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -506,10 +522,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
+											<h3 class="href-underline"><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -533,10 +549,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
+											<h3 class="href-underline"><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -554,10 +570,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
+											<h3 class="href-underline"><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -575,10 +591,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
+											<h3 class="href-underline"><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -596,10 +612,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Making Sense of Data in the Media</a></h3>
+											<h3 class="href-underline"><a href="#">Making Sense of Data in the Media</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -617,10 +633,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
+											<h3 class="href-underline"><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -644,10 +660,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
+											<h3 class="href-underline"><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -665,10 +681,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
+											<h3 class="href-underline"><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -686,10 +702,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
+											<h3 class="href-underline"><a href="#">Exploring Biostatistics And Data Analysis</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -707,10 +723,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">Making Sense of Data in the Media</a></h3>
+											<h3 class="href-underline"><a href="#">Making Sense of Data in the Media</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -728,10 +744,10 @@
 											<span class="item-price d-flex justify-content-center align-items-center">$15.00</span>
 										</div>
 										<div class="item-text headline pera-content">
-											<h3><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
+											<h3 class="href-underline"><a href="#">An Introduction to Data Analysis & Visualisation</a></h3>
 											<span class="crs-author">By David Millar</span>
 											<div class="crs-bottom d-flex justify-content-between align-items-center">
-												<div class="bottom-btn">
+												<div class="bottom-btn  btn-spin">
 													<a href="#">Enroll Now</a>
 												</div>
 												<span class="num-stu"><i class="fa-solid fa-user"></i> (66 Students)</span>
@@ -749,7 +765,7 @@
 				<div class="ed-ft-button-next arrow-nav d-flex justify-content-center align-items-center"><i class="fa-solid fa-arrow-right"></i></div>
 			</div>
 		</div>
-		<div class="ed-btn-1 mt-80 text-center">
+		<div class="ed-btn-1 mt-80 btn-spin text-center">
 			<a href="#">Check More</a>
 		</div>
 	</section>	
@@ -764,10 +780,10 @@
 		<div class="container">
 			<div class="ed-top-rate-content position-relative">
 				<div class="ed-top-rate-img position-absolute">
-					<div class="item-img1 position-absolute">
+					<div class="item-img1 ed_top_img_2 position-absolute">
 						<img src="assets/img/shape/circle.png" alt="">
 					</div>
-					<div class="item-img2">
+					<div class="item-img2 ed_top_img">
 						<img src="assets/img/about/rate-men.png" alt="">
 					</div>
 				</div>
@@ -785,8 +801,8 @@
 						</div>
 					</div>
 					<div class="ed-sec-title headline pera-content">
-						<div class="subtitle">Top Rated Company</div>
-						<h2 class="sec_title">A Perfect start 
+						<div class="subtitle wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">Top Rated Company</div>
+						<h2 class="sec_title ed-sec-tt-anim ed-has-anim">A Perfect start 
 							of your Distance 
 						Learning</h2>
 					</div>
@@ -810,7 +826,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="ed-btn-1">
+					<div class="ed-btn-1 btn-spin">
 						<a href="#">Enroll Now</a>
 					</div>
 				</div>
@@ -825,8 +841,8 @@
 	<section id="ed-team-1" class="ed-team-sec-1 pt-100 pb-100">
 		<div class="container">
 			<div class="ed-sec-title headline pera-content">
-				<div class="subtitle">Top Rated Company</div>
-				<h2 class="sec_title">Creative Profiles Make Your
+				<div class="subtitle wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">Top Rated Company</div>
+				<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Creative Profiles Make Your
 				Profile & Get Eyeballs</h2>
 			</div>
 			<div class="ed-team-content mt-45">
@@ -919,16 +935,16 @@
 
 <!-- Start of price section
 	============================================= -->
-	<section id="ed-price" class="ed-price-section pb-140">
+	<section id="ed-price" class="ed-price-section pt-120 pb-140">
 		<div class="container">
 			<div class="ed-sec-title text-center headline pera-content">
-				<div class="subtitle">Top Rated Company</div>
-				<h2 class="sec_title">Choice The Right Pricing Plan 
+				<div class="subtitle wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">Top Rated Company</div>
+				<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Choice The Right Pricing Plan 
 				That Suits your Need</h2>
 			</div>
 			<div class="ed-price-content mt-45">
 				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms">
 						<div class="ed-price-item">
 							<div class="item-top">
 								<div class="item-icon">
@@ -943,7 +959,7 @@
 								<p>Every pleasure is to be welcomed and every pain avoided. is to be 
 								welcomed and every</p>
 							</div>
-							<div class="item-btn text-center">
+							<div class="item-btn btn-spin text-center">
 								<a href="#">Get Started</a>
 							</div>
 							<div class="item-list ul-li-block">
@@ -957,7 +973,7 @@
 							<div class="price-slug text-center"><span>14-day free trial - No credit card Required</span></div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
 						<div class="ed-price-item highlight-item">
 							<div class="item-top">
 								<div class="item-icon">
@@ -980,13 +996,13 @@
 									<li><i class="fa-solid fa-circle-check"></i> Virtual Private Server (VPS)</li>
 								</ul>
 							</div>
-							<div class="item-btn mt-45 text-center">
+							<div class="item-btn btn-spin mt-45 text-center">
 								<a href="#">Get Started</a>
 							</div>
 							<div class="price-slug text-center"><span>14-day free trial - No credit card Required</span></div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">
 						<div class="ed-price-item">
 							<div class="item-top">
 								<div class="item-icon">
@@ -1001,7 +1017,7 @@
 								<p>Every pleasure is to be welcomed and every pain avoided. is to be 
 								welcomed and every</p>
 							</div>
-							<div class="item-btn text-center">
+							<div class="item-btn btn-spin text-center">
 								<a href="#">Get Started</a>
 							</div>
 							<div class="item-list ul-li-block">
@@ -1027,8 +1043,8 @@
 	<section id="ed-testimonial" class="ed-testimonial-section">
 		<div class="container">
 			<div class="ed-sec-title text-center headline pera-content">
-				<div class="subtitle">Top Rated Company</div>
-				<h2 class="sec_title">Why People Quiety’s
+				<div class="subtitle wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">Top Rated Company</div>
+				<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Why People Quiety’s
 				Hiring Software</h2>
 			</div>
 			<div class="ed-testimonial-content mt-75">
@@ -1119,8 +1135,8 @@
 	<section id="ed-faq" class="ed-faq-section pt-120 pb-120">
 		<div class="container">
 			<div class="ed-sec-title text-center headline pera-content">
-				<div class="subtitle">Top Rated Company</div>
-				<h2 class="sec_title">Why People Quiety’s</h2>
+				<div class="subtitle wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">Top Rated Company</div>
+				<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Why People Quiety’s</h2>
 			</div>
 			<div class="ed-faq-content mt-15">
 				<div class="ed-faq-accordion">
@@ -1277,6 +1293,9 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="ed-footer-copyright text-center">
+				<span>© Copyright  2024.<a href="#"> Themexriver</a> All Rights Reserved. </span>
 			</div>
 		</div>
 	</footer>		

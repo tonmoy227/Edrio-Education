@@ -9,6 +9,9 @@
 	}
 }
 .ed-ftr-widget {
+	@media #{$xs} {
+		width: 100%;
+	}
 	.logo-widget {
 		max-width: 405px;
 		.brand-logo {
@@ -90,7 +93,7 @@
 			width: 350px;
 		}
 		@media #{$xs} {
-			width: 310px;
+			width: 100%;
 			max-width: 100%;
 		}
 		form {
@@ -113,6 +116,7 @@
 			right: 0;
 			border: none;
 			height: 55px;
+			line-height: 1;
 			font-size: 16px;
 			font-weight: 800;
 			padding: 20px 30px;
@@ -120,6 +124,13 @@
 			position: absolute;
 			color: var(--ed-tt-color);
 			background: var(--ed-gradient);
+			transition: all 500ms ease-in-out;
+			@media #{$xxs} {
+				padding: 20px;
+			}
+			&:hover {
+				letter-spacing: 1px;
+			}
 		}
 	}
 	.widget-title {
@@ -143,9 +154,25 @@
 	max-width: 810px;
 	.ed-ft-gallery {
 		li {
-			margin: 0px 5px;
+			width: 112px;
+			height: 87px;
+			margin: 0px 3px;
 			overflow: hidden;
 			border-radius: 10px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: all 500ms ease-in-out;
+			}
+			@media #{$xxs} {
+				width: 90px;
+			}
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
 		}
 	}
 }
@@ -169,7 +196,21 @@
 				i {
 					margin-right: 5px;
 				}
+				&:hover {
+					color: #00f8cb;
+				}
 			}
+		}
+	}
+}
+.ed-footer-copyright {
+	padding: 40px 0px 30px;
+	span {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 800;
+		a {
+			@extend%gradient-text;
 		}
 	}
 }

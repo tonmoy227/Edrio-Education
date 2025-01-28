@@ -26,11 +26,17 @@
 		position: relative;
 		color: var(--ed-tt-color);
 		transition: all 500ms ease;
+		@media #{$xs} {
+			font-size: 25px;
+		}
 		span {
 			max-width: 85%;
 			display: inline-block;
 			img {
 				margin-right: 42px;
+				@media #{$xs} {
+					display: none;
+				}
 			}
 		}
 	}
@@ -43,6 +49,9 @@
 		padding-top: 0;
 		font-size: 18px;
 		padding-left: 90px;
+		@media #{$xs} {
+			padding-left: 0;
+		}
 		p {
 			color: #565656;
 			font-size: 22px;

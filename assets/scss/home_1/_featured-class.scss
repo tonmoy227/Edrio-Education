@@ -1,6 +1,7 @@
 .ed-ft-class-section {
 	z-index: 1;
-	padding: 50px 15px;
+	overflow: hidden;
+	padding: 50px 15px 120px;
 	background-color: #efebfc;
 	&:before {
 		top: 0;
@@ -57,6 +58,7 @@
 	}
 }
 .ed-ft-class-slider {
+	height: 545px;
 	display: flex;
 	margin: 0 auto;
 	max-width: 1690px;
@@ -81,10 +83,25 @@
 			}
 		}
 		.inner-img {
+			position: relative;
+			&:before {
+				background: rgba(255, 255, 255, .3);
+				bottom: 0;
+				content: "";
+				left: 50%;
+				z-index: 1;
+				position: absolute;
+				right: 51%;
+				top: 0;
+				opacity: 1;
+				pointer-events: none;
+				transition: all 400ms linear;
+			}
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				transition: all 400ms ease-in-out;
 			}
 		}
 		.item-price {
@@ -135,6 +152,23 @@
 					color: var(--ed-tt-color);
 					border: 3px solid var(--ed-tt-color);
 					box-shadow: 0 4px 0 0 var(--ed-tt-color);
+					span {
+						display: inline-block;
+						pointer-events: none;
+						&.ed-spin {
+							-webkit-animation: ed-spin .5s 1;
+							-khtml-animation: ed-spin .5s 1;
+							-moz-animation: ed-spin .5s 1;
+							-ms-animation: ed-spin .5s 1;
+							-o-animation: ed-spin .5s 1;
+							animation: ed-spin .5s 1;
+							-webkit-transform-origin: bottom;
+							transform-origin: bottom
+						}
+					}
+					&:hover {
+						box-shadow: 0 -4px 0 0 var(--ed-tt-color);
+					}
 				}
 			}
 			.num-stu {
@@ -143,6 +177,21 @@
 				color: var(--ed-tt-color);
 				i {
 					margin-right: 5px;
+				}
+			}
+		}
+	}
+	&:hover {
+		.item-img {
+			.inner-img {
+				img {
+					transform: scale(1.05);
+				}
+				&:before {
+					left: 0;
+					right: 0;
+					opacity: 0;
+					transition: all 400ms linear;
 				}
 			}
 		}
