@@ -1,3 +1,59 @@
+%ofcanvas-trigger{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	border-radius: 100%;
+	justify-content: center;
+	border: 2px solid var(--ed-black-color);
+	button {
+		padding: 0;
+		width: 18px;
+		border: none;
+		height: 18px;
+		background-color: transparent;
+	}
+	span {
+		width: 4px;
+		height: 4px;
+		float: left;
+		margin: 1px;
+		position: relative;
+		border-radius: 50px;
+		display: inline-block;
+		transition: all 500ms ease;
+		background: #1C255C;
+	}
+	&:hover {
+		span {
+			background: #1C255C;
+		}
+		span:nth-child(1){
+			transform:translateX(9px);
+		}
+		span:nth-child(2){
+			transform:translateX(9px);
+		}
+		span:nth-child(3){
+			transform:translateY(9px);
+		}
+		span:nth-child(6){
+			transform:translateY(9px);
+		}
+		span:nth-child(9){
+			transform:translateX(-9px);
+		}
+		span:nth-child(8){
+			transform:translateX(-9px);
+		}
+		span:nth-child(7){
+			transform:translateY(-9px);
+		}
+		span:nth-child(4){
+			transform:translateY(-9px);
+		}
+	}
+}
 .mobile_menu_button {
 	display: none;
 	@media #{$md,$sm,$xs} {
@@ -350,6 +406,164 @@
 					}
 					&:hover {
 						box-shadow: 0 -4px 0 0 var(--ed-tt-color);
+					}
+				}
+			}
+		}
+	}
+	&.header_style_two {
+		.ed-header-top {
+			background-color: var(--ed-yellow-color);
+			@media #{$sm,$xs} {
+				display: none !important;
+			}
+			.header-top-content {
+				.top-cta {
+					a {
+						font-size: 15px;
+						position: relative;
+						margin-right: 85px;
+						padding: 12px 0px 10px;
+						color: var(--ed-black-color);
+						@media #{$md} {
+							margin-right: 20px;
+						}
+						&:before {
+							top: 0;
+							width: 1px;
+							content: '';
+							right: -45px;
+							height: 100%;
+							position: absolute;
+							background-color: #e9b51e;
+							@media #{$md} {
+								display: none;
+							}
+						}
+						i {
+							font-size: 18px;
+							margin-right: 5px;
+						}
+						&:last-child {
+							margin-right: 0;
+							&:before {
+								display: none;
+							}
+						}
+					}
+				}
+				.top-social {
+					a {
+						font-size: 16px;
+						margin-left: 18px;
+						@media #{$md} {
+							margin-left: 10px;
+						}
+						&:hover {
+							color: var(--ed-red-color);
+						}
+					}
+				}
+			}
+		}
+		.ed-header-navigation {
+			padding: 30px 0px;
+			background-color: #fff;
+			.brand-logo {
+				@media #{$sm,$xs} {
+					max-width: 180px;
+				}
+			}
+			@media #{$sm,$xs} {
+				padding: 20px 0px;
+			}
+			@media #{$xxs} {
+				padding: 15px 0px;
+			}
+			.main-navigation {
+				@media #{$md,$sm,$xs} {
+					display: none;
+				}
+				.dropdown:after  {
+					top: 0;
+				}
+				li {
+					margin: 0px 25px;
+					@media #{$xxl} {
+						margin-left: 35px;
+					}
+					@media #{$xl} {
+						margin-left: 20px;
+					}
+					@media #{$lg,$md,$sm,$xs} {
+						margin-left: 15px;
+					}
+					.dropdown-menu {
+						a {
+							display: inline-block;
+						}
+					}
+					a {
+						display: inline;
+						font-weight: 700;
+						padding-bottom: 30px;
+						color: var(--ed-tt-color);
+						@media #{$lg,$md,$sm,$xs} {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+			.header-action {
+				gap: 20px;
+				@media #{$sm,$xs} {
+					gap: 10px;
+				}
+				button {
+					padding: 0;
+					border: none;
+					background-color: transparent;
+				}
+				.ed-cart-trigger {
+					position: relative;
+					@media #{$xxs} {
+						display: none !important;
+					}
+					span {
+						top: -12px;
+						left: 12px;
+						color: #fff;
+						width: 15px;
+						height: 15px;
+						display: flex;
+						font-size: 10px;
+						font-weight: 560;
+						position: absolute;
+						border-radius: 100%;
+						align-items: center;
+						justify-content: center;
+						background-color: var(--ed-red-color);
+					}
+				}
+				.ed-login-trigger {
+					color: #fff;
+					font-size: 15px;
+					font-weight: 600;
+					padding: 8px 22px;
+					margin-left: 15px;
+					border-radius: 100px;
+					background-color: var(--ed-red-color);
+					@media #{$sm,$xs} {
+						margin-left: 8px;
+					}
+					@media #{$xxs} {
+						display: none !important;
+					}
+				}
+				.offcanvas-trigger  {
+					@extend%ofcanvas-trigger;
+					@media #{$md,$sm,$xs} {
+						display: none !important;
 					}
 				}
 			}

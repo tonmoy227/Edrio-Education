@@ -2,14 +2,33 @@
 Font load
 ===========*/
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+	font-family: "Golden Hopes PERSONAL USE ONLY Regular";
+	src: url("https://db.onlinewebfonts.com/t/99e780e86b2e7ff1e6b7e171034011ee.eot");
+	src: url("https://db.onlinewebfonts.com/t/99e780e86b2e7ff1e6b7e171034011ee.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/99e780e86b2e7ff1e6b7e171034011ee.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/99e780e86b2e7ff1e6b7e171034011ee.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/99e780e86b2e7ff1e6b7e171034011ee.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/99e780e86b2e7ff1e6b7e171034011ee.svg#Golden Hopes PERSONAL USE ONLY Regular")format("svg");
+}
 :root {
 	--ed-body-color: #565656;
+	--ed-body-color-2: #4b4b4b;
 	--ed-tt-color: #141515;
+	--ed-black-color: #000000;
+	--ed-red-color : #dd3924;
+	--ed-yellow-color : #fccc42;
+	--ed-purple-color : #be94f5;
 	--ed-heading: "Urbanist", sans-serif;
 	--ed-body-font: "Urbanist", sans-serif;
+	--ed-heading-2: "Inter", sans-serif;
+	--ed-body-font-2: "Inter", sans-serif;
+	--ed-cursive-font: "Golden Hopes PERSONAL USE ONLY Regular";
 	--ed-color-1: rgb(0,255,180);
 	--ed-color-2: rgb(1,234,255);
 	--ed-prime-c: #3361ff;
+	--ed-prime-c2: #005b56;
 	--ed-gradient:  linear-gradient( 90deg, var(--ed-color-1) 0%, var(--ed-color-2)100%);
 	--cube-1: cubic-bezier(0.55, 0.085, 0, 0.99);
 	--cube-2: all .25s cubic-bezier(.645,.045,.355,1);

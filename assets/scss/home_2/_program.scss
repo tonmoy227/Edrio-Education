@@ -1,0 +1,52 @@
+.ed-program-item {
+	overflow: hidden;
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 0px 0px 81px 0px rgba(14, 22, 61, 0.07);
+	.inner-img {
+		overflow: hidden;
+	}
+	.sale_tag {
+		right: 22px;
+		bottom: 20px;
+		font-size: 15px;
+		font-weight: 800;
+		position: absolute;
+		padding: 10px 25px;
+		border-radius: 50px;
+		color: var(--ed-black-color);
+		background-color: var(--ed-purple-color);
+	}
+	.item-text {
+		padding: 28px 50px;
+		.pro-meta {
+			gap: 10px;
+			display: flex;
+			margin-bottom: 15px;
+			a {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 500;
+				padding: 6px 15px;
+				border-radius: 100px;
+				background-color: #424242;
+			}
+			span {
+				font-size: 15px;
+				font-size: 14px;
+				font-weight: 500;
+				padding: 6px 15px;
+				border-radius: 100px;
+				color: var(--ed-black-color);
+				background-color: var(--ed-yellow-color);
+			}
+		}
+		.prog_title {
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 1.357;
+			padding-bottom: 15px;
+			color: var(--ed-black-color);
+		}
+	}
+}

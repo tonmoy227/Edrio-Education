@@ -421,6 +421,50 @@ Last change:    00/00/00
 
 		});
 	};
+// Course Slider Slider		
+	if($(".ed-course-slider-2").length) {
+		const swiper = new Swiper(".ed-course-slider-2" , {
+			speed: 500,
+			loop: true,
+			spaceBetween: 18,
+			pagination: {
+				el: ".ed-course-pagi",
+				clickable: true,
+			},
+			autoplay:  {
+				delay: 5000,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				576: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerView: 3,
+				},
+				1200: {
+					slidesPerView: 4,
+				},
+				1400: {
+					slidesPerView: 5,
+				},
+				1600: {
+					slidesPerView: 5,
+				},
+				1800: {
+					slidesPerView: 5,
+				},
+			},
+		})
+	}
 // Animation		
 	gsap.utils.toArray('.ed_left_img').forEach((el, index) => { 
 		let edImg3 = gsap.timeline({
