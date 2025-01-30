@@ -465,6 +465,50 @@ Last change:    00/00/00
 			},
 		})
 	}
+	// Team Slider		
+	if($(".ed-team-slider-2").length) {
+		const swiper = new Swiper(".ed-team-slider-2" , {
+			speed: 500,
+			loop: true,
+			spaceBetween: 0,
+			pagination: {
+				el: ".ed-team-pagi",
+				clickable: true,
+			},
+			// autoplay:  {
+			// 	delay: 5000,
+			// },
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				576: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 2,
+				},
+				1024: {
+					slidesPerView: 2,
+				},
+				1199: {
+					slidesPerView: 3,
+				},
+				1400: {
+					slidesPerView: 3,
+				},
+				1600: {
+					slidesPerView: 3,
+				},
+				1800: {
+					slidesPerView: 3,
+				},
+			},
+		})
+	}
 // Animation		
 	gsap.utils.toArray('.ed_left_img').forEach((el, index) => { 
 		let edImg3 = gsap.timeline({

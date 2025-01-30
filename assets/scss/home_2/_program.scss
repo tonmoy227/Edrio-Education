@@ -1,6 +1,12 @@
-.ed-program-item {
+.ed-program-section {
 	overflow: hidden;
+}
+.ed-program-item {
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 410px;
 	border-radius: 30px;
+	margin-bottom: 30px;
 	background-color: #fff;
 	box-shadow: 0px 0px 81px 0px rgba(14, 22, 61, 0.07);
 	.inner-img {
@@ -18,7 +24,10 @@
 		background-color: var(--ed-purple-color);
 	}
 	.item-text {
-		padding: 28px 50px;
+		padding: 25px 50px 20px;
+		@media #{$md,$sm,$xs} {
+			padding: 25px 30px 20px;
+		}
 		.pro-meta {
 			gap: 10px;
 			display: flex;
@@ -45,8 +54,98 @@
 			font-size: 28px;
 			font-weight: 700;
 			line-height: 1.357;
-			padding-bottom: 15px;
+			padding-bottom: 12px;
 			color: var(--ed-black-color);
+			@media #{$xxs} {
+				font-size: 22px;
+			}
+		}
+		.prog_tag {
+			padding-left: 28px;
+			position: relative;
+			margin-bottom: 14px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid #f0f0f0;
+			&:before {
+				top: 0;
+				left: -5px;
+				width: 24px;
+				content: '';
+				height: 24px;
+				position: absolute;
+				background-image: url(../img/icon/arrow-2.png);
+				@media #{$xxs} {
+				}
+			}
+			a {
+				font-size: 15px;
+				font-weight: 700;
+				margin-right: 22px;
+				position: relative;
+				@media #{$xxs} {
+					margin-right: 10px;
+				}
+				&:before {
+					top: 11px;
+					width: 8px;
+					content: '';
+					height: 2px;
+					right: -17px;
+					position: absolute;
+					background-color: #535252;
+					@media #{$xxs} {
+						width: 4px;
+						right: -10px;
+					}
+				}
+				&:last-child {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+		ul {
+			margin-bottom: 14px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #f0f0f0;
+		}
+		li {
+			width: 45%;
+			color: #848484;
+			font-weight: 500;
+			padding-left: 22px;
+			position: relative;
+			margin-right: 10px;
+			margin-bottom: 5px;
+			@media #{$xxs} {
+				width: 100%;
+				margin-right: 0;
+			}
+			&:before {
+				left: 0;
+				top: 1px;
+				font-size: 15px;
+				content: '\f058';
+				font-weight: 700;
+				position: absolute;
+				font-family: 'Font Awesome 6 Free';
+			}
+		}
+		.view_more {
+			font-size: 15px;
+			font-weight: 600;
+			color: var(--ed-black-color);
+			i {
+				color: #fff;
+				width: 22px;
+				height: 22px;
+				font-size: 10px;
+				margin-left: 5px;
+				line-height: 22px;
+				border-radius: 100%;
+				background-color: var(--ed-red-color);
+			}
 		}
 	}
 }
