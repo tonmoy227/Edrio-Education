@@ -19,6 +19,7 @@
 .ed-collaborate-content {
 	gap: 20px;
 	display: grid;
+	overflow: hidden;
 	justify-items: center;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	@media #{$md,$sm} {

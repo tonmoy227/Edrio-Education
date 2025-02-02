@@ -29,7 +29,7 @@
             border: none;
             outline: none;
             border-radius: 2px;
-            background: #fff;
+            background: #f1f1f1;
             color: #000;
             flex: 0 0 auto;
             transition: all .3s ease-in-out;
@@ -48,7 +48,7 @@
             }
     
             &:hover {
-                background: var(--ag-gradient);
+                background: var(--ed-red-color);
                 background-size: 200%, 1px;
                 color: #fff;
             }
@@ -80,8 +80,9 @@
     &-title{
         font-size: 23px;
         line-height: 1;
+        font-weight: 700 !important;
         padding-bottom: 30px;
-        color: var(--ag-title-color);
+        color: var(--ed-black-color);
     }
 
     &-form {
@@ -96,7 +97,7 @@
             text-align: center;
             font-size: 16px;
             color: #888888;
-            font-weight: 300;
+            font-weight: 500;
             padding: 10px 10px;
             background: transparent;
 
@@ -123,8 +124,8 @@
 
         &-title {
             font-size: 16px;
-            font-weight: 400;
-            color: var(--ag-title-color);
+            font-weight: 700 !important;
+            color: var(--ed-black-color);
             padding-bottom: 12px;
         }
 
@@ -141,7 +142,7 @@
 
             &:hover {
                 
-                background: var(--ag-gradient);
+                background: var(--ed-red-color);
                 background-size: 200%, 1px;
                 color: #fff;
             }

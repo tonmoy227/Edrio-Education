@@ -16,6 +16,7 @@
 }
 .ed-review-count-img-wrap {
 	gap: 10px;
+	overflow: hidden;
 	max-width: 720px;
 	@media #{$xxs} {
 		flex-wrap: wrap;
@@ -35,6 +36,7 @@
 	left: 0;
 	right: 0;
 	top: 50%;
+	z-index: 2;
 	width: 205px;
 	padding: 30px;
 	height: 165px;

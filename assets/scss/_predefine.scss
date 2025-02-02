@@ -87,6 +87,21 @@ body {
 			color: var(--ed-tt-color);
 		}
 	}
+	.mfp-bg {
+		background: var(--ed-black-color);
+	}
+	.cart_sidebar_button a {
+		background-color: var(--ed-red-color);
+	}
+	.cart_sidebar_button a:not(:last-child) {
+		background: var(--ed-yellow-color);
+	}
+	.ed-scrollup {
+		background: var(--ed-red-color);
+		i {
+			color: #fff;
+		}
+	}
 }
 .ul-li ul {
 	margin: 0;
@@ -415,11 +430,28 @@ select:visited {
 }
 .ed-btn-2 {
 	a {
+		z-index: 1;
 		color: #fff;
+		font-size: 16px;
 		font-weight: 700;
-		padding: 16px 30px;
+		padding: 22px 30px;
+		overflow: hidden;
 		border-radius: 100px;
 		background-color: var(--ed-red-color);
+		position: relative;
+		&:before {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 0%;
+			z-index: -1;
+			content: '';
+			position: absolute;
+			transform: scale(0);
+			border-radius: 100px;
+			transition: all 300ms ease-in-out;
+			background-color: var(--ed-yellow-color);
+		}
 		@media #{$xs} {
 			padding: 15px 24px;
 		}
@@ -437,11 +469,22 @@ select:visited {
 			border-radius: 100%;
 			display: inline-block;
 			background-color: #ef4d37;
+			transition: all 100ms ease-in-out;
 			@media #{$xxs} {
 				width: 18px;
 				height: 18px;
 				font-size: 10px;
 				line-height: 18px;
+			}
+		}
+		&:hover {
+			color: var(--ed-black-color);
+			i {
+				transform: translateX(5px);
+			}
+			&:before {
+				height: 100%;
+				transform: scale(1);
 			}
 		}
 	}
