@@ -617,6 +617,22 @@ gsap.utils.toArray('.ed_top_img').forEach((el, index) => {
 	.set(el, {transformOrigin: 'center center'})
 	.from(el, { opacity: 1, rotateY: -45, scale: 0.5, yPercent: 100}, {opacity: 1,  rotateY: 0, yPercent: 0, scale: 1, x: 0, duration: 1, immediateRender: false})
 })
+gsap.utils.toArray('.ed_top_img_3').forEach((el, index) => { 
+	let edImg4 = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-intro-content",
+			scrub: 1,
+			start: "top 100%",
+			end: "bottom 100%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	edImg4
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, { opacity: 1,  scale: 0.5, yPercent: 100}, {opacity: 1,   yPercent: 0, scale: 1, x: 0, duration: 1, immediateRender: false})
+})
 gsap.utils.toArray('.ed_top_img_2').forEach((el, index) => { 
 	let edImg5 = gsap.timeline({
 		scrollTrigger: {
@@ -918,7 +934,7 @@ gsap.utils.toArray(".img-parallax").forEach(function(container) {
 		ease: "none",
 	}); 
 });
-if (window.matchMedia("(min-width: 1400px)").matches) {
+if (window.matchMedia("(min-width: 1200px)").matches) {
 	var collab = gsap.timeline({
 		scrollTrigger: {
 			trigger: ".ed-collaborate-sec",
@@ -935,4 +951,20 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 		stagger: .1,
 	})
 }
+gsap.utils.toArray(' .rotate_view').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: el,
+			scrub: 2,
+			start: "top 60%",
+			end: "top 30%%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, { opacity: 0,  x: "+=300", y: "-150", rotate: "-90deg"}, {opacity: 1, x: 0, y: 0, duration: 1, rotate: "-90deg" })
+});
 })(jQuery);

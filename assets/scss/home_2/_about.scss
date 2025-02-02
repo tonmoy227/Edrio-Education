@@ -21,6 +21,14 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	.ed-about-shape {
+		top: 0;
+		right: 0;
+		position: absolute;
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
 }
 .ed-ab-img-wrap-2 {
 	@media #{$lg,$md,$sm,$xs} {
