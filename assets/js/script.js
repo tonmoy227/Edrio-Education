@@ -199,12 +199,12 @@ Last change:    00/00/00
 	$(document).ready(function() {
 		$('.ed-option select').niceSelect();
 	});
-	if($('.ed-split-word').length) {
-		var txtSplit = $('.ed-split-word');
+	if($('.ed-split-char').length) {
+		var txtSplit = $('.ed-split-char');
 		if(txtSplit.length == 0) return; gsap.registerPlugin(SplitText); txtSplit.each(function(index, el) {
 			el.split = new SplitText(el, { 
-				type: "words",
-				wordsClass: "split-word"
+				type: "chars",
+				wordsClass: "split-char"
 			});
 		});
 	}
@@ -214,6 +214,15 @@ Last change:    00/00/00
 			el.split = new SplitText(el, { 
 				type: "lines",
 				linesClass: "split-line"
+			});
+		});
+	}
+	if($('.ed-split-word').length) {
+		var txtSplit = $('.ed-split-word');
+		if(txtSplit.length == 0) return; gsap.registerPlugin(SplitText); txtSplit.each(function(index, el) {
+			el.split = new SplitText(el, { 
+				type: "words",
+				linesClass: "split-word"
 			});
 		});
 	}
@@ -544,6 +553,50 @@ if($(".ed-team-slider-2").length) {
 		pagination: {
 			el: ".ed-team-pagi",
 			clickable: true,
+		},
+		autoplay:  {
+			delay: 5000,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			576: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 2,
+			},
+			1199: {
+				slidesPerView: 3,
+			},
+			1400: {
+				slidesPerView: 3,
+			},
+			1600: {
+				slidesPerView: 3,
+			},
+			1800: {
+				slidesPerView: 3,
+			},
+		},
+	})
+}
+	// Team Slider		
+if($(".ed-fun-slider").length) {
+	const swiper = new Swiper(".ed-fun-slider" , {
+		speed: 500,
+		loop: true,
+		spaceBetween: 30,
+		navigation: {
+			prevEl: ".ed-fn-prev",
+			nextEl: ".ed-fn-next",
 		},
 		autoplay:  {
 			delay: 5000,

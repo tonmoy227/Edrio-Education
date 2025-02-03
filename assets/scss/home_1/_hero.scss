@@ -20,6 +20,10 @@
 .ed-h1-content {
 	padding-top: 325px;
 	padding-bottom: 240px;
+	@media #{$md,$sm} {
+		padding-top: 250px;
+		padding-bottom: 170px;
+	}
 	@media #{$xs} {
 		padding-top: 170px;
 		padding-bottom: 80px;

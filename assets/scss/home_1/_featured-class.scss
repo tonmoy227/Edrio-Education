@@ -68,6 +68,11 @@
 	border-radius: 15px;
 	background-color: #fff;
 	.item-img {
+		height: 268px;
+		overflow: hidden;
+		@media #{$md,$sm,$xs} {
+			height: 200px;
+		}
 		.item-tag {
 			top: 22px;
 			left: 38px;
@@ -83,6 +88,7 @@
 			}
 		}
 		.inner-img {
+			height: 100%;
 			position: relative;
 			&:before {
 				background: rgba(255, 255, 255, .3);
@@ -126,7 +132,7 @@
 			font-size: 28px;
 			font-weight: 800;
 			color: var(--ed-tt-color);
-			@media #{$xs} {
+			@media #{$md,$sm,$xs} {
 				font-size: 24px;
 			}
 		}
