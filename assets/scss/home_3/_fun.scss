@@ -1,3 +1,9 @@
+.ed-fun-section {
+	overflow: hidden;
+}
+.ed-fun-slider {
+	display: flex;
+}
 .ed-fun-item {
 	padding: 35px;
 	position: relative;
@@ -74,6 +80,11 @@
 	}
 }
 .ed-fn-nav {
+	@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+		gap: 15px;
+		margin-top: 40px;
+		justify-content: center;
+	}
 	.ed-fn-prev,
 	.ed-fn-next {
 		top: 50%;
@@ -85,6 +96,10 @@
 		border-radius: 100%;
 		transform: translateY(-50%);
 		border: 3px solid var(--ed-black-color);
+		@media #{$xxl,$xl,$lg,$md,$sm,$xs} {
+			position: static;
+			transform: translateY(0);
+		}
 		&:after {
 			top: 0;
 			left: 0;
@@ -110,8 +125,14 @@
 	}
 	.ed-fn-prev {
 		left: -100px;
+		@media #{$xxxl} {
+			left: -60px;
+		}
 	}
 	.ed-fn-next {
 		right: -100px;
+		@media #{$xxxl} {
+			right: -60px;
+		}
 	}
 }

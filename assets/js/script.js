@@ -222,7 +222,7 @@ Last change:    00/00/00
 		if(txtSplit.length == 0) return; gsap.registerPlugin(SplitText); txtSplit.each(function(index, el) {
 			el.split = new SplitText(el, { 
 				type: "words",
-				linesClass: "split-word"
+				wordsClass: "split-word"
 			});
 		});
 	}
@@ -632,10 +632,100 @@ if($(".ed-fun-slider").length) {
 		},
 	})
 }
+	// Video Client Slider	
+var quick_view = new Swiper(".ed-vc-slider-nav", {
+	loop: true,
+	spaceBetween: 100,
+	slidesPerView: 4,
+	speed: 1000,
+	navigation: {
+		prevEl: ".vc-button-prev",
+		nextEl: ".vc-button-next",
+	},
+	breakpoints: {  
+		'1400': {
+			slidesPerView: 3,
+		},
+		'1200': {
+			slidesPerView: 3,
+		},
+		'1024': {
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
+		'991': {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		'768': {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		'577': {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		'0': {
+			slidesPerView: 1,
+			spaceBetween: 30,
+		},
+	},
+});
+var swiper2 = new Swiper(".ed-vc-slider-for", {
+	loop: true,
+	spaceBetween: 0,
+	speed: 1000,
+	slidesPerView: 1,
+	navigation: {
+		prevEl: ".vc-button-prev",
+		nextEl: ".vc-button-next",
+	},
+	thumbs: {
+		swiper: quick_view,
+	},
+});
 // counter-activation
 $('.counter').counterUp({
 	delay: 10,
 	time: 5000
+});
+	// Grid Item Active
+var $grid = $('.grid').imagesLoaded( function() {
+	$grid.masonry({
+		percentPosition: true,
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer'
+	}); 
+});
+var $grid = $(".grid").isotope({
+	itemSelector: ".grid-item",
+	layoutMode: "fitRows"
+});
+var filterFns = {
+	numberGreaterThan50: function() {
+		var number = $(this)
+		.find(".number")
+		.text();
+		return parseInt(number, 10) > 50;
+	},
+	ium: function() {
+		var name = $(this)
+		.find(".name")
+		.text();
+		return name.match(/ium$/);
+	}
+};
+$(".button-group").on("click", "button", function() {
+	var filterValue = $(this).attr("data-filter");
+	filterValue = filterFns[filterValue] || filterValue;
+	$grid.isotope({ filter: filterValue });
+});
+$(".button-group").each(function(i, buttonGroup) {
+	var $buttonGroup = $(buttonGroup);
+	$buttonGroup.on("click", "button", function() {
+		$buttonGroup.find(".is-checked").removeClass("is-checked");
+		$(this).addClass("is-checked");
+	});
 });
 // Animation		
 gsap.utils.toArray('.ed_left_img').forEach((el, index) => { 
