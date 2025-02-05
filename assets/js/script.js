@@ -161,6 +161,15 @@ Last change:    00/00/00
 			}
 		}
 	});
+	$('.marquee-left').marquee({
+		gap: 0,
+		speed: 60,
+		delayBeforeStart: 0,
+		direction: 'left',
+		duplicated: true,
+		pauseOnHover: false,
+		startVisible:true,
+	});
 	// Background Image
 	$('[data-background]').each(function() {
 		$(this).css('background-image', 'url('+ $(this).attr('data-background') + ')');
