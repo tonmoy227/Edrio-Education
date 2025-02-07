@@ -56,6 +56,14 @@ Last change:    00/00/00
 		});
 		wow.init();
 	};
+	jQuery('.video_box').magnificPopup({
+		disableOn: 200,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false,
+	});
 	function TXTheaderSticky() {
 		var $window = $(window);
 		var lastScrollTop = 0;
@@ -359,8 +367,25 @@ Last change:    00/00/00
 						},
 					});
 				};
+				if($(".ed-hs-slide-3").length) {
+					var AGTh4 = new Swiper(".ed-hs-slide-3", {
+						loop: true,
+						speed: 1000,
+						effect: "fade",
+						fadeEffect: {
+							crossFade: true
+						},
+						navigation: {
+							prevEl: ".ed-hs-prev",
+							nextEl: ".ed-hs-next",
+						},
+						autoplay: {
+							delay: 4000,
+						},
+					});
+				};
 			}, 700);
-		})
+})
 });
 if($('.ed-text').length) {
 	var edtextarea = $(".ed-text");
@@ -919,7 +944,13 @@ if($('.ed-sec-tt-anim').length) {
 				opacity: .3,
 				y: "100",
 			});
-		}
+		};
+		if( $(el).hasClass('ed-has-anim-char') ){
+			gsap.set(el.split.chars, {
+				opacity: .3,
+				x: "20",
+			});
+		};
 		el.anim = gsap.to(el.split.words, {
 			scrollTrigger: {
 				trigger: el,
@@ -932,6 +963,19 @@ if($('.ed-sec-tt-anim').length) {
 			opacity: 1,
 			duration: .4,
 			stagger: 0.15,
+		});
+		el.anim = gsap.to(el.split.chars, {
+			scrollTrigger: {
+				trigger: el,
+				start: "top 90%",
+				markers: false
+			},
+
+			x: "0",
+			y: "0",
+			opacity: 1,
+			duration: .4,
+			stagger: 0.05,
 		});
 
 	});
@@ -953,6 +997,38 @@ gsap.utils.toArray(' .top_view').forEach((el, index) => {
 	.set(el, {transformOrigin: 'center center'})
 	.from(el, { opacity: 0,  x: "-=30"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
 });
+gsap.utils.toArray(' .top_view_3').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: el,
+			scrub: 2,
+			start: "top 80%",
+			end: "top 90%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, { opacity: 0,  x: "+=30"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .top_view_2').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: el,
+			scrub: 2,
+			start: "top 60%",
+			end: "top 50%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, { opacity: 0, scale: 0,  y: "+=80"}, {opacity: 1, scale: 1, y: 0, duration: 1, immediateRender: false})
+});
 gsap.utils.toArray(' .left_view').forEach((el, index) => { 
 	let tlcta = gsap.timeline({
 		scrollTrigger: {
@@ -968,6 +1044,22 @@ gsap.utils.toArray(' .left_view').forEach((el, index) => {
 	tlcta
 	.set(el, {transformOrigin: 'center center'})
 	.from(el, { opacity: 1, scale: .5, xPercent: "100"}, {opacity: 1, xPercent: 0, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .upper_view').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: el,
+			scrub: 1.5,
+			end: "top 90%",
+			start: "top 110%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, { opacity: 1, scale: .8, yPercent: "100"}, {opacity: 1, yPercent: 0, duration: 1, immediateRender: false})
 });
 gsap.utils.toArray(' .right_view').forEach((el, index) => { 
 	let tlcta = gsap.timeline({

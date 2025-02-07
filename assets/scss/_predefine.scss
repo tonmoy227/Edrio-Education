@@ -56,6 +56,10 @@ body {
 	background: var(--ed-prime-c2);
 	background-size: 200%, 1px;
 }
+.home-3::-webkit-scrollbar-thumb {
+	background: var(--ed-prime-c4);
+	background-size: 200%, 1px;
+}
 .home-1 {
 	font-size: 20px;
 	line-height: 1.6;
@@ -109,6 +113,12 @@ body {
 	font-family: var(--ed-body-font-3);
 	.container {
 		max-width: 1426px;
+	}
+	.ed-scrollup {
+		background: var(--ed-prime-c4);
+		i {
+			color: var(--ed-black-color);
+		}
 	}
 }
 .ul-li ul {
@@ -450,6 +460,10 @@ select:visited {
 		}
 	}
 }
+@keyframes rightarrow {
+	0% { -webkit-transform: translateX(0); opacity: 0.5 }
+	100% { -webkit-transform: translateX(0.4em); opacity: 1 }
+}
 .ed-btn-1 {
 	a {
 		line-height: 1;
@@ -586,6 +600,52 @@ select:visited {
 		}
 		img {
 			margin-left: 5px;
+			transition: all 500ms ease-in-out;
+		}
+		span {
+			z-index: 1;
+			font-weight: 500;
+			position: relative;
+			white-space: nowrap;
+			color: var(--ed-black-color);
+			&:before {
+				top: 0;
+				left: 0;
+				opacity: 1;
+				display: block;
+				transition: all 0.5s var(--cube-1);
+				position: relative;
+				content: attr(data-front);
+				transform: translateY(0) rotateX(0);
+			}
+			&:after {
+				top: 0;
+				left: 0;
+				opacity: 0;
+				width: 100%;
+				display: block;
+				transition: all 0.5s var(--cube-1);
+				position: absolute;
+				content: attr(data-back);
+				transform: translateY(-50%) rotateX(90deg);
+			}
+		}
+		&:hover {
+			background-color: var(--ed-prime-c4);
+			span {
+				&:before {
+					opacity: 0;
+					background-color: var(--ed-prime-c5);
+					transform: translateY(50%) rotateX(90deg);
+				}
+				&:after {
+					opacity: 1;
+					transform: translateY(0) rotateX(0);
+				}
+			}
+			img {
+				animation: rightarrow 0.6s infinite alternate ease-in-out;
+			}
 		}
 	}
 }

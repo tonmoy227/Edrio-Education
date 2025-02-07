@@ -24,7 +24,7 @@
 }
 .ed-mf-item {
 	gap: 25px;
-	@media #{$lg,$md,$sm,$xs} {
+	@media #{$md,$sm,$xs} {
 		flex-wrap: wrap;
 	}
 	.inner-img {
@@ -50,7 +50,7 @@
 			object-fit: cover;
 			border: 3px solid var(--ed-black-color);
 		}
-		@media #{$xxs} {
+		@media #{$xs} {
 			width: 150px !important;
 			height: 180px !important;
 			margin-bottom: 0;
@@ -58,7 +58,7 @@
 	}
 	.item-img-1 {
 		margin-top: 95px;
-		@media #{$xxs} {
+		@media #{$xs} {
 			gap: 15px;
 			margin-top: 0;
 			display: flex;
@@ -72,7 +72,7 @@
 		}
 	}
 	.item-img-2 {
-		@media #{$xxs} {
+		@media #{$xs} {
 			gap: 15px;
 			margin-top: 0;
 			display: flex;
@@ -87,7 +87,7 @@
 	}
 	.item-img-3 {
 		margin-top: 45px;
-		@media #{$xxs} {
+		@media #{$xs} {
 			gap: 15px;
 			margin-top: 0;
 			display: flex;
@@ -100,7 +100,7 @@
 		}
 	}
 	.item-img-4 {
-		@media #{$xxs} {
+		@media #{$xs} {
 			gap: 15px;
 			margin-top: 0;
 			display: flex;
@@ -115,12 +115,12 @@
 	}
 	.item-img-5 {
 		margin-top: 50px;
-		@media #{$xxs} {
+		@media #{$xs} {
 			gap: 15px;
 			margin-top: 0;
 			display: flex;
 		}
-		@media #{$lg,$md,$sm} {
+		@media #{$lg,$md,$sm,$xs} {
 			margin-top: 0;
 		}
 	}

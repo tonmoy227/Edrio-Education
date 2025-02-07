@@ -38,4 +38,11 @@
 			color: var(--ed-black-color);
 		}
 	}
+	&:hover {
+		.item-icon {
+			img {
+				animation: icon-bounce 0.8s ease-out infinite;
+			}
+		}
+	}
 }

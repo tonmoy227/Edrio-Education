@@ -1,8 +1,9 @@
 .ed-about-section-3 {
 	z-index: 1;
+	overflow: hidden;
 	.ed-ab-sec-sh {
+		top: 0;
 		left: 0;
-		top: -10%;
 		z-index: -1;
 		@media #{$lg,$md,$sm,$xs} {
 			display: none;
@@ -48,6 +49,7 @@
 	.ab-shape3 {
 		right: 55%;
 		bottom: -17px;
+		animation: roteshape 6s var(--cube-1) infinite;
 		@media #{$xs} {
 			display: none;
 		}
@@ -55,6 +57,7 @@
 	.ab-shape4 {
 		right: 50%;
 		bottom: 0px;
+		animation: roteshape 4s var(--cube-1) infinite;
 		@media #{$xs} {
 			display: none;
 		}
@@ -114,6 +117,7 @@
 		width: 80px;
 		height: 80px;
 		border-radius: 100%;
+		transition: all 500ms ease-in-out;
 		border: 2px solid var(--ed-black-color);
 	}
 	.item-text {
@@ -123,5 +127,11 @@
 			font-weight: 600;
 			color: var(--ed-black-color);
 		}
+	}
+	&:hover {
+		.item-icon {
+			transform: scale(-1) rotate(180deg);
+		}
+
 	}
 }

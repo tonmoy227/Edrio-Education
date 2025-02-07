@@ -1,3 +1,6 @@
+.ed-contact-sec-3 {
+	overflow: hidden;
+}
 .ed-contact-content-3 {
 	z-index: 2;
 	position: relative;
@@ -5,6 +8,10 @@
 .ed-contact-form {
 	max-width: 610px;
 	padding-bottom: 6px;
+	@media #{$md,$sm,$xs} {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
 	.inner-item {
 		padding: 60px 50px;
 		position: relative;
@@ -46,7 +53,11 @@
 		padding-left: 20px;
 		margin-bottom: 15px;
 		border-radius: 10px;
+		transition: all 400ms ease-in-out;
 		border: 2px solid var(--ed-black-color);
+		&:focus {
+			border: 2px solid var(--ed-prime-c4);
+		}
 	}
 	textarea {
 		height: 160px;
@@ -63,6 +74,7 @@
 		color: var(--ed-black-color);
 		background-color: var(--ed-prime-c4);
 		border: 3px solid var(--ed-black-color);
+		transition: all 400ms ease-in-out;
 		&:before,
 		&:after {
 			left: 0;
@@ -79,13 +91,23 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
+			transition: all 400ms ease-in-out;
 			background-color: var(--ed-prime-c4);
 			background-image: none;
+		}
+		&:hover {
+			color: #fff;
+			&:after {
+				background-color: var(--ed-prime-c5);
+			}
 		}
 	}
 }
 .ed-contact-text {
 	max-width: 566px;
+	@media #{$md,$sm,$xs} {
+		margin: 0 auto;
+	}
 	.cn-text-img {
 		overflow: hidden;
 		border-radius: 20px;
@@ -99,6 +121,9 @@
 		gap: 15px;
 		width: 50%;
 		margin-bottom: 25px;
+		@media #{$xs} {
+			width: 100%;
+		}
 		.item-icon {
 			color: #fff;
 			width: 50px;
@@ -128,6 +153,11 @@
 		&:nth-child(2) {
 			.item-icon {
 				background-color: #fdc563;
+			}
+		}
+		&:nth-child(3) {
+			.item-icon {
+				background-color: #f18eaa;
 			}
 		}
 	}

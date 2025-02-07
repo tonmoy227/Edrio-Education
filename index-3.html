@@ -45,8 +45,8 @@
   					<a href="!#">Home</a>
   					<ul class="dropdown-menu clearfix">
   						<li><a href="index.html">Home Page One</a></li>
-  						<li><a class="active" href="index-2.html">Home Page Two</a></li>
-  						<li><a href="index-3.html">Home Page Three</a></li>
+  						<li><a href="index-2.html">Home Page Two</a></li>
+  						<li><a class="active" href="index-3.html">Home Page Three</a></li>
   						<li><a href="index-4.html">Home Page Four</a></li>
   					</ul>
   				</li>
@@ -102,7 +102,7 @@
   				<a href="#"><i class="fa-brands fa-instagram"></i></a>
   			</div>
   			<div class="ed-head-btn">
-  				<a href="#"><span>Admision Now</span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
+  				<a href="#"><span data-back="Admision Now" data-front="Admision Now"></span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
   			</div>
   			<button class="agt-mobile-menu-btn mobile_menu_button open_mobile_menu">
   				<i class="fa-solid fa-bars"></i>
@@ -110,13 +110,39 @@
   		</div>
   	</div>
   </header>
+  <!-- search-popup -->
+  <div class="txa-search-box search_box_active ">
+  	<div class="txa-search-container">
+  		<div class="txa-search-wrap headline-2 text-center headline mb-55">
+  			<h5 class="txa-search-title">Search</h5>
+  			<form action="#" class="txa-search-form">
+  				<input class="txa-search-form-input" type="text" placeholder="What are you looking for?...">
+  			</form>
+  		</div>
+
+  		<div class="txa-search-tag-wrap headline-2 headline text-center">
+  			<h6 class="txa-search-tag-title">People also search for:</h6>
+  			<div class="txa-search-tag d-inline-flex flex-wrap  ">
+  				<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Corporate</a>
+  				<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Business</a>
+  				<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Consulting</a>
+  				<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Finance</a>
+  				<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Reports</a>
+  			</div>
+  		</div>
+  	</div>
+
+  	<button aria-label="search-close" type="button" class="txa-search-box-close search_box_close">
+  		<i class="fas fa-times"></i>
+  	</button>
+  </div>
 <!-- Start of Header section
   ============================================= -->
 
 <!-- Start of Hero Slider section
   ============================================= -->
   <section id="ed-hero-slider-3" class="ed-hero-slider-sec-3">
-  	<div class="ed-hs-slide-3">
+  	<div class="ed-hs-slide-3 swiper-container">
   		<div class="swiper-wrapper">
   			<div class="swiper-slide">
   				<div class="ed-hs-slide-item-wrap position-relative">
@@ -147,12 +173,12 @@
   									</div>
   								</div> 
   								<div class="ed-slide-text-2 headline-3 pera-content">
-  									<span class="slide-slug">Happy World</span>
+  									<span class="slide-slug ed-split-word">Happy World</span>
   									<h1 class="slide_title ed-split-char">Childern’s Day</h1>
-  									<p>Choose from over 210,000 online video courses with new additions 
+  									<p class="ed-split-line">Choose from over 210,000 online video courses with new additions 
   									Published every month ourses and learn how to code.</p>
   									<div class="ed-btn-3">
-  										<a href="#"><span>Apply Now</span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
+  										<a href="#"><span data-back="Apply Now" data-front="Apply Now"></span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
   									</div>
   								</div>
   							</div>
@@ -160,6 +186,94 @@
   					</div>
   				</div>
   			</div>
+  			<div class="swiper-slide">
+  				<div class="ed-hs-slide-item-wrap position-relative">
+  					<span class="ed-ds1 position-absolute"><img src="assets/img/hero/doddle1.png" alt=""></span>
+  					<span class="ed-ds2 position-absolute"><img src="assets/img/hero/doddle2.png" alt=""></span>
+  					<div class="ed-hs-slide-item-3 position-relative" data-background="assets/img/hero/hs-bg2.jpg">
+  						<span class="ed-h-shape1 position-absolute"><img src="assets/img/shape/hs1.png" alt=""></span>
+  						<div class="ed-hs-wrap position-absolute">
+  							<span class="ed-h-shape2"><img src="assets/img/shape/hs2.png" alt=""></span>
+  							<span class="ed-h-shape3 position-absolute"><img src="assets/img/shape/hs3.png" alt=""></span>
+  						</div>
+  						<span class="ed-h-shape4 position-absolute"><img src="assets/img/shape/hs4.png" alt=""></span>
+  						<span class="ed-h-shape5 position-absolute"><img src="assets/img/shape/hs5.png" alt=""></span>
+  						<span class="ed-h-shape6 position-absolute"><img src="assets/img/shape/hs6.png" alt=""></span>
+  						<span class="ed-h-shape7 position-absolute"><img src="assets/img/shape/hs7.png" alt=""></span>
+  						<span class="ed-h-shape8 position-absolute"><img src="assets/img/shape/hs8.png" alt=""></span>
+  						<span class="ed-h-shape9 position-absolute"><img src="assets/img/shape/hs9.png" alt=""></span>
+  						<span class="ed-h-shape10 position-absolute"><img src="assets/img/shape/hs10.png" alt=""></span>
+  						<span class="ed-h-shape11 position-absolute"><img src="assets/img/shape/hs11.png" alt=""></span>
+  						<span class="ed-h-shape12 position-absolute"><img src="assets/img/shape/hs12.png" alt=""></span>
+  						<div class="container">
+  							<div class="ed-hs-slide-content-2 position-relative">
+  								<div class="ed-slide-img-2">
+  									<div class="img-wrapper position-relative">
+  										<div class="item-img">
+  											<img src="assets/img/hero/hk2.png" alt="">
+  										</div>
+  									</div>
+  								</div> 
+  								<div class="ed-slide-text-2 headline-3 pera-content">
+  									<span class="slide-slug ed-split-word">Happy World</span>
+  									<h1 class="slide_title ed-split-char">Childern’s Day</h1>
+  									<p class="ed-split-line">Choose from over 210,000 online video courses with new additions 
+  									Published every month ourses and learn how to code.</p>
+  									<div class="ed-btn-3">
+  										<a href="#"><span data-back="Apply Now" data-front="Apply Now"></span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="swiper-slide">
+  				<div class="ed-hs-slide-item-wrap position-relative">
+  					<span class="ed-ds1 position-absolute"><img src="assets/img/hero/doddle1.png" alt=""></span>
+  					<span class="ed-ds2 position-absolute"><img src="assets/img/hero/doddle2.png" alt=""></span>
+  					<div class="ed-hs-slide-item-3 position-relative" data-background="assets/img/hero/hs-bg2.jpg">
+  						<span class="ed-h-shape1 position-absolute"><img src="assets/img/shape/hs1.png" alt=""></span>
+  						<div class="ed-hs-wrap position-absolute">
+  							<span class="ed-h-shape2"><img src="assets/img/shape/hs2.png" alt=""></span>
+  							<span class="ed-h-shape3 position-absolute"><img src="assets/img/shape/hs3.png" alt=""></span>
+  						</div>
+  						<span class="ed-h-shape4 position-absolute"><img src="assets/img/shape/hs4.png" alt=""></span>
+  						<span class="ed-h-shape5 position-absolute"><img src="assets/img/shape/hs5.png" alt=""></span>
+  						<span class="ed-h-shape6 position-absolute"><img src="assets/img/shape/hs6.png" alt=""></span>
+  						<span class="ed-h-shape7 position-absolute"><img src="assets/img/shape/hs7.png" alt=""></span>
+  						<span class="ed-h-shape8 position-absolute"><img src="assets/img/shape/hs8.png" alt=""></span>
+  						<span class="ed-h-shape9 position-absolute"><img src="assets/img/shape/hs9.png" alt=""></span>
+  						<span class="ed-h-shape10 position-absolute"><img src="assets/img/shape/hs10.png" alt=""></span>
+  						<span class="ed-h-shape11 position-absolute"><img src="assets/img/shape/hs11.png" alt=""></span>
+  						<span class="ed-h-shape12 position-absolute"><img src="assets/img/shape/hs12.png" alt=""></span>
+  						<div class="container">
+  							<div class="ed-hs-slide-content-2 position-relative">
+  								<div class="ed-slide-img-2">
+  									<div class="img-wrapper position-relative">
+  										<div class="item-img">
+  											<img src="assets/img/hero/hk1.png" alt="">
+  										</div>
+  									</div>
+  								</div> 
+  								<div class="ed-slide-text-2 headline-3 pera-content">
+  									<span class="slide-slug ed-split-word">Happy World</span>
+  									<h1 class="slide_title ed-split-char">Childern’s Day</h1>
+  									<p class="ed-split-line">Choose from over 210,000 online video courses with new additions 
+  									Published every month ourses and learn how to code.</p>
+  									<div class="ed-btn-3">
+  										<a href="#"><span data-back="Apply Now" data-front="Apply Now"></span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ed-hs-nav d-flex justify-content-center">
+  			<div class="ed-hs-prev arrow-nav d-flex justify-content-center align-items-center"><img src="assets/img/icon/arrow-4.png" alt=""></div>
+  			<div class="ed-hs-next arrow-nav d-flex justify-content-center align-items-center"><img src="assets/img/icon/arrow-5.png" alt=""></div>
   		</div>
   	</div>
   </section>
@@ -176,8 +290,8 @@
   					<img src="assets/img/icon/ic18.png" alt="">
   				</div>
   				<div class="item-text">
-  					<a href="#">Full Day
-  					Session</a>
+  					<h3 class="href-underline"><a href="#">Full Day
+  					Session</a></h3>
   				</div>
   			</div>
   			<div class="ed-category-item-3 text-center">
@@ -185,8 +299,8 @@
   					<img src="assets/img/icon/ic19.png" alt="">
   				</div>
   				<div class="item-text">
-  					<a href="#">Qualified
-  					Teachers</a>
+  					<h3 class="href-underline"><a href="#">Qualified
+  					Teachers</a></h3>
   				</div>
   			</div>
   			<div class="ed-category-item-3 text-center">
@@ -194,8 +308,8 @@
   					<img src="assets/img/icon/ic20.png" alt="">
   				</div>
   				<div class="item-text">
-  					<a href="#">Kids Play
-  					Ground</a>
+  					<h3 class="href-underline"><a href="#">Kids Play
+  					Ground</a></h3>
   				</div>
   			</div>
   			<div class="ed-category-item-3 text-center">
@@ -203,8 +317,8 @@
   					<img src="assets/img/icon/ic21.png" alt="">
   				</div>
   				<div class="item-text">
-  					<a href="#">Activity
-  					Kids Room</a>
+  					<h3 class="href-underline"><a href="#">Activity
+  					Kids Room</a></h3>
   				</div>
   			</div>
   			<div class="ed-category-item-3 text-center">
@@ -212,8 +326,8 @@
   					<img src="assets/img/icon/ic22.png" alt="">
   				</div>
   				<div class="item-text">
-  					<a href="#">Knowledge
-  					Classes</a>
+  					<h3 class="href-underline"><a href="#">Knowledge
+  					Classes</a></h3>
   				</div>
   			</div>
   			<div class="ed-category-item-3 text-center">
@@ -221,8 +335,8 @@
   					<img src="assets/img/icon/ic23.png" alt="">
   				</div>
   				<div class="item-text">
-  					<a href="#">Last Minute
-  					Request</a>
+  					<h3 class="href-underline"><a href="#">Last Minute
+  					Request</a></h3>
   				</div>
   			</div>
   		</div>
@@ -234,35 +348,35 @@
 <!-- Start of About section
   ============================================= --> 
   <section id="ed-about-3" class="ed-about-section-3 pb-150 position-relative">
-  	<div class="ed-ab-sec-sh position-absolute"><img src="assets/img/shape/duck.png" alt=""></div>
-  	<div class="ed-ab-sec-sh2 position-absolute"><img src="assets/img/shape/mb.png" alt=""></div>
+  	<div class="ed-ab-sec-sh right_view position-absolute"><img src="assets/img/shape/duck.png" alt=""></div>
+  	<div class="ed-ab-sec-sh2 left_view position-absolute"><img src="assets/img/shape/mb.png" alt=""></div>
   	<div class="container">
   		<div class="ed-about-content-3 d-flex jusitfy-content-between align-items-center">
   			<div class="ed-about-img-wrap-3 position-relative">
-  				<span class="ab-shape1 position-absolute"><img src="assets/img/shape/abs1.png" alt=""></span>
-  				<span class="ab-shape2 position-absolute"><img src="assets/img/shape/abs2.png" alt=""></span>
+  				<span class="ab-shape1 right_view position-absolute"><img src="assets/img/shape/abs1.png" alt=""></span>
+  				<span class="ab-shape2 top_view position-absolute"><img src="assets/img/shape/abs2.png" alt=""></span>
   				<span class="ab-shape3 position-absolute"><img src="assets/img/shape/abs3.png" alt=""></span>
   				<span class="ab-shape4 position-absolute"><img src="assets/img/shape/abs4.png" alt=""></span>
   				<div class="item-img">
   					<img src="assets/img/about/ab5.jpg " alt="">
   				</div>
-  				<div class="inner-text position-absolute">
+  				<div class="inner-text top_view_2 position-absolute">
   					<div class="txt-bg"><img src="assets/img/shape/indi.png" alt=""></div>
   					<span>Founded 
   					in 1816</span>
   				</div>
   			</div>
   			<div class="ed-about-text-wrap-3">
-  				<div class="ed-sec-title-3 headline-3 pera-content">
-  					<div class="subtitle">Learning Is An Adventure!</div>
-  					<h2 class="sec_title">Welcome to Breaside
+  				<div class="ed-sec-title-3 headline-3 pera-content ed-text">
+  					<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  					<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Welcome to Breaside
   					Preparatory School</h2>
   					<p>Located in Bromley, Kent, Breaside Preparatory School provides a rich learning environment for your son or daughter. Our curriculum will prepare your children for the senior schools of choice through a balanced</p>
   				</div>
   				<div class="ed-ab-text-feature mt-35 mb-15">
   					<div class="row">
   						<div class="col-sm-6">
-  							<div class="ed-ab-ft-3 d-flex align-items-center">
+  							<div class="ed-ab-ft-3 d-flex align-items-center top_view">
   								<div class="item-icon d-flex align-items-center justify-content-center">
   									<img src="assets/img/icon/ic24.png" alt="">
   								</div>
@@ -273,7 +387,7 @@
   							</div>
   						</div>
   						<div class="col-sm-6">
-  							<div class="ed-ab-ft-3 d-flex align-items-center">
+  							<div class="ed-ab-ft-3 d-flex align-items-center top_view">
   								<div class="item-icon d-flex align-items-center justify-content-center">
   									<img src="assets/img/icon/ic25.png" alt="">
   								</div>
@@ -284,7 +398,7 @@
   							</div>
   						</div>
   						<div class="col-sm-6">
-  							<div class="ed-ab-ft-3 d-flex align-items-center">
+  							<div class="ed-ab-ft-3 d-flex align-items-center top_view">
   								<div class="item-icon d-flex align-items-center justify-content-center">
   									<img src="assets/img/icon/ic26.png" alt="">
   								</div>
@@ -295,7 +409,7 @@
   							</div>
   						</div>
   						<div class="col-sm-6">
-  							<div class="ed-ab-ft-3 d-flex align-items-center">
+  							<div class="ed-ab-ft-3 d-flex align-items-center top_view">
   								<div class="item-icon d-flex align-items-center justify-content-center">
   									<img src="assets/img/icon/ic27.png" alt="">
   								</div>
@@ -308,7 +422,7 @@
   					</div>
   				</div>
   				<div class="ed-btn-3">
-  					<a href="#"><span>Get Quote Now</span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
+  					<a href="#"><span data-back="Get Quote Now" data-front="Get Quote Now"></span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
   				</div>
   			</div>
   		</div>
@@ -321,9 +435,9 @@
   ============================================= -->
   <section id="ed-fun" class="ed-fun-section pt-140 pb-140" data-background="assets/img/bg/fun-bg.jpg">
   	<div class="container">
-  		<div class="ed-sec-title-3 text-center headline-3 pera-content">
-  			<div class="subtitle">Learning Is An Adventure!</div>
-  			<h2 class="sec_title">New Approach to Fun</h2>
+  		<div class="ed-sec-title-3 ed-text text-center headline-3 pera-content">
+  			<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  			<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">New Approach to Fun</h2>
   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse </p>
   		</div>
   		<div class="ed-fun-content mt-40 position-relative">
@@ -335,7 +449,7 @@
   								<img src="assets/img/course/fn1.jpg" alt="">
   							</div>
   							<div class="item-text headline-3 pera-content">
-  								<h3 class="fun_title"><a href="#">Learning through Play</a></h3>
+  								<h3 class="fun_title href-underline"><a href="#">Learning through Play</a></h3>
   								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   								<div class="item-bottom text-uppercase ul-li">
   									<ul>
@@ -353,7 +467,7 @@
   								<img src="assets/img/course/fn2.jpg" alt="">
   							</div>
   							<div class="item-text headline-3 pera-content">
-  								<h3 class="fun_title"><a href="#">Learning through Play</a></h3>
+  								<h3 class="fun_title href-underline"><a href="#">Learning through Play</a></h3>
   								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   								<div class="item-bottom text-uppercase ul-li">
   									<ul>
@@ -371,7 +485,7 @@
   								<img src="assets/img/course/fn3.jpg" alt="">
   							</div>
   							<div class="item-text headline-3 pera-content">
-  								<h3 class="fun_title"><a href="#">Learning through Play</a></h3>
+  								<h3 class="fun_title href-underline"><a href="#">Learning through Play</a></h3>
   								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   								<div class="item-bottom text-uppercase ul-li">
   									<ul>
@@ -389,7 +503,7 @@
   								<img src="assets/img/course/fn1.jpg" alt="">
   							</div>
   							<div class="item-text headline-3 pera-content">
-  								<h3 class="fun_title"><a href="#">Learning through Play</a></h3>
+  								<h3 class="fun_title href-underline"><a href="#">Learning through Play</a></h3>
   								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   								<div class="item-bottom text-uppercase ul-li">
   									<ul>
@@ -407,7 +521,7 @@
   								<img src="assets/img/course/fn2.jpg" alt="">
   							</div>
   							<div class="item-text headline-3 pera-content">
-  								<h3 class="fun_title"><a href="#">Learning through Play</a></h3>
+  								<h3 class="fun_title href-underline"><a href="#">Learning through Play</a></h3>
   								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   								<div class="item-bottom text-uppercase ul-li">
   									<ul>
@@ -435,15 +549,15 @@
   ============================================= -->
   <section id="ed-why-choose-3" class="ed-wc-sec-3 pt-125 pb-125">
   	<div class="container">
-  		<div class="ed-sec-title-3 text-center headline-3 pera-content">
-  			<div class="subtitle">Learning Is An Adventure!</div>
-  			<h2 class="sec_title">Why Buxlow Preparatory School?</h2>
+  		<div class="ed-sec-title-3 ed-text text-center headline-3 pera-content">
+  			<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  			<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Why Buxlow Preparatory School?</h2>
   			<p>Located in Bromley, Kent, Breaside Preparatory School provides a rich learning 
   			environment for your son or daughter.</p>
   		</div>
   		<div class="ed-wc-content-3 d-flex justify-content-center align-items-center mt-40">
   			<div class="ed-wc-elem-1">
-  				<div class="ed-wc-item-3 d-flex align-items-center">
+  				<div class="ed-wc-item-3 top_view d-flex align-items-center">
   					<div class="item-text headline-3 pera-content text-end">
   						<h3>Outstanding Education </h3>
   						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
@@ -452,7 +566,7 @@
   						<img src="assets/img/icon/ic24.png" alt="">
   					</div>
   				</div>
-  				<div class="ed-wc-item-3 d-flex align-items-center">
+  				<div class="ed-wc-item-3 top_view d-flex align-items-center">
   					<div class="item-text headline-3 pera-content text-end">
   						<h3>Enriching Activities </h3>
   						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
@@ -462,13 +576,13 @@
   					</div>
   				</div>
   			</div>
-  			<div class="ed-wc-elem-2">
+  			<div class="ed-wc-elem-2 upper_view">
   				<div class="item-img">
   					<img src="assets/img/about/wc.png" alt="">
   				</div>
   			</div>
   			<div class="ed-wc-elem-3">
-  				<div class="ed-wc-item-3 d-flex align-items-center">
+  				<div class="ed-wc-item-3 top_view_3 d-flex align-items-center">
   					<div class="item-icon d-flex justify-content-center align-items-center">
   						<img src="assets/img/icon/ic25.png" alt="">
   					</div>
@@ -477,7 +591,7 @@
   						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
   					</div>
   				</div>
-  				<div class="ed-wc-item-3 d-flex align-items-center">
+  				<div class="ed-wc-item-3 top_view_3 d-flex align-items-center">
   					<div class="item-icon d-flex justify-content-center align-items-center">
   						<img src="assets/img/icon/ic26.png" alt="">
   					</div>
@@ -499,8 +613,8 @@
   	<div class="container">
   		<div class="ed-acti-top mb-65 d-flex align-items-end justify-content-between flex-wrap">
   			<div class="ed-sec-title-3  headline-3 pera-content">
-  				<div class="subtitle">Learning Is An Adventure!</div>
-  				<h2 class="sec_title">Our Activities & Events</h2>
+  				<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  				<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Our Activities & Events</h2>
   			</div>
   			<div class="ed-acti-filter-btn">
   				<div class="button-group p-filter-btn  clearfix">
@@ -524,7 +638,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -539,7 +653,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -554,7 +668,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -569,7 +683,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -584,7 +698,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -599,7 +713,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -614,7 +728,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -629,7 +743,7 @@
   						<a href="#"><i class="fa-solid fa-plus"></i></a>
   					</div>
   					<div class="inner-text headline-3">
-  						<h3><a href="#">Outstanding Education </a></h3>
+  						<h3 class="href-underline"><a href="#">Outstanding Education </a></h3>
   					</div>
   				</div>
   			</div>
@@ -641,11 +755,11 @@
 
 <!-- Start of Video Client section
   ============================================= -->
-  <section id="ed-video-client" class="ed-video-client-section pb-130">
+  <section id="ed-video-client" class="ed-video-client-section pb-90">
   	<div class="container">
   		<div class="ed-sec-title-3 text-center headline-3 pera-content">
-  			<div class="subtitle">Learning Is An Adventure!</div>
-  			<h2 class="sec_title">Begin your child's Educational Journey 
+  			<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  			<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Begin your child's Educational Journey 
   			at The Kensington Kindergarten</h2>
   		</div>
   		<div class="ed-vc-content mt-40">
@@ -661,7 +775,7 @@
   												<img src="assets/img/about/ac1.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -671,7 +785,7 @@
   												<img src="assets/img/about/ac2.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -687,7 +801,7 @@
   												<img src="assets/img/about/ac1.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -697,7 +811,7 @@
   												<img src="assets/img/about/ac2.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -713,7 +827,7 @@
   												<img src="assets/img/about/ac1.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -723,7 +837,7 @@
   												<img src="assets/img/about/ac2.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -739,7 +853,7 @@
   												<img src="assets/img/about/ac1.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -749,7 +863,7 @@
   												<img src="assets/img/about/ac2.jpg" alt="">
   											</div>
   											<div class="video-play">
-  												<a class="d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
+  												<a class="video_box d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-play"></i></a>
   											</div>
   										</div>
   									</div>
@@ -839,7 +953,8 @@
 
 <!-- Start of Counter section
   ============================================= -->
-  <section id="ed-counter-3" class="ed-counter-section-3 pt-120 pb-60" data-background="assets/img/bg/count-bg.jpg">
+  <section id="ed-counter-3" class="ed-counter-section-3 position-relative pt-120 pb-60">
+  	<div class="ed-count-bg img-parallax position-absolute"><img src="assets/img/bg/count-bg.jpg" alt=""></div>
   	<div class="container">
   		<div class="ed-counter-content-3">
   			<div class="row justify-content-center">
@@ -897,11 +1012,11 @@
 <!-- Start of Blog section
   ============================================= -->
   <section id="ed-blog-3" class="ed-blog-section-3 position-relative pt-130 pb-100">
-  	<span class="ed-blog-shape position-absolute"><img src="assets/img/shape/bs.png" alt=""></span>
+  	<span class="ed-blog-shape left_view position-absolute"><img src="assets/img/shape/bs.png" alt=""></span>
   	<div class="container">
   		<div class="ed-sec-title-3 text-center headline-3 pera-content">
-  			<div class="subtitle">Learning Is An Adventure!</div>
-  			<h2 class="sec_title">Discover the Knightsbridge 
+  			<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  			<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Discover the Knightsbridge 
   			Kindergarten</h2>
   		</div>
   		<div class="ed-blog-content-3 mt-45">
@@ -915,7 +1030,7 @@
   							<span>11/5/2025</span>
   						</div>
   						<div class="item-text headline-3">
-  							<h3 class="blog_title"><a href="#">Fostering Creativity in Early 
+  							<h3 class="blog_title href-underline"><a href="#">Fostering Creativity in Early 
   							Childhood Education</a></h3>
   							<div class="inner-bottom d-flex justify-content-between align-items-center">
   								<span>Olivia Carter</span>
@@ -933,7 +1048,7 @@
   							<span>11/5/2025</span>
   						</div>
   						<div class="item-text headline-3">
-  							<h3 class="blog_title"><a href="#">Fostering Creativity in Early 
+  							<h3 class="blog_title href-underline"><a href="#">Fostering Creativity in Early 
   							Childhood Education</a></h3>
   							<div class="inner-bottom d-flex justify-content-between align-items-center">
   								<span>Olivia Carter</span>
@@ -951,7 +1066,7 @@
   							<span>11/5/2025</span>
   						</div>
   						<div class="item-text headline-3">
-  							<h3 class="blog_title"><a href="#">Fostering Creativity in Early 
+  							<h3 class="blog_title href-underline"><a href="#">Fostering Creativity in Early 
   							Childhood Education</a></h3>
   							<div class="inner-bottom d-flex justify-content-between align-items-center">
   								<span>Olivia Carter</span>
@@ -974,11 +1089,11 @@
   	<div class="container">
   		<div class="ed-cta-content-3 text-center">
   			<div class="ed-sec-title-3 text-center headline-3 pera-content">
-  				<div class="subtitle">Join Our New Session</div>
-  				<h2 class="sec_title">Join us for a Personal Tour</h2>
+  				<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Join Our New Session</div>
+  				<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Join us for a Personal Tour</h2>
   			</div>
   			<div class="ed-btn-3">
-  				<a href="#"><span>Get Quote Now</span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
+  				<a href="#"><span data-back="Get Quote Now" data-front="Get Quote Now"></span> <img src="assets/img/icon/arrow-3.png" alt=""></a>
   			</div>
   		</div>
   	</div>
@@ -991,8 +1106,8 @@
   <section id="ed-testimonial-3" class="ed-testimonial-sec-3 pt-120 pb-120">
   	<div class="container">
   		<div class="ed-sec-title-3 text-center headline-3 pera-content">
-  			<div class="subtitle">Learning Is An Adventure!</div>
-  			<h2 class="sec_title">What Our Parents Say</h2>
+  			<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  			<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">What Our Parents Say</h2>
   		</div>
   	</div>
   	<div class="ed-test-content-3 mt-90">
@@ -1111,12 +1226,12 @@
 <!-- Start of Media frame section
   ============================================= -->
   <section id="ed-media-frame" class="ed-media-frame-sec position-relative">
-  	<span class="ed-mf-vector1 position-absolute"><img src="assets/img/gallery/vc1.png" alt=""></span>
-  	<span class="ed-mf-vector2 position-absolute"><img src="assets/img/gallery/vc2.png" alt=""></span>
+  	<span class="ed-mf-vector1 right_view position-absolute"><img src="assets/img/gallery/vc1.png" alt=""></span>
+  	<span class="ed-mf-vector2 left_view position-absolute"><img src="assets/img/gallery/vc2.png" alt=""></span>
   	<div class="container">
-  		<div class="ed-sec-title-3 text-center headline-3 pera-content">
-  			<div class="subtitle">Learning Is An Adventure!</div>
-  			<h2 class="sec_title">Follow Breaside Prep on 
+  		<div class="ed-sec-title-3 ed-text text-center headline-3 pera-content">
+  			<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  			<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Follow Breaside Prep on 
   			Social Media Frame</h2>
   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
   		</div>
@@ -1204,8 +1319,8 @@
   				<div class="col-lg-6">
   					<div class="ed-contact-text">
   						<div class="ed-sec-title-3  headline-3 pera-content">
-  							<div class="subtitle">Learning Is An Adventure!</div>
-  							<h2 class="sec_title">Follow Breaside</h2>
+  							<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  							<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Follow Breaside</h2>
   							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
   							eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
   						</div>
@@ -1255,6 +1370,116 @@
   </section>
 <!-- Ed of Contact section
   ============================================= -->
+
+<!-- Start of Footer section
+  ============================================= --> 
+  <section id="ed-footer-3" class="ed-footer-sec-3 pt-80 position-relative">
+  	<div class="ed-footer-gallery ul-li">
+  		<ul class="top_item">
+  			<li><img src="assets/img/gallery/fg1.jpg" alt=""></li>
+  		</ul>
+  		<ul class="bottom_item">
+  			<li><img src="assets/img/gallery/fg2.jpg" alt=""></li>
+  			<li><img src="assets/img/gallery/fg3.jpg" alt=""></li>
+  			<li><img src="assets/img/gallery/fg4.jpg" alt=""></li>
+  			<li><img src="assets/img/gallery/fg5.jpg" alt=""></li>
+  			<li><img src="assets/img/gallery/fg6.jpg" alt=""></li>
+  			<li><img src="assets/img/gallery/fg7.jpg" alt=""></li>
+  		</ul>
+  	</div>
+  	<div class="container">
+  		<div class="ed-ft-newsletter pb-50 d-flex align-items-center justify-content-between">
+  			<div class="ed-sec-title-3  headline-3 pera-content">
+  				<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  				<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Nursery and Prep School for 
+  					6 months-11 years, founded in North 
+  				Wembley in 1927.</h2>
+  			</div>
+  			<div class="ed-ft-newsletter-form pera-content">
+  				<form action="#">
+  					<input type="email" name="Your Email" placeholder="Your Email">
+  					<button>Subcribe Now <img src="assets/img/icon/arrow-3.png" alt=""></button>
+  				</form>
+  				<p>Get updates On New Courses and News</p>
+  			</div>
+  		</div>
+  		<div class="ed-ft-widget-wrap pt-60 pb-60">
+  			<div class="row">
+  				<div class="col-lg-4">
+  					<div class="ed-ft-widget-3">
+  						<div class="cta-info">
+  							<h3 class="widget-title">Contact Info.</h3>
+  							<div class="item-info-wrap">
+  								<div class="item-info d-flex align-items-center">
+  									<div class="cta-icon d-flex align-items-center justify-content-center">
+  										<i class="fa-solid fa-location-dot"></i>
+  									</div>
+  									<div class="cta-text">
+  										Barid House, 15-19 St Cross St 123,
+  										United State Ecin BUW
+  									</div>
+  								</div>
+  								<div class="item-info d-flex align-items-center">
+  									<div class="cta-icon d-flex align-items-center justify-content-center">
+  										<i class="fa-solid fa-phone"></i>
+  									</div>
+  									<div class="cta-text">
+  										+93 (0)38 3938 393
+  									</div>
+  								</div>
+  								<div class="item-info d-flex align-items-center">
+  									<div class="cta-icon d-flex align-items-center justify-content-center">
+  										<i class="fa-solid fa-envelope"></i>
+  									</div>
+  									<div class="cta-text">
+  										Username@domain.com
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="col-lg-4">
+  					<div class="ed-ft-widget-3">
+  						<div class="menu-widget ul-li">
+  							<h3 class="widget-title">Quick Links.</h3>
+  							<ul>
+  								<li><a href="#">Contact Us</a></li>
+  								<li><a href="#">Gallery</a></li>
+  								<li><a href="#">News & Articles</a></li>
+  								<li><a href="#">FAQ’s</a></li>
+  								<li><a href="#">Coming Soon</a></li>
+  								<li><a href="#">Sign In/Registration</a></li>
+  								<li><a href="#">About</a></li>
+  								<li><a href="#">Course</a></li>
+  								<li><a href="#">Instructor</a></li>
+  								<li><a href="#">Events</a></li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="col-lg-4">
+  					<div class="ed-ft-widget-3">
+  						<div class="title-info">
+  							<div class="ed-sec-title-3  headline-3 pera-content">
+  								<div class="subtitle  ed-sec-tt-anim ed-has-anim-char">Learning Is An Adventure!</div>
+  								<h2 class="sec_title  ed-sec-tt-anim ed-has-anim">Kindergarten Nursery 
+  								Walk Through</h2>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="ed-copyright-text-3">
+  		<div class="container">
+  			© 2015 - 2024 Themexriver I All Rights Reserved
+  		</div>
+  	</div>
+  </section>
+<!-- End of Footer section
+  ============================================= --> 
 
 
   <!-- For Js Library -->
