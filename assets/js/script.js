@@ -175,7 +175,7 @@ Last change:    00/00/00
 		delayBeforeStart: 0,
 		direction: 'left',
 		duplicated: true,
-		pauseOnHover: false,
+		pauseOnHover: true,
 		startVisible:true,
 	});
 	// Background Image
@@ -416,6 +416,11 @@ if($('.ed-text').length) {
 
 	});
 }
+var enrollActive = $('.ed-h-list-img')
+enrollActive.mouseover(function() {
+	enrollActive.removeClass('active');
+	$(this).addClass('active');
+});
 	// Featured Class Slider
 const initializeSwipers = () => {
 	var slider = new Swiper('.ed-ft-class-slider', {
