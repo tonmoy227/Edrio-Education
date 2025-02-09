@@ -421,7 +421,13 @@ enrollActive.mouseover(function() {
 	enrollActive.removeClass('active');
 	$(this).addClass('active');
 });
-	// Featured Class Slider
+var teamActive = $('.ed-tm4-item')
+teamActive.mouseover(function() {
+	teamActive.removeClass('active');
+	$(this).addClass('active');
+});
+
+// Featured Class Slider
 const initializeSwipers = () => {
 	var slider = new Swiper('.ed-ft-class-slider', {
 		spaceBetween: 30,

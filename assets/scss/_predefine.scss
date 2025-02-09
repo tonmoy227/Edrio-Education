@@ -492,7 +492,7 @@ select:visited {
 		font-size: 12px;
 		font-weight: 600;
 		border-radius: 30px;
-		margin-bottom: 12px;
+		margin-bottom: 20px;
 		display: inline-block;
 		padding: 12px 25px 8px;
 		color: var(--ed-black-color);
@@ -502,6 +502,26 @@ select:visited {
 		font-size: 50px;
 		font-weight: 800;
 		color: var(--ed-black-color);
+		@media #{$lg,$md} {
+			font-size: 45px;
+		}
+		@media #{$xs} {
+			font-size: 38px;
+		}
+		@media #{$xxs} {
+			font-size: 34px;
+		}
+	}
+	p {
+		padding-top: 8px;
+	}
+	&.text-center {
+		margin: 0 auto;
+		max-width: 760px;
+		p {
+			max-width: 670px;
+			margin: 0 auto;
+		}
 	}
 }
 @keyframes rightarrow {
@@ -691,6 +711,15 @@ select:visited {
 				animation: rightarrow 0.6s infinite alternate ease-in-out;
 			}
 		}
+	}
+}
+.ed-btn-4 {
+	a {
+		color: #fff;
+		font-weight: 500;
+		padding: 18px 40px;
+		border-radius: 30px;
+		background-color: var(--ed-black-color);
 	}
 }
 .split-line {
