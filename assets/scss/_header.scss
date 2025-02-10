@@ -763,6 +763,14 @@
 				}
 			}
 		}
+		&:is(.txa_sticky_header):is(.txa_sticky):is(.txa_sticky_show) {
+			.ed-header-content {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				background-color: #fff;
+				box-shadow: -8px 8px 24px 0px rgba(0, 0, 0, 0.08);
+			}
+		}
 	}
 	&.header_style_four {
 		padding-top: 40px;
@@ -875,6 +883,11 @@
 					}
 				}
 			}
+		}
+		&:is(.txa_sticky_header):is(.txa_sticky):is(.txa_sticky_show) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			box-shadow: -8px 8px 24px 0px rgba(0, 0, 0, 0.08);
 		}
 	}
 	&.txa_sticky_header { 
@@ -1110,6 +1123,10 @@
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form .keep-login input {
 	width: auto;
 }
+.ori-sign-up-modal-form-content .ori-sign-up-modal-form .keep-login span {
+	color: #BAC1D4;
+}
+
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form .forgot-pass a {
 	color: var(--ed-prime-c);
 }

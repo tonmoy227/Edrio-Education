@@ -3,6 +3,12 @@
 		width: 100%;
 		font-size: 22px;
 		margin-left: 30px;
+		@media #{$md,$sm,$xs} {
+			margin-left: 0;
+		}
+		@media #{$xs} {
+			font-size: 18px;
+		}
 	}
 	.ed-faq-accordion .accordion-body {
 		padding-left: 0;
@@ -12,6 +18,12 @@
 		img {
 			width: 68px;
 			height: 68px;
+			@media #{$md,$sm,$xs} {
+				display: none;
+			}
+		}
+		@media #{$xs} {
+			max-width: 100%;
 		}
 	}
 	.ed-faq-accordion .accordion-item {
@@ -28,6 +40,10 @@
 		}
 		&:nth-child(4) {
 			background-color: #ffc698;
+		}
+		@media #{$xs} {
+			border-radius: 15px;
+			padding: 30px 15px 20px;
 		}
 	}
 	.ed-faq-accordion .accordion-body p {
@@ -49,6 +65,14 @@
 		justify-content: center;
 		background-color: #dadada;
 		font-family: 'Font Awesome 5 Free';
+		@media #{$md,$sm,$xs} {
+			top: 0;
+		}
+		@media #{$xs} {
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+		}
 	}
 }
 .ed-client4-sec {

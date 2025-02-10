@@ -34,10 +34,10 @@
 
 <!-- Start of Header section
   ============================================= -->
-  <header id="ed-header" class="ed-header-section header_style_four">
+  <header id="ed-header" class="ed-header-section header_style_four txa_sticky_header">
   	<div class="ed-header-content d-flex align-items-center justify-content-between">
   		<div class="brand-logo">
-  			<img src="assets/img/logo/logo-3.png" alt="">
+  			<a href="#"><img src="assets/img/logo/logo-3.png" alt=""></a>
   		</div>
   		<div class="header-action d-flex align-items-center">
   			<div class="shop-btn">
@@ -61,6 +61,73 @@
   		</div>
   	</div>
   </header>
+  <!-- sidebar cart start -->
+  <div class="cart_sidebar">
+  	<div class="cart_sidebar_top">
+  		<h2 class="heading_title">Cart</h2>
+  		<button type="button" class="cart_close_btn tx-close"><i class="fa-solid fa-xmark"></i></button>
+  	</div>
+  	<div class="cart_items_list">
+  		<div class="cart_item">
+  			<div class="item_image">
+  				<img src="assets/img/shop/pr1.jpg" alt="image_not_found">
+  			</div>
+  			<div class="item_content headline">
+  				<h4 class="item_title">
+  					Rorem ipsum dolor sit amet.
+  				</h4>
+  				<span class="item_price">$19.00</span>
+  				<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+  			</div>
+  		</div>
+  		<div class="cart_item">
+  			<div class="item_image">
+  				<img src="assets/img/shop/pr2.jpg" alt="image_not_found">
+  			</div>
+  			<div class="item_content headline">
+  				<h4 class="item_title">
+  					Rorem ipsum dolor sit amet.
+  				</h4>
+  				<span class="item_price">$22.00</span>
+  				<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+  			</div>
+  		</div>
+  		<div class="cart_item">
+  			<div class="item_image">
+  				<img src="assets/img/shop/pr3.jpg" alt="image_not_found">
+  			</div>
+  			<div class="item_content headline">
+  				<h4 class="item_title">
+  					Rorem ipsum dolor sit amet.
+  				</h4>
+  				<span class="item_price">$43.00</span>
+  				<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+  			</div>
+  		</div>
+  		<div class="cart_item">
+  			<div class="item_image">
+  				<img src="assets/img/shop/pr4.jpg" alt="image_not_found">
+  			</div>
+  			<div class="item_content headline">
+  				<h4 class="item_title">
+  					Rorem ipsum dolor sit amet.
+  				</h4>
+  				<span class="item_price">$14.00</span>
+  				<button type="button" class="remove_btn"><i class="fa-solid fa-xmark"></i></button>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="cart_sidebar_bottom">
+  		<div class="total_price">
+  			<span>Sub Total:</span>
+  			<span>$87.00</span>
+  		</div>
+  		<div class="cart_sidebar_button">
+  			<a  href="#">View Cart</a>
+  			<a  href="#">Checkout</a>
+  		</div>
+  	</div>
+  </div>
 <!-- End of Header section
   ============================================= -->
 
@@ -69,12 +136,12 @@
   <section id="ed-hero-4" class="ed-hero-section-4" data-background="assets/img/bg/hero-bg.jpg">
   	<div class="container">
   		<div class="ed-hero-content-4">
-  			<div class="ed-hero-text-4 text-center headline-4 pera-content">
-  				<h1 class="hero_title">Practice Your Creativity 
+  			<div class="ed-hero-text-4 text-center headline-4 pera-content edh-text">
+  				<h1 class="hero_title banner_title agt_hero_title_2">Practice Your Creativity 
   				With thousands of Classes.</h1>
   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. facilisis. </p>
   			</div>
-  			<div class="ed-hero-img-wrap-4 pt-85 ul-li">
+  			<div class="ed-hero-img-wrap-4 txt_item_active  ul-li">
   				<ul>
   					<li>
   						<div class="ed-h-list-img position-relative">
@@ -155,7 +222,7 @@
   					</li>
   				</ul>
   			</div>
-  			<div class="ed-hero-search-4">
+  			<div class="ed-hero-search-4 top_view_4">
   				<form action="#" method="get">
   					<input type="text" placeholder="Search Your Needs">
   					<div class="action-select ed-option">
@@ -295,8 +362,8 @@
   	<div class="container">
   		<div class="ed-oc-top-content mb-30 d-flex align-items-end justify-content-between flex-wrap">
   			<div class="ed-sec-title-4 headline-4">
-  				<div class="subtitle text-uppercase">MARKETPLACE</div>
-  				<h2 class="sec_title">Inspiring Online Courses</h2>
+  				<div class="subtitle text-uppercas wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1300ms">MARKETPLACE</div>
+  				<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Inspiring Online Courses</h2>
   			</div>
   			<div class="ed-oc-filter-btn">
   				<div class="button-group p-filter-btn  clearfix">
@@ -526,9 +593,9 @@
 <!-- Start of Team section
   ============================================= -->
   <section id="ed-team-4" class="ed-tm4-sec pt-110">
-  	<div class="ed-sec-title-4 headline-4 pera-content text-center">
-  		<div class="subtitle text-uppercase">MARKETPLACE</div>
-  		<h2 class="sec_title">Learn From Creative Experts</h2>
+  	<div class="ed-sec-title-4 ed-text headline-4 pera-content text-center">
+  		<div class="subtitle text-uppercas wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1300ms">MARKETPLACE</div>
+  		<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Learn From Creative Experts</h2>
   		<p>Skillshare classes are taught by industry leaders excited to share their tools, 
   		techniques, and professional journeys with you.</p>
   	</div>
@@ -647,8 +714,8 @@
   		<div class="ed-ab4-content d-flex">
   			<div class="ed-ab4-text">
   				<div class="ed-sec-title-4 headline-4 pera-content">
-  					<div class="subtitle text-uppercase">MARKETPLACE</div>
-  					<h2 class="sec_title">Decentralized
+  					<div class="subtitle text-uppercas wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1300ms">MARKETPLACE</div>
+  					<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Decentralized
   						Marketplace for
   					Digital Artwork</h2>
   					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
@@ -668,7 +735,7 @@
   				</div>
   			</div>
   			<div class="ed-ab4-img">
-  				<div class="ab4-item-img d-flex">
+  				<div class="ab4-item-img d-flex top_view">
   					<div class="item-img-1">
   						<img src="assets/img/about/ab6.jpg" alt="">
   					</div>
@@ -676,7 +743,7 @@
   						<img src="assets/img/about/ab7.jpg" alt="">
   					</div>
   				</div>
-  				<div class="ab4-item-img d-flex">
+  				<div class="ab4-item-img d-flex top_view">
   					<div class="item-img-2">
   						<img src="assets/img/about/ab8.jpg" alt="">
   					</div>  
@@ -684,7 +751,7 @@
   						<img src="assets/img/about/ab9.jpg" alt="">
   					</div>
   				</div>
-  				<div class="ab4-item-img d-flex">
+  				<div class="ab4-item-img d-flex top_view">
   					<div class="item-img-1">
   						<img src="assets/img/about/ab10.jpg" alt="">
   					</div>
@@ -704,13 +771,13 @@
   <section id="ed-ins-co" class="ed-ins-co-sec pt-120 pb-90">
   	<div class="container">
   		<div class="ed-sec-title-4 headline-4 pera-content text-center">
-  			<div class="subtitle text-uppercase">MARKETPLACE</div>
-  			<h2 class="sec_title">Inspiring Online Courses</h2>
+  			<div class="subtitle text-uppercas wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1300ms">MARKETPLACE</div>
+  			<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Inspiring Online Courses</h2>
   		</div>
   		<div class="ed-ins-co-content mt-45">
   			<div class="row justify-content-center">
-  				<div class="col-lg-3 col-md-6">
-  					<div class="ed-oc-item">
+  				<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+  					<div class="ed-oc-item mb-30">
   						<div class="item-img position-relative">
   							<div class="inner-img">
   								<img src="assets/img/course/oc1.jpg" alt="">
@@ -735,8 +802,8 @@
   						</div>
   					</div>
   				</div>
-  				<div class="col-lg-3 col-md-6">
-  					<div class="ed-oc-item">
+  				<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+  					<div class="ed-oc-item mb-30">
   						<div class="item-img position-relative">
   							<div class="inner-img">
   								<img src="assets/img/course/oc2.jpg" alt="">
@@ -761,8 +828,8 @@
   						</div>
   					</div>
   				</div>
-  				<div class="col-lg-3 col-md-6">
-  					<div class="ed-oc-item">
+  				<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
+  					<div class="ed-oc-item mb-30">
   						<div class="item-img position-relative">
   							<div class="inner-img">
   								<img src="assets/img/course/oc3.jpg" alt="">
@@ -787,8 +854,8 @@
   						</div>
   					</div>
   				</div>
-  				<div class="col-lg-3 col-md-6">
-  					<div class="ed-oc-item">
+  				<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+  					<div class="ed-oc-item mb-30">
   						<div class="item-img position-relative">
   							<div class="inner-img">
   								<img src="assets/img/course/oc4.jpg" alt="">
@@ -823,20 +890,20 @@
 <!-- Start of Counter section
   ============================================= -->
   <section id="ed-counter-4" class="ed-counter-sec-4 position-relative pt-120 pb-120">
-  	<div class="ed-counter-bg position-absolute"><img src="assets/img/bg/count-bg.png" alt=""></div>
+  	<div class="ed-counter-bg position-absolute top_view_4"><img src="assets/img/bg/count-bg.png" alt=""></div>
   	<div class="container">
   		<div class="ed-counter-content-4">
   			<div class="ed-counter4-text d-flex justify-content-between ul-li-block align-items-end">
   				<div class="ed-sec-title-4 headline-4 pera-content">
-  					<div class="subtitle text-uppercase">MARKETPLACE</div>
-  					<h2 class="sec_title">Decentralized 
+  					<div class="subtitle text-uppercas wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1300ms">MARKETPLACE</div>
+  					<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Decentralized 
   					Marketplace For Digital Artwork</h2>
   					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
   				</div>
   				<ul>
-  					<li><i class="fa-solid fa-circle-check"></i> Increase in Retention for in-demand </li>
-  					<li><i class="fa-solid fa-circle-check"></i> Transformational Learning through </li>
-  					<li><i class="fa-solid fa-circle-check"></i> Our 2025 Global Learning & Skills Trends </li>
+  					<li class="top_view"><i class="fa-solid fa-circle-check"></i> Increase in Retention for in-demand </li>
+  					<li class="top_view"><i class="fa-solid fa-circle-check"></i> Transformational Learning through </li>
+  					<li class="top_view"><i class="fa-solid fa-circle-check"></i> Our 2025 Global Learning & Skills Trends </li>
   				</ul>
   			</div>
   			<div class="ed-counter4-content d-flex">
@@ -884,8 +951,8 @@
   <section id="ed-faq4" class="ed-faq4-sec pt-120 pb-60">
   	<div class="container">
   		<div class="ed-sec-title-4 headline-4 pera-content text-center">
-  			<div class="subtitle text-uppercase">MARKETPLACE</div>
-  			<h2 class="sec_title">Inspiring Online Courses</h2>
+  			<div class="subtitle text-uppercas wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1300ms">MARKETPLACE</div>
+  			<h2 class="sec_title ed-sec-tt-anim ed-has-anim">Inspiring Online Courses</h2>
   		</div>
   		<div class="ed-faq4-content mt-55">
   			<div class="ed-faq-accordion">
@@ -1030,11 +1097,179 @@
   ============================================= -->
   <section id="ed-footer-4" class="ed-footer-sec-4 pt-90" data-background="assets/img/bg/ft4-bg.jpg">
   	<div class="container">
-  		
+  		<div class="ed-footer4-cta pb-65 d-flex align-items-center justify-content-between">
+  			<div class="ed-ft4-cta-img right_view">
+  				<div class="item-img-1 mb-20">
+  					<img src="assets/img/about/ct1.jpg" alt="">
+  				</div>
+  				<div class="cta-img-wrapper d-flex">
+  					<div class="item-img-2">
+  						<img src="assets/img/about/ct2.jpg" alt="">
+  					</div>
+  					<div class="item-img-2">
+  						<img src="assets/img/about/ct3.jpg" alt="">
+  					</div>
+  				</div>
+  			</div>
+  			<div class="ed-ft4-cta-text top_view_2 text-center headline-4">
+  				<h2>Bookmark in Your Own
+  				Way, With Saveday</h2>
+  				<div class="cta_info">
+  					<a href="#">Call +1 800 4564 782</a>
+  					<span>or</span>
+  					<a href="#"> Chat Now.</a>
+  				</div>
+  				<div class="cta_btn">
+  					<a href="#">Join for $9.99/m</a>
+  				</div>
+  			</div>
+  			<div class="ed-ft4-cta-img left_view">
+  				<div class="cta-img-wrapper mb-20 d-flex justify-content-end">
+  					<div class="item-img-2">
+  						<img src="assets/img/about/ct4.jpg" alt="">
+  					</div>
+  					<div class="item-img-2">
+  						<img src="assets/img/about/ct5.jpg" alt="">
+  					</div>
+  				</div>
+  				<div class="item-img-1">
+  					<img src="assets/img/about/ct6.jpg" alt="">
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ed-footer4-widget-area pt-75 pb-60 d-flex justify-content-between">
+  			<div class="ed-ft4-widget headline-4">
+  				<div class="menu-widget ul-li-block">
+  					<h3 class="widget-title">Company</h3>
+  					<ul>
+  						<li><a href="#">About</a></li>
+  						<li><a href="#">Contact Form</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="ed-ft4-widget headline-4">
+  				<div class="menu-widget ul-li-block">
+  					<h3 class="widget-title">Products</h3>
+  					<ul>
+  						<li><a href="#">Joomla Templates</a></li>
+  						<li><a href="#">Sp Page Builder</a></li>
+  						<li><a href="#">Jomla Extensions</a></li>
+  						<li><a href="#">Helix Framework</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="ed-ft4-widget headline-4">
+  				<div class="menu-widget ul-li-block">
+  					<h3 class="widget-title">Company</h3>
+  					<ul>
+  						<li><a href="#">Documentation</a></li>
+  						<li><a href="#">Forums</a></li>
+  						<li><a href="#">FAQs</a></li>
+  						<li><a href="#">Support Policy</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="ed-ft4-widget headline-4">
+  				<div class="menu-widget ul-li-block">
+  					<h3 class="widget-title">Terms</h3>
+  					<ul>
+  						<li><a href="#">Terms of Use</a></li>
+  						<li><a href="#">Copyright Notice</a></li>
+  						<li><a href="#">Refund Policy</a></li>
+  						<li><a href="#">Privacy Policy</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="ed-ft4-widget headline-4 pera-content">
+  				<div class="newsletter-widget">
+  					<h3 class="widget-title">Newsletter</h3>
+  					<p>Dont’t miss any updates of our new templates and 
+  					extensions and al the astonishing we bring for you.</p>
+  					<form action="#" method="get">
+  						<input type="email" placeholder="Email Address">
+  						<button>Subscribe</button>
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ed--ft4-about pera-content pb-60">
+  			<div class="ed_ab_title"><span>About Company</span> <i></i></div>
+  			<div class="ed-ft4-counter mt-50 d-flex align-items-center justify-content-between">
+  				<div class="brand-logo-text d-flex align-items-center">
+  					<a href="#"><img src="assets/img/logo/logo-4.png" alt=""></a>
+  					<p>Discover thousands of easy to customize themes, templates & CMS products, made by world-class developers.</p>
+  				</div>
+  				<div class="ft4-counter-wrap d-flex align">
+  					<div class="ft4-count-item headline-4 pera-content">
+  						<h3><span class="counter">247</span>K</h3>
+  						<p>Total Products</p>
+  					</div>
+  					<div class="ft4-count-item headline-4 pera-content">
+  						<h3><span class="counter">11.3</span>M+</h3>
+  						<p>Downloads</p>
+  					</div>
+  					<div class="ft4-count-item headline-4 pera-content">
+  						<h3><span class="counter">366321</span></h3>
+  						<p>Registered Users</p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="ed-ft-copyright4 pera-content d-flex justify-content-between">
+  			<p>©2025 <a href="#"> Themexriver </a> I All Rights Reserved</p>
+  			<div class="ed-payment">
+  				<span>Secure Payments:</span>
+  				<span><img src="assets/img/logo/payment.png" alt=""></span>
+  			</div>
+  		</div>
   	</div>
   </section>   
 <!-- End of Footer section
   ============================================= --> 
+
+
+<!-- log In Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1"  aria-hidden="true">
+	<div class="ori-signup-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="ori-sign-up-modal-form-area">
+						<button class="close-btn" type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+						<div class="ori-sign-up-modal-form-content d-flex align-items-center flex-wrap">
+							<div class="ori-sign-up-modal-img position-relative">
+								<img src="assets/img/bg/mbg.jpg" alt="">
+								<div class="brand-logo position-absolute">
+									<a href="#"><img src="assets/img/logo/logo-3.png" alt=""></a>
+								</div>
+							</div>
+							<div class="ori-sign-up-modal-form headline-2 pera-content">
+								<h3>Log in</h3>
+								<p>Log in to continue in our website.</p>
+								<form action="#" method="get">
+									<label>Email Address</label>
+									<input type="email" name="email" placeholder="example@hotmail.com">
+									<label>Password</label>
+									<input type="text" name="password" placeholder="123456789">
+									<div class="ori-signup-account-forget d-flex justify-content-between">
+										<div class="keep-login">
+											<input type="checkbox" name="keep">
+											<span>Keep me logged in</span>
+										</div>
+										<div class="forgot-pass">
+											<a href="#">Forgot Password</a>
+										</div>
+									</div>
+									<button type="submit">Log In</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- For Js Library -->
 <script src="assets/js/jquery-3.7.0.min.js"></script>

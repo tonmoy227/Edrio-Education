@@ -156,9 +156,14 @@
 			}
 		}
 		h3 {
+			font-weight: 800;
 			transform: translateX(70px);
 			@media #{$xl,$lg,$md,$sm,$xs} {
 				transform: translateX(15px);
+				font-weight: 700;
+			}
+			@media #{$xxs} {
+				font-weight: 600;
 			}
 		}
 		.item-img {

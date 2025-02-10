@@ -442,18 +442,6 @@
 	@media #{$xxs} {
 		margin-bottom: 30px;
 	}
-	// &:before {
-	// 	top: 0;
-	// 	right: 0;
-	// 	width: 1px;
-	// 	content: '';
-	// 	height: 100%;
-	// 	position: absolute;
-	// 	background-color: #01322f;
-	// 	@media #{$xl,$lg,$md,$sm,$xs} {
-	// 		display: none;
-	// 	}
-	// }
 	.widget-title {
 		color: #fff;
 		font-size: 27px;
@@ -572,6 +560,235 @@
 		flex-wrap: wrap;
 		li {
 			width: 33.33%;
+		}
+	}
+}
+.ed-footer-sec-4 {
+	overflow: hidden;
+}
+.ed-footer4-cta {
+	gap: 30px;
+	overflow: hidden;
+	border-bottom: 1px solid #1a2127;
+	@media #{$md,$sm,$xs} {
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
+}
+.ed-ft4-cta-text {
+	margin: 0 auto;
+	max-width: 470px;
+	@media #{$md,$sm,$xs} {
+		max-width: 100%;
+		width: 100%;
+	}
+	h2 {
+		color: #fff;
+		font-size: 40px;
+		font-weight: 800;
+		margin-bottom: 20px;
+		@media #{$lg} {
+			font-size: 30px;
+		}
+		@media #{$xs} {
+			font-size: 30px;
+		}
+	}
+	.cta_info {
+		color: #fff;
+		font-weight: 700;
+	}
+	.cta_btn {
+		margin-top: 25px;
+		a {
+			font-size: 18px;
+			font-weight: 800;
+			padding: 17px 30px;
+			border-radius: 40px;
+			color: var(--ed-black-color);
+			background-color: var(--ed-prime-c6);
+			@media #{$xs} {
+				font-size: 16px;
+				font-weight: 600;
+				padding: 14px 25px;
+			}
+			&:hover {
+				background-color: #fff;
+			}
+		}
+	}
+}
+.ed-ft4-cta-img {
+	.item-img-1,
+	.item-img-4 {
+		overflow: hidden;
+		border-radius: 200px;
+	}
+	.cta-img-wrapper {
+		gap: 15px;
+	}
+	.item-img-2 {
+		overflow: hidden;
+		border-radius: 200px;
+	}
+}
+.ed-footer4-widget-area {
+	@media #{$lg,$md,$sm,$xs} {
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+}
+.ed-ft4-widget {
+	.widget-title {
+		color: #fff;
+		font-size: 22px;
+		font-weight: 800;
+		padding-bottom: 28px;
+	}
+	.menu-widget {
+		li {
+			margin-bottom: 15px;
+			a {
+				color: #a3a7ac;
+				font-size: 16px;
+				font-weight: 800;
+				position: relative;
+				padding-left: 25px;
+				&:before {
+					left: 0;
+					top: 5px;
+					width: 24px;
+					content: '';
+					height: 24px;
+					position: absolute;
+					background-repeat: no-repeat;
+					background-image: url(../img/icon/arrow-6.png);
+				}
+				&:hover {
+					color: var(--ed-prime-c6);
+					transform: translateX(10px);
+				}
+			}
+		}
+	}
+	.newsletter-widget {
+		max-width: 430px;
+		@media #{$xl} {
+			max-width: 350px;
+		}
+		p {
+			color: #a3a7ac;
+			padding-bottom: 35px;
+		}
+		form {
+			overflow: hidden;
+			position: relative;
+			border-radius: 30px;
+			input {
+				width: 100%;
+				height: 63px;
+				border: none;
+				padding-left: 20px;
+				border-radius: 30px;
+				background-color: #373a41;
+			}
+			button {
+				top: 0;
+				right: 0;
+				height: 100%;
+				border: none;
+				font-size: 16px;
+				font-weight: 700;
+				position: absolute;
+				padding: 10px 25px;
+				color: var(--ed-black-color);
+				transition: all 500ms ease-in-out;
+				background-color: var(--ed-prime-c6);
+				&:hover {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
+.ed--ft4-about {
+	.ed_ab_title {
+		gap: 20px;
+		display: flex;
+		align-items: center;
+		span {
+			color: #fff;
+			font-size: 14px;
+			font-weight: 700;
+			white-space: nowrap;
+			
+		}
+		i {
+			width: 100%;
+			border-top: 1px solid #1a2127;
+		}
+	}
+}
+.ed-ft4-counter {
+	@media #{$lg,$md,$sm,$xs} {
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+	.brand-logo-text {
+		gap: 50px;
+		max-width: 790px;
+		@media #{$xs} {
+			gap: 30px;
+			flex-wrap: wrap;
+		}
+		@media #{$xl} {
+			gap: 20px 30px;
+			max-width: 590px;
+		}
+		p {
+			color: #a3a7ac;
+			font-size: 16px;
+		}
+	}
+}
+.ft4-counter-wrap {
+	gap: 20px 50px;
+	@media #{$xl} {
+		gap: 20px 25px;
+	}
+	@media #{$xs} {
+		gap: 15px 30px;
+		flex-wrap: wrap;
+	}
+}
+.ft4-count-item {
+	h3 {
+		color: #fff;
+		font-size: 30px;
+		font-weight: 800;
+	}
+	p {
+		color: #9b9fa4;
+		font-weight: 800;
+	}
+}
+.ed-ft-copyright4 {
+	padding: 20px 0px;
+	border-top: 1px solid #1a2127;
+	@media #{$xs} {
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+	p {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.ed-payment {
+		span {
+			color: #fff;
+			font-size: 18px;
+			font-weight: 600;
 		}
 	}
 }

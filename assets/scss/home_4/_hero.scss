@@ -42,9 +42,6 @@
 	position: relative;
 	padding: 8px 8px 18px;
 	transition: all 400ms ease-in-out;
-	@media #{$xxs} {
-		margin-bottom: 40px;
-	}
 	&:before {
 		left: 0;
 		bottom: 0;
@@ -60,7 +57,7 @@
 		border: 2px solid var(--ed-black-color);
 		box-shadow: 1px 3px 0 0 var(--ed-prime-c6);
 		transition: 1000ms cubic-bezier(.5,-.75,.3,1.5);
-		@media #{$xxs} {
+		@media #{$lg,$md,$sm,$xs} {
 			opacity: 1;
 			height: 90%;
 			visibility: visible;
@@ -88,11 +85,10 @@
 			border-top: 16px solid #1d59e8;
 			transform: translateX(-50%);
 		}
-		@media #{$xxs} {
+		@media #{$lg,$md,$sm,$xs} {
 			top: -30px;
 			opacity: 1;
 			visibility: visible;
-			animation: icon-bounce 2s ease-out infinite;
 		}
 	}
 	.item-img {
@@ -114,7 +110,7 @@
 		padding-left: 18px;
 		transform: translateX(20px);
 		transition: 1000ms cubic-bezier(.5,-.75,.3,1.5);
-		@media #{$xxs} {
+		@media #{$lg,$md,$sm,$xs} {
 			opacity: 1;
 			visibility: visible;
 			transform: translateX(0px);
@@ -123,6 +119,9 @@
 			font-size: 15px;
 			font-weight: 700;
 			color: var(--ed-black-color);
+			&:hover {
+				color: #1d59e8;
+			}
 			img {
 				margin-left: 3px;
 			}
@@ -131,7 +130,7 @@
 	&:hover,
 	&.active {
 		transform: translateY(-40px);
-		@media #{$xxs} {
+		@media #{$lg,$md,$sm,$xs} {
 			transform: translateY(0px);
 		}
 		&:before {
@@ -153,6 +152,9 @@
 	}
 }
 .ed-hero-img-wrap-4 {
+	@media #{$lg,$md,$sm,$xs} {
+		padding-top: 30px;
+	}
 	ul {
 		display: flex;
 		justify-content: center;
@@ -161,7 +163,10 @@
 		}
 	}
 	li {
+		padding-top: 85px;
 		margin-left: -120px;
+		transition: all 1200ms ease-in-out;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 		@media #{$xxl} {
 			margin-left: -130px;
 		}
@@ -170,29 +175,42 @@
 		}
 		@media #{$lg,$md,$sm,$xs} {
 			margin: 10px;
+			padding-top: 40px;
 			transform: translateY(0px) rotate(0deg) !important;
 		}
 		&:nth-child(1) {
 			margin-left: 0;
+			transition-delay: 300ms;
 			transform: translateY(50px) rotate(-15deg);
 		}
 		&:nth-child(2) {
+			transition-delay: 500ms;
 			transform: translateY(30px) rotate(-5deg);
 		}
 		&:nth-child(3) {
+			transition-delay: 600ms;
 			transform: translateY(30px) rotate(-5deg);
 		}
 		&:nth-child(4) {
+			transition-delay: 300ms;
 			transform: translateY(35px) rotate(-4deg);
 		}
 		&:nth-child(5) {
+			transition-delay: 500ms;
 			transform: translateY(45px) rotate(3deg);
 		}
 		&:nth-child(6) {
+			transition-delay: 700ms;
 			transform: translateY(45px) rotate(3deg);
 		}
 		&:nth-child(7) {
+			transition-delay: 500ms;
 			transform: translateY(45px) rotate(15deg);
+		}
+	}
+	&.active {
+		li {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 		}
 	}
 }

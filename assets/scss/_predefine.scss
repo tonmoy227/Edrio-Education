@@ -136,6 +136,9 @@ body {
 			color: var(--ed-black-color);
 		}
 	}
+	.cart_sidebar_button a:not(:last-child) {
+		background: var(--ed-prime-c6);
+	}
 }
 .ul-li ul {
 	margin: 0;
@@ -720,6 +723,10 @@ select:visited {
 		padding: 18px 40px;
 		border-radius: 30px;
 		background-color: var(--ed-black-color);
+		&:hover {
+			color: var(--ed-black-color);
+			background-color: var(--ed-prime-c6);
+		}
 	}
 }
 .split-line {
