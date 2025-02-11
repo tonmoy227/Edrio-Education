@@ -694,6 +694,50 @@ if($(".ed-fun-slider").length) {
 		},
 	})
 }
+	// Category Slider		
+if($(".ed-category5-card-slide").length) {
+	const swiper = new Swiper(".ed-category5-card-slide" , {
+		speed: 500,
+		loop: true,
+		spaceBetween: 32,
+		navigation: {
+			prevEl: ".ed-ct-prev",
+			nextEl: ".ed-ct-next",
+		},
+		autoplay:  {
+			delay: 5000,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			576: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 2,
+			},
+			1199: {
+				slidesPerView: 3,
+			},
+			1400: {
+				slidesPerView: 3,
+			},
+			1600: {
+				slidesPerView: 3,
+			},
+			1800: {
+				slidesPerView: 3,
+			},
+		},
+	})
+}
 	// Video Client Slider	
 var quick_view = new Swiper(".ed-vc-slider-nav", {
 	loop: true,

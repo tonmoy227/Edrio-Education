@@ -5,6 +5,7 @@ Font load
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fredoka:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @font-face {
 	font-family: "Golden Hopes PERSONAL USE ONLY Regular";
 	src: url("https://db.onlinewebfonts.com/t/99e780e86b2e7ff1e6b7e171034011ee.eot");
@@ -18,6 +19,7 @@ Font load
 	--ed-body-color: #565656;
 	--ed-body-color-2: #4b4b4b;
 	--ed-tt-color: #141515;
+	--ed-tt-color-2: #050505;
 	--ed-black-color: #000000;
 	--ed-red-color : #dd3924;
 	--ed-yellow-color : #fccc42;
@@ -27,9 +29,11 @@ Font load
 	--ed-heading-2: "Inter", sans-serif;
 	--ed-heading-3: "Fredoka", sans-serif;
 	--ed-heading-4: "Epilogue", sans-serif;
+	--ed-heading-5: "Figtree", sans-serif;
 	--ed-body-font-2: "Inter", sans-serif;
 	--ed-body-font-3: "Fredoka", sans-serif;
 	--ed-body-font-4: "Epilogue", sans-serif;
+	--ed-body-font-5: "Figtree", sans-serif;
 	--ed-cursive-font: "Golden Hopes PERSONAL USE ONLY Regular";
 	--ed-cursive-font-2: "Amatic SC";
 	--ed-color-1: rgb(0,255,180);
@@ -40,6 +44,8 @@ Font load
 	--ed-prime-c4: #ffae00 ;
 	--ed-prime-c5: #f15f25;
 	--ed-prime-c6: #00ff84;
+	--ed-prime-c7: #FF9960;
+	--ed-prime-c8: #C3F498;
 	--ed-gradient:  linear-gradient( 90deg, var(--ed-color-1) 0%, var(--ed-color-2)100%);
 	--cube-1: cubic-bezier(0.55, 0.085, 0, 0.99);
 	--cube-2: all .25s cubic-bezier(.645,.045,.355,1);
