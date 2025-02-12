@@ -704,9 +704,9 @@ if($(".ed-category5-card-slide").length) {
 			prevEl: ".ed-ct-prev",
 			nextEl: ".ed-ct-next",
 		},
-		autoplay:  {
-			delay: 5000,
-		},
+		// autoplay:  {
+		// 	delay: 5000,
+		// },
 		breakpoints: {
 			0: {
 				slidesPerView: 1,

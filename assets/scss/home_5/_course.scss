@@ -1,0 +1,141 @@
+.ed-course5-sec {
+	margin: 0px 32px;
+	border-radius: 20px;
+	background-color: #ECF0EF;
+	.ed-sec-title-5 {
+		.subtitle {
+			&:before,
+			&:after {
+				background-color: #ECF0EF;
+			}
+		}
+	}
+}
+.ed-course5-item {
+	border-radius: 8px;
+	margin-bottom: 32px;
+	background-color: #FFFFFF;
+	transition: all 500ms ease-in-out;
+	.item-img-cate {
+		.inner-img {
+			overflow: hidden;
+			border-radius: 8px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.inner-cate {
+			top: 24px;
+			left: 24px;
+			font-size: 15px;
+			font-weight: 500;
+			padding: 6px 16px;
+			border-radius: 4px;
+			position: absolute;
+			background-color: #C3F498;
+			color: var(--ed-tt-color-2);
+			font-family: var(--ed-heading-2);
+		}
+	}
+	.item-text {
+		padding: 33px 40px 35px;
+		.item-rate {
+			margin-bottom: 5px;
+			li {
+				color: #FF9960;
+				font-size: 16px;
+			}
+		}
+		h3 {
+			font-size: 24px;
+			font-weight: 600;
+			padding-bottom: 20px;
+			color: var(--ed-tt-color-2);
+			border-bottom: 1px solid rgba(5, 5, 5, 0.2);
+		}
+		.item-meta {
+			margin-top: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid rgba(5, 5, 5, 0.2);
+			a {
+				gap: 10px;
+				display: flex;
+				font-size: 16px;
+				align-items: center;
+				font-family: var(--ed-heading-2);
+				i {
+					width: 40px;
+					height: 40px;
+					display: flex;
+					border-radius: 100%;
+					align-items: center;
+					justify-content: center;
+					background-color: rgba(47, 88, 79, .08);
+				}
+				b {
+					color: #515151;
+					font-weight: 500;
+				}
+			}
+		}
+		.item-bottom {
+			transition: all 500ms ease-in-out;
+		}
+		.item-author {
+			gap: 12px;
+			.author-img {
+				width: 40px;
+				height: 40px;
+				overflow: hidden;
+				border-radius: 100%;
+			}
+			.author-text {
+				font-size: 16px;
+				font-weight: 500;
+				color: var(--ed-tt-color-2);
+			}
+		}
+		.item-price {
+			font-size: 26px;
+			font-weight: 600;
+			span {
+				color: #FF9960;
+			}
+		}
+	}
+	.crs-btn {
+		left: 0;
+		right: 0;
+		width: 81%;
+		bottom: 30px;
+		margin: 0 auto;
+		position: absolute;
+		border-radius: 4px;
+		transform: scaleY(0);
+		transform-origin: bottom;
+		border: 2px solid #FB995A52;
+		transition: all 500ms ease-in-out;
+		a {
+			width: 100%;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 14px 15px;
+			border-radius: 4px;
+			background-color:  var(--ed-prime-c7);
+		}
+	}
+	&:hover {
+		box-shadow: 16px 16px 28px 0px #2F584F47;
+		.item-bottom {
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(.5);
+		}
+		.crs-btn {
+			transform: scaleY(1);
+		}
+	}
+}

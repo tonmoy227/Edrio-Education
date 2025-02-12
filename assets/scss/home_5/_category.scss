@@ -2,6 +2,14 @@
 	margin: 0 auto;
 	overflow: hidden;
 	max-width: 1920px;
+	.ed-cate-shape1 {
+		top: -5%;
+		left: -18%;
+	}
+	.ed-cate-shape2 {
+		top: 17%;
+		left: 5%;
+	}
 }
 .ed-category5-content {
 	display: flex;
@@ -9,17 +17,21 @@
 .ed-category5-text {
 	max-width: 490px;
 }
+.ed-category5-card-slide {
+	display: flex;
+	margin-right: -100px;
+}
 .ed-category5-card-wrap {
 	width: 100%;
-	max-width: 1100px;
+	max-width: 1095px;
 	padding: 90px 80px;
-	margin-right: -305px;
+	margin-right: -295px;
 	background-color: #FFEFE6;
+	border-top-left-radius: 80px;
 	box-shadow: 0px 6px 1px 0px rgba(255, 153, 96, 0.1215686275) inset;
 	margin-left: 35px;
 }
 .ed-category5-card {
-	max-width: 312px;
 	border-radius: 12px;
 	background-color: #fff;
 	.item-text {
@@ -31,9 +43,10 @@
 			font-size: 24px;
 			font-weight: 600;
 			line-height: 1.167;
+			max-width: 165px;
 		}
 		span {
-			margin-top: 15px;
+			margin-top: 12px;
 			color: var(--ed-tt-color-2);
 			b {
 				color: #F38073;
@@ -43,7 +56,7 @@
 		}
 	}
 	.item-icon {
-		height: 243px;
+		height: 255px;
 		.ct_icon_2 {
 			margin-left: -42px;
 		}
@@ -65,6 +78,54 @@
 			.ct_icon_2 {
 				margin-left: 36px;
 			}
+		}
+		&:is(.ver_4) {
+			.ct_icon_1 {
+				top: -71px;
+				left: 57px;
+				position: relative;
+			}
+		}
+		&:is(.ver_5) {
+			.ct_icon_2 {
+				margin-left: -3px;
+			}
+		}
+	}
+}
+.ed-ct-nav {
+	left: -60px;
+	bottom: 0px; 
+	width: 120px;
+	height: 120px;
+	flex-wrap: wrap;
+	position: absolute;
+	.ed-ct-prev,
+	.ed-ct-next {
+		width: 60px;
+		height: 60px;
+		background-color: #FF9960;
+		transition: all 500ms ease-in-out;
+		&:hover {
+			color: #fff;
+			background-color: #FFDA8A;
+		}
+	}
+	.ed-ct-prev {
+		clip-path: polygon( 100% 100%,100% 100%,83.78% 98.692%,68.393% 94.904%,54.045% 88.843%,40.942% 80.713%,29.29% 70.722%,19.294% 59.075%,11.162% 45.977%,5.098% 31.635%,1.309% 16.254%,0% 0.04%,0% 0%,100% 0%,100% 100% );
+		i {
+			margin-left: 10px;
+			margin-bottom: 10px;
+			transform: rotate(-45deg);
+		}
+	}
+	.ed-ct-next {
+		margin-left: 60px;
+		clip-path: polygon( 0% 0%,0% 0%,16.22% 1.308%,31.607% 5.096%,45.955% 11.157%,59.058% 19.287%,70.71% 29.278%,80.706% 40.925%,88.838% 54.023%,94.902% 68.365%,98.691% 83.746%,100% 99.96%,100% 100%,0% 100%,0% 0% );
+		i {
+			transform: rotate(-45deg);
+			margin-top: 10px;
+			margin-right: 6px;
 		}
 	}
 }

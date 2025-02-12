@@ -803,11 +803,13 @@ select:visited {
 	}
 }
 .ed-btn-5 {
+	display: inline-block;
+	border-radius: 100px;
+	border: 2px solid #FB995A52;
 	a {
 		border-radius: 100px;
 		padding: 8px 8px 8px 25px;
 		background-color: var(--ed-prime-c7);
-		border: 2px solid #FB995A52;
 		.b-icon {
 			width: 40px;
 			height: 40px;
