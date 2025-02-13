@@ -1,0 +1,128 @@
+.ed-tst5-sec {
+	z-index: 1;
+	margin: 0px 32px;
+	.ed-tst5-shape2 {
+		bottom: 0;
+		right: 130px;
+	}
+	&:before {
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		width: 100%;
+		content: '';
+		height: 322px;
+		position: absolute;
+		background-color: #ECF0EF;
+	}
+	.ed-sec-title-5 {
+		margin: 0 auto;
+		max-width: 565px;
+	}
+}
+.ed-tst5-content {
+	background-color: #2F584F;
+}
+.ed-tst5-shape {
+	width: 380px;
+	height: 380px;
+}
+.ed-tst5-slider {
+	overflow: hidden;
+	padding: 64px 100px;
+}
+.ed-tst5-slider-active {
+	display: flex;
+}
+.ed-tst5-item {
+	ul {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(30px);
+		transition: all 500ms ease-in-out;
+	}
+	li {
+		color: #FFAE00;
+	}
+	p {
+		color: #fff;
+		font-size: 24px;
+		max-width: 660px;
+		padding-top: 12px;
+		padding-bottom: 32px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(30px);
+		transition: all 500ms ease-in-out;
+	}
+	.tst5-author {
+		gap: 20px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(30px);
+		transition: all 500ms ease-in-out;
+		.item-img {
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+			border-radius: 100%;
+		}
+		.item-text {
+			h3 {
+				color: #fff;
+				font-size: 24px;
+				font-weight: 700;
+				padding-bottom: 8px;
+			}
+			span {
+				color: #fff;
+			}
+		}
+	}
+}
+.swiper-slide-active {
+	.ed-tst5-item {
+		ul,p, .tst5-author  {
+			opacity: 1;
+			visibility: visible;
+			transform: translateX(0px);
+		}
+		ul {
+			transition-delay: 500ms;
+		}
+		p {
+			transition-delay: 700ms;
+		}
+		.tst5-author {
+			transition-delay: 900ms;
+		}
+	}
+}
+.ed-tst5-pagi {
+	.swiper-pagination-bullet {
+		opacity: 1;
+		width: 23px;
+		height: 23px;
+		position: relative;
+		margin: 0 3px!important;
+		background-color: transparent;
+		border: 1px solid transparent;
+		transition: all 500ms ease-in-out;
+		&:before {
+			top: 6px;
+			left: 6px;
+			width: 8px;
+			height: 8px;
+			content: '';
+			position: absolute;
+			border-radius: 100%;
+			background-color: #2F584F52;
+		}
+		&.swiper-pagination-bullet-active {
+			border: 1px solid #2F584F;
+			&:before {
+				background-color: #2F584F;
+			}
+		}
+	}
+}

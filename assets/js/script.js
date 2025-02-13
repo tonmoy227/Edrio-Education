@@ -16,7 +16,7 @@ Last change:    00/00/00
 
 // lenis-smooth-scroll
 	const lenis = new Lenis({
-		duration: .6, 
+		duration: .9, 
 		easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
 		direction: 'vertical', 
 		smooth: true, 
@@ -704,9 +704,6 @@ if($(".ed-category5-card-slide").length) {
 			prevEl: ".ed-ct-prev",
 			nextEl: ".ed-ct-next",
 		},
-		// autoplay:  {
-		// 	delay: 5000,
-		// },
 		breakpoints: {
 			0: {
 				slidesPerView: 1,
@@ -790,6 +787,21 @@ var swiper2 = new Swiper(".ed-vc-slider-for", {
 		swiper: quick_view,
 	},
 });
+// Testimonial Slider
+if($(".ed-tst5-slider-active").length) {
+	var EDT = new Swiper(".ed-tst5-slider-active", {
+		loop: true,
+		speed: 1000,
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true
+		},
+		pagination: {
+			el: ".ed-tst5-pagi",
+			clickable: true,
+		},
+	});
+};
 // counter-activation
 $('.counter').counterUp({
 	delay: 10,
