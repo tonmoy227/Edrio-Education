@@ -895,6 +895,9 @@
 			padding: 6px 0px;
 			background-color: #fff;
 			clip-path: polygon( 0% 0%,100% 0%,98.594% 100%,0% 100%,0% 0% );
+			@media #{$md,$sm,$xs} {
+				display: none;
+			}
 			.top-info-social {
 				li {
 					margin-right: 55px;
@@ -957,11 +960,19 @@
 		}
 		.ed-header-navigation-wrap {
 			border-bottom: 1px solid rgba(255, 255, 255, .32);
+			.brand-logo {
+				@media #{$xxs} {
+					max-width: 150px;
+				}
+			}
 		}
 		.ed-header-navigation {
 			padding: 12px 0px;
 			.main-navigation {
 				font-family: var(--ed-heading-2);
+				@media #{$md,$sm,$xs} {
+					display: none;
+				}
 				li {
 					margin: 0px 22px;
 					a {
@@ -1034,12 +1045,20 @@
 				}
 			}
 			.hd-cta-btn {
+				@media #{$xs} {
+					display: none;
+				}
 				a {
 					font-size: 16px;
 					font-weight: 500;
 					padding: 12px 24px;
 					border-radius: 100px;
+					white-space: nowrap;
 					background-color: #fff;
+					&:hover {
+						color: #fff;
+						background-color: var(--ed-prime-c7);
+					}
 				}
 			}
 		}

@@ -793,6 +793,7 @@
 	}
 }
 .ed-footer5-sec {
+	overflow: hidden;
 	background-color: #050505;
 }
 .ed-footer5-newsletter {
@@ -833,6 +834,124 @@
 			position: absolute;
 			border-radius: 4px;
 			background-color: #FF9960;
+		}
+	}
+}
+.ed-footer5-widget-area {
+	width: 100%;
+	gap: 15px 30px;
+	max-width: 870px;
+	padding-top: 35px;
+}
+.ed-footer-1-menu li .has-dropdown {
+	padding-top: 14px;
+	padding-left: 20px;
+	display: none;
+}
+.ed-footer5-widget {
+	.widget-title {
+		color: #FFDA8A;
+		font-size: 16px;
+		font-weight: 500;
+		padding-bottom: 20px;
+	}
+	.menu-widget {
+		li {
+			font-weight: 500;
+			margin-bottom: 12px;
+			font-family: var(--ed-heading-2);
+			a {
+				color: rgba(255, 255, 255, .8);
+				position: relative;
+			}
+			&:is(.dropdown) {
+				a {
+					&:before {
+						top: 2px;
+						color: rgba(255, 255, 255, .8);
+						right: -20px;
+						font-size: 14px;
+						content: '\f078';
+						font-weight: 700;
+						position: absolute;
+						font-family: 'Font Awesome 6 Free';
+					}
+				}
+			}
+			.has-dropdown {
+				padding-left: 0;
+				a {
+					font-size: 16px;
+					color: rgba(255, 255, 255, 1);
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.menu-widget-2 {
+		li {
+			margin-bottom: 12px;
+			a {
+				padding-left: 14px;
+				position: relative;
+				color: rgba(255, 255, 255, .8);
+				&:before {
+					left: 0;
+					top: 10px;
+					width: 6px;
+					height: 6px;
+					content: '';
+					position: absolute;
+					border-radius: 100%;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+	.cta-widget {
+		max-width: 260px;
+		.cta-info-item {
+			gap: 15px;
+			margin-bottom: 12px;
+			font-family: var(--ed-heading-2);
+			.item-icon {
+				width: 20px;
+				color: #4AD2CC;
+				font-size: 16px;
+				margin-top: 3px;
+			}
+			.item-text {
+				max-width: 224px;
+				color: rgba(255, 255, 255, .80);
+			}
+		}
+	}
+}
+.ed-copyright5 {
+	padding: 25px 0px;
+	border-top: 1px solid rgba(255, 255, 255, .32);
+	.ed-copyright5-content {
+		font-size: 16px;
+		p {
+			color: rgba(255, 255, 255, 0.64);
+			a {
+				color: #fff;
+			}
+		}
+		.copyright5-social {
+			a {
+				margin-left: 48px;
+				color: rgba(255, 255, 255, 0.76);
+				i {
+					color: #fff;
+					margin-right: 10px;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+			}
 		}
 	}
 }
