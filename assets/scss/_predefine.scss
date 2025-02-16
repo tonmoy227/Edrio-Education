@@ -592,6 +592,18 @@ select:visited {
 	.sec_title {
 		font-size: 48px;
 		font-weight: 700;
+		@media #{$xl} {
+			font-size: 45px;
+		}
+		@media #{$lg,$md} {
+			font-size: 40px;
+		}
+		@media #{$xs} {
+			font-size: 36px;
+		}
+		@media #{$xxs} {
+			font-size: 32px;
+		}
 		span {
 			color:  rgba(5, 5, 5, 0.64);
 		}
@@ -807,9 +819,37 @@ select:visited {
 	display: inline-block;
 	border: 2px solid #FB995A52;
 	a {
+		z-index: 1;
+		display: block;
+		overflow: hidden;
+		position: relative;
 		border-radius: 100px;
 		padding: 8px 8px 8px 25px;
 		background-color: var(--ed-prime-c7);
+		&:before,
+		&:after {
+			width: 50%;
+			content: '';
+			z-index: -1;
+			height: 0%;
+			position: absolute;
+			transition: all 500ms ease-in-out;
+			background-color: var(--ed-prime-c8);
+		}
+		&:before {
+			top: 0;
+			left: 0;
+		}
+		&:after {
+			right: 0;
+			bottom: 0;
+		}
+		.b-text {
+			color: #fff;
+			font-size: 16px;
+			font-weight: 600;
+			transition: all 400ms ease-in-out;
+		}
 		.b-icon {
 			width: 40px;
 			height: 40px;
@@ -818,12 +858,31 @@ select:visited {
 			align-items: center;
 			background-color: #fff;
 			justify-content: center;
+			transition: all 400ms ease-in-out;
+			svg {
+				path {
+					transition: all 500ms ease-in-out;
+				}
+			}
 		}
-	}
-	.b-text {
-		color: #fff;
-		font-size: 16px;
-		font-weight: 600;
+		&:hover {
+			.b-text {
+				color: var(--ed-tt-color-2);
+			}
+			.b-icon {
+				color: var(--ed-tt-color-2);
+				background-color: var(--ed-prime-c7);
+				svg {
+					path {
+						fill: var(--ed-tt-color-2);
+					}
+				}
+			}
+			&:before,
+			&:after {
+				height: 100%;
+			}
+		}
 	}
 	.ed_btn_text {
 		gap: 15px;
