@@ -225,7 +225,8 @@
 }
 .ed-category5-card-slide {
 	display: flex;
-	padding-top: 52px;
+	padding-top: 75px;
+	padding-left: 15px;
 	margin-right: -100px;
 	@media #{$lg,$md,$sm,$xs} {
 		margin-right: 0;
@@ -236,9 +237,9 @@
 	width: 100%;
 	max-width: 1095px;
 	margin-right: -295px;
-	padding: 90px 80px 90px;
 	background-color: #FFEFE6;
 	border-top-left-radius: 80px;
+	padding: 70px 80px 90px 65px;
 	box-shadow: 0px 6px 1px 0px rgba(255, 153, 96, 0.1215686275) inset;
 	margin-left: 35px;
 	@media #{$lg,$md,$sm,$xs} {
@@ -565,6 +566,10 @@
 				margin: 0;
 				transform: rotate(-180deg);
 			}
+		}
+		background-color: #FFDA8A;
+		&:hover {
+			background-color: #FF9960;
 		}
 		@media #{$lg,$md,$sm,$xs} {
 			margin-left: 0;

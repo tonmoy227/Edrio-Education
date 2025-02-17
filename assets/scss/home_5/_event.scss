@@ -4,9 +4,14 @@
 .ed-event-img {
 	width: 100%;
 	max-width: 750px;
+	video {
+		width: 100%;
+		height: 89%;
+		object-fit: cover;
+	}
 	@media #{$xxl} {
 		max-width: 500px;
-		img {
+		video {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -52,7 +57,7 @@
 	margin-top: 120px;
 	padding: 110px 68px;
 	position: relative;
-	background-color: rgba(255, 232, 221, 0.7);
+	background-color: rgba(255, 232, 221, 1);
 	@media #{$xxxl,$xxl} {
 		padding-left: 30px;
 	}
@@ -126,6 +131,10 @@
 }
 .ed-event-list-text {
 	max-width: 720px;
+	.ed-sec-title-5 .subtitle:before, 
+	.ed-sec-title-5 .subtitle:after {
+		background-color: rgba(255, 232, 221, 1);
+	}
 	@media #{$xl,$lg,$md,$sm,$xs} {
 		margin: 0 auto;
 	}

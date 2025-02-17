@@ -934,7 +934,7 @@ gsap.utils.toArray('.ed_top_img_2').forEach((el, index) => {
 			trigger: ".ed-top-rate-content",
 			scrub: 1,
 			start: "top 50%",
-			end: "buttom 10%",
+			end: "top -100%",
 			toggleActions: "play none none reverse",
 			markers: false
 		}
@@ -944,6 +944,7 @@ gsap.utils.toArray('.ed_top_img_2').forEach((el, index) => {
 	.set(el, {transformOrigin: 'center center'})
 	.from(el, { opacity: 1,  scale: 1.2, yPercent: -100}, {opacity: 1,   yPercent: 0, scale: 1, x: 0, duration: 1, immediateRender: false})
 })
+
 if(window.innerWidth> 991){
 	if ($('.ed-intro-content').length > 0 ) {
 		function IntroShape(e) {
@@ -1227,7 +1228,38 @@ gsap.utils.toArray(' .zoom_in').forEach((el, index) => {
 	.set(el, {transformOrigin: 'center center'})
 	.from(el, {  scale: 0,}, {scale: 1, duration: 1, immediateRender: false})
 });
+gsap.utils.toArray(' .zoom_in_2').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-vd5-sec",
+			scrub: 1.5,
+			start: "top 0%",
+			end: "top -10%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
 
+	tlcta
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, {  scale: 0, xPercent: "100", yPercent: "100"}, {scale: 1, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .top_view_logo').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-footer5-sec",
+			scrub: 2,
+			start: "top 100%",
+			end: "top 0%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, { opacity: 0, scale: .5,  y: "+=250"}, {opacity: 1, y: 0, scale: 1, duration: 1, immediateRender: false})
+});
 let imageappear1 = document.querySelectorAll(".ed-image-appear1");
 imageappear1.forEach((container) => {
 	let image = container.querySelector(".ed-img-rvl_1");

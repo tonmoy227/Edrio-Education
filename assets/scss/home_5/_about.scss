@@ -35,6 +35,13 @@
 
 .ed-about5-sec {
 	overflow: hidden;
+	.ed-ab5-shape {
+		top: 0;
+		right: 25px;
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
 }
 .ed-about5-img {
 	z-index: 1;
@@ -216,6 +223,19 @@
 	width: 100%;
 	max-width: 815px;
 	padding-left: 40px;
+	&:before {
+		left: 0;
+		top: -40px;
+		width: 152px;
+		content: '';
+		height: 152px;
+		position: absolute;
+		border-top-left-radius: 80px;
+		background-color: rgba(226, 248, 247, 1);
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
 	@media #{$lg,$md,$sm,$xs} {
 		padding-left: 0;
 	}
@@ -229,6 +249,10 @@
 		max-width: 362px;
 		@media #{$xs} {
 			max-width: 100%;
+		}
+		.subtitle:before,
+		.subtitle:after {
+			background-color: rgba(226, 248, 247, 1);
 		}
 	}
 	.ed-ab5-text-decs {
@@ -324,6 +348,7 @@
 			span {
 				line-height: 1;
 				font-size: 64px;
+				color: var(--ed-tt-color-2);
 				@media #{$xs} {
 					font-size: 50px;
 				}

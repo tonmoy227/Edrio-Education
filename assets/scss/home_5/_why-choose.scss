@@ -1,13 +1,16 @@
 .ed-wc5-sec {
 	overflow: hidden;
 	.ed-wc5-shape {
-		top: -55px;
+		top: 0;
 		left: 80px;
 	}
 }
 .ed-wc5-img-wrap {
 	width: 100%;
-	max-width: 655px;
+	max-width: 655px; 
+	@media #{$lg} {
+		max-width: 420px; 
+	}
 }
 .ed-wc5-count {
 	gap: 12px;
@@ -19,6 +22,9 @@
 	border-radius: 6px;
 	padding: 25px 28px 20px;
 	background-color: #2F584F;
+	@media #{$lg} {
+		left: 0;
+	}
 	@media #{$xxs} {
 		margin: 0 auto;
 		position: static;
@@ -96,7 +102,7 @@
 }
 .ed-wc5-text {
 	width: 100%;
-	max-width: 564px;
+	max-width: 600px;
 }
 .ed-wc5-item {
 	z-index: 1;
@@ -150,6 +156,10 @@
 		}
 	}
 	&:nth-child(2) {
+		margin-left: 80px;
+		@media #{$xl,$lg,$md,$sm,$xs} {
+			margin-left: 0;
+		}
 		&:before {
 			background-color: #5FDCD6;
 		}
