@@ -2,9 +2,19 @@
 	overflow: hidden;
 	margin: 0px 32px;
 	padding: 360px 0px;
+	@media #{$md,$sm,$xs} {
+		margin: 0;
+		padding: 250px 0px;
+	}
+	@media #{$xxs} {
+		padding: 150px 0px;
+	}
 	.ed-vd5-shape1 {
 		right: 0;
 		bottom: 0;
+		@media #{$md,$sm,$xs} {
+			display: none;
+		}
 	}
 	.ed-vd5-img {
 		top: 0;
@@ -12,6 +22,10 @@
 		width: 100%;
 		height: 100%;
 		position: absolute;
+		.item-img {
+			width: 100%;
+			height: 100%;
+		}
 		img {
 			width: 100%;
 			height: 100%;
