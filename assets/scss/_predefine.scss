@@ -64,6 +64,9 @@ body {
 .home-5::-webkit-scrollbar-thumb {
 	background: var(--ed-prime-c8);
 }
+.home-6::-webkit-scrollbar-thumb {
+	background: var(--ed-prime-c9);
+}
 .home-1 {
 	font-size: 20px;
 	line-height: 1.6;
@@ -161,6 +164,24 @@ body {
 		background: var(--ed-prime-c7);
 	}
 }
+.home-6 {
+	color: #050505;
+	font-size: 18px;
+	line-height: 1.555;
+	font-family: var(--ed-body-font-2);
+	.container {
+		max-width: 1344px;
+	}
+	.ed-scrollup {
+		background: var(--ed-prime-c7);
+		i {
+			color: #fff;
+		}
+	}
+	.cart_sidebar_button a:not(:last-child) {
+		background: var(--ed-prime-c7);
+	}
+}
 .ul-li ul {
 	margin: 0;
 	padding: 0;
@@ -232,6 +253,18 @@ body {
 	font-weight: 400;
 	line-height: 1.084;
 	letter-spacing: -1px ;
+	color: var(--ed-tt-color-2);
+	font-family: var(--ed-heading-5);
+}
+.headline-6 h1,
+.headline-6 h2,
+.headline-6 h3,
+.headline-6 h4,
+.headline-6 h5,
+.headline-6 h6 {
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.084;
 	color: var(--ed-tt-color-2);
 	font-family: var(--ed-heading-5);
 }
@@ -799,7 +832,7 @@ select:visited {
 				animation: rightarrow 0.6s infinite alternate ease-in-out;
 			}
 		}
-	}
+	} 
 }
 .ed-btn-4 {
 	a {
@@ -891,6 +924,19 @@ select:visited {
 	&:is(.ver_2) {
 		a {
 			background-color: #2F584F;
+		}
+	}
+}
+.ed-btn-6 {
+	a {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 600;
+		padding: 16px 24px;
+		border-radius: 6px;
+		background-color: var(--ed-prime-c9);
+		span {
+			margin-right: 3px;
 		}
 	}
 }

@@ -36,7 +36,7 @@
 .ed-about5-sec {
 	overflow: hidden;
 	.ed-ab5-shape {
-		top: 0;
+		top: -20px;
 		right: 25px;
 		@media #{$lg,$md,$sm,$xs} {
 			display: none;
