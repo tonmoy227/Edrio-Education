@@ -1181,13 +1181,31 @@
 				.item-icon {
 					width: 44px;
 					height: 44px;
+					position: relative;
 					border-radius: 100%;
 					background-color: rgba(5, 5, 5, 0.05);
+					span {
+						top: -2px;
+						right: -2px;
+						color: #fff;
+						width: 16px;
+						height: 16px;
+						display: flex;
+						font-size: 10px;
+						font-weight: 500;
+						position: absolute;
+						align-items: center;
+						border-radius: 100%;
+						justify-content: center;
+						background-color: var(--ed-prime-c9);
+					}
 				}
 			}
 		}
 		.header-navigation-wrap {
 			background-color: #050505;
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
 		}
 		.main-navigation {
 			li {
@@ -1195,12 +1213,66 @@
 				a {
 					color: #FFFFFF;
 					font-size: 16px;
+					display: inline;
 					font-weight: 500;
+					padding-bottom: 20px;
 				}
 			}
 			.dropdown:after {
+				right: -3px;
 				color: #F4BF00;
+				font-size: 13px;
 				content: "\f078";
+			}
+			.dropdown-menu {
+				top: 40px;
+				border-radius: 10px;
+			}
+			.dropdown-menu a {
+				display: inline-block;
+				font-size: 14px !important; 
+				color: var(--ed-tt-color-2);
+			}
+		}
+		.header-navigation-wrap {
+			.hd-login-btn {
+				gap: 15px 40px;
+			}
+			.login-signup {
+				gap: 15px;
+				display: flex;
+				button {
+					padding: 0;
+					color: #fff;
+					border: none;
+					font-size: 16px;
+					font-weight: 500;
+					position: relative;
+					background-color: transparent;
+					&:before {
+						top: 0px;
+						color: #fff;
+						right: -10px;
+						content: '/';
+						position: absolute;
+					}
+					&:last-child {
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+			.cta-btn {
+				a {
+					color: #fff;
+					line-height: 1;
+					font-size: 16px;
+					font-weight: 600;
+					padding: 20px 35px;
+					border-bottom-right-radius: 4px;
+					background-color: var(--ed-prime-c9);
+				}
 			}
 		}
 	}
@@ -1620,7 +1692,7 @@
 	color: #1768dd;
 	display: block;
 	position: relative;
-	font-size: rem(15px);
+	font-size: 15px;
 }
 
 .sidebar-widget-container {

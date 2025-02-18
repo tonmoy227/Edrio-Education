@@ -438,6 +438,21 @@ Last change:    00/00/00
 			}, 700);
 })
 });
+if (window.matchMedia("(min-width: 1400px)").matches) { 
+	var Hero_pin = document.querySelectorAll(".ed-hero-sec-6")
+	Hero_pin.forEach((item) => {
+		gsap.to(item, {
+			scrollTrigger: {
+				trigger: item,
+				markers: false,
+				pin: true,
+				pinSpacing: false,
+				start: "top -70%",
+				end: "bottom -130%",
+			},
+		});
+	});
+}
 if($('.ed-text').length) {
 	var edtextarea = $(".ed-text");
 

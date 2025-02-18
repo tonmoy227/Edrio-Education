@@ -645,6 +645,17 @@ select:visited {
 		padding-top: 18px;
 	}
 }
+.ed-sec-title-6 {
+	.sec_title {
+		font-size: 48px;
+		font-weight: 600;
+		color: var(--ed-tt-color-2);
+	}
+	p {
+		color: #050505;
+		padding-top: 20px;
+	}
+}
 @keyframes rightarrow {
 	0% { -webkit-transform: translateX(0); opacity: 0.5 }
 	100% { -webkit-transform: translateX(0.4em); opacity: 1 }
