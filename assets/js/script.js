@@ -422,9 +422,9 @@ Last change:    00/00/00
 						fadeEffect: {
 							crossFade: true
 						},
-						// autoplay: {
-						// 	delay: 4000,
-						// },
+						autoplay: {
+							delay: 4000,
+						},
 						navigation: {
 							prevEl: ".ed-hs5-prev",
 							nextEl: ".ed-hs5-next",
@@ -438,21 +438,21 @@ Last change:    00/00/00
 			}, 700);
 })
 });
-if (window.matchMedia("(min-width: 1400px)").matches) { 
-	var Hero_pin = document.querySelectorAll(".ed-hero-sec-6")
-	Hero_pin.forEach((item) => {
-		gsap.to(item, {
-			scrollTrigger: {
-				trigger: item,
-				markers: false,
-				pin: true,
-				pinSpacing: false,
-				start: "top -70%",
-				end: "bottom -130%",
-			},
-		});
-	});
-}
+// if (window.matchMedia("(min-width: 1400px)").matches) { 
+// 	var Hero_pin = document.querySelectorAll(".ed-hero-sec-6")
+// 	Hero_pin.forEach((item) => {
+// 		gsap.to(item, {
+// 			scrollTrigger: {
+// 				trigger: item,
+// 				markers: false,
+// 				pin: true,
+// 				pinSpacing: false,
+// 				start: "top -75%",
+// 				end: "bottom -137%",
+// 			},
+// 		});
+// 	});
+// }
 if($('.ed-text').length) {
 	var edtextarea = $(".ed-text");
 
@@ -823,6 +823,28 @@ var quick_view = new Swiper(".ed-vc-slider-nav", {
 		},
 	},
 });
+// Testimonial  Slider	
+if($(".ed-tst6-slider").length) {
+	var AGTh3 = new Swiper(".ed-tst6-slider", {
+		loop: true,
+		speed: 1000,
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true
+		},
+		// autoplay: {
+		// 	delay: 4000,
+		// },
+		navigation: {
+			prevEl: ".ed-tst6-prev",
+			nextEl: ".ed-tst6-next",
+		},
+		pagination: {
+			el: ".ed-tst6-pagi",
+			clickable: true,
+		},
+	});
+};
 var swiper2 = new Swiper(".ed-vc-slider-for", {
 	loop: true,
 	spaceBetween: 0,

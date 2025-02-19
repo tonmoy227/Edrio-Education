@@ -2769,7 +2769,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   line-height: 1.084;
   color: var(--ed-tt-color-2);
-  font-family: var(--ed-heading-5);
+  font-family: var(--ed-heading-2);
 }
 
 @-webkit-keyframes zoom-in-zoom-out {
@@ -16528,14 +16528,24 @@ select:visited {
 /*Course  area*/
 /*----------------------------------------------------*/
 .ed-course6-sec {
-  padding-top: 200px;
-  padding-bottom: 140px;
-  background-color: #103B43;
-  clip-path: polygon(0% 1.112%, 0% 100%, 100% 100%, 100% 20.853%, 97.161% 23.031%, 97.161% 23.031%, 97.009% 22.842%, 96.82% 22.627%, 96.6% 22.393%, 96.354% 22.152%, 96.087% 21.913%, 95.803% 21.685%, 95.509% 21.479%, 95.208% 21.303%, 94.907% 21.169%, 94.609% 21.084%, 94.609% 21.084%, 94.555% 21.075%, 94.5% 21.065%, 94.445% 21.057%, 94.389% 21.048%, 94.332% 21.04%, 94.274% 21.033%, 94.216% 21.025%, 94.157% 21.018%, 94.098% 21.011%, 94.038% 21.003%, 94.038% 21.003%, 94.038% 21.003%, 93.674% 20.957%, 93.29% 20.894%, 92.886% 20.799%, 92.464% 20.657%, 92.024% 20.455%, 91.569% 20.178%, 91.098% 19.811%, 90.614% 19.34%, 90.117% 18.75%, 89.609% 18.026%, 89.609% 18.026%, 89.157% 17.325%, 88.76% 16.709%, 88.417% 16.175%, 88.124% 15.718%, 87.878% 15.334%, 87.677% 15.019%, 87.519% 14.768%, 87.399% 14.579%, 87.315% 14.446%, 87.266% 14.365%, 87.266% 14.365%, 87.134% 14.363%, 86.985% 14.378%, 86.824% 14.413%, 86.659% 14.471%, 86.496% 14.558%, 86.343% 14.675%, 86.206% 14.826%, 86.093% 15.016%, 86.009% 15.247%, 85.964% 15.524%, 85.964% 15.524%, 85.906% 15.803%, 85.791% 16.042%, 85.629% 16.242%, 85.431% 16.408%, 85.206% 16.542%, 84.966% 16.646%, 84.722% 16.723%, 84.482% 16.776%, 84.259% 16.808%, 84.063% 16.821%, 82.943% 14.365%, 81.328% 14.365%, 73.828% 16.821%, 72.891% 14.365%, 70.13% 14.365%, 68.073% 11.122%, 66.198% 11.122%, 62.344% 3.476%, 62.344% 3.476%, 61.817% 3.376%, 61.19% 3.279%, 60.485% 3.191%, 59.724% 3.122%, 58.93% 3.08%, 58.124% 3.074%, 57.329% 3.111%, 56.568% 3.2%, 55.862% 3.35%, 55.234% 3.568%, 55.234% 3.568%, 55.073% 3.64%, 54.906% 3.714%, 54.734% 3.791%, 54.557% 3.871%, 54.375% 3.953%, 54.189% 4.037%, 54% 4.124%, 53.806% 4.212%, 53.61% 4.301%, 53.41% 4.393%, 53.409% 4.393%, 53.409% 4.393%, 52.674% 4.728%, 51.917% 5.071%, 51.154% 5.412%, 50.399% 5.742%, 49.666% 6.052%, 48.968% 6.334%, 48.321% 6.578%, 47.739% 6.776%, 47.234% 6.919%, 46.823% 6.997%, 46.823% 6.997%, 46.45% 7.045%, 46.071% 7.097%, 45.694% 7.152%, 45.324% 7.21%, 44.969% 7.267%, 44.633% 7.324%, 44.324% 7.377%, 44.048% 7.427%, 43.811% 7.47%, 43.62% 7.507%, 40.781% 8.665%, 40.781% 8.665%, 40.408% 8.493%, 39.971% 8.308%, 39.488% 8.122%, 38.976% 7.946%, 38.452% 7.791%, 37.935% 7.669%, 37.442% 7.591%, 36.989% 7.57%, 36.595% 7.615%, 36.276% 7.739%, 36.276% 7.739%, 36.009% 7.898%, 35.758% 8.041%, 35.525% 8.169%, 35.31% 8.283%, 35.115% 8.382%, 34.941% 8.466%, 34.79% 8.536%, 34.661% 8.593%, 34.557% 8.636%, 34.479% 8.665%, 24.479% 2.178%, 23.568% 4.634%, 19.818% 3.197%, 19.818% 3.197%, 19.77% 3.061%, 19.706% 2.918%, 19.625% 2.777%, 19.529% 2.65%, 19.417% 2.544%, 19.291% 2.47%, 19.15% 2.438%, 18.995% 2.457%, 18.827% 2.537%, 18.646% 2.688%, 18.646% 2.688%, 18.353% 2.945%, 17.95% 3.233%, 17.442% 3.534%, 16.838% 3.833%, 16.146% 4.113%, 15.372% 4.356%, 14.525% 4.546%, 13.611% 4.667%, 12.638% 4.702%, 11.615% 4.634%, 11.615% 4.634%, 11.389% 4.567%, 11.124% 4.468%, 10.832% 4.335%, 10.522% 4.167%, 10.204% 3.963%, 9.891% 3.722%, 9.591% 3.443%, 9.316% 3.124%, 9.075% 2.765%, 8.88% 2.363%, 8.88% 2.363%, 8.881% 2.151%, 8.872% 1.912%, 8.852% 1.657%, 8.817% 1.398%, 8.767% 1.147%, 8.698% 0.915%, 8.61% 0.715%, 8.499% 0.557%, 8.364% 0.454%, 8.203% 0.417%, 8.203% 0.417%, 8.017% 0.414%, 7.813% 0.407%, 7.597% 0.396%, 7.374% 0.381%, 7.151% 0.365%, 6.933% 0.347%, 6.725% 0.328%, 6.534% 0.31%, 6.365% 0.293%, 6.224% 0.278%, 6.042% 0%, 4.531% 1.622%, 4.531% 1.622%, 4.159% 1.641%, 3.732% 1.66%, 3.27% 1.677%, 2.792% 1.691%, 2.316% 1.701%, 1.863% 1.704%, 1.45% 1.699%, 1.098% 1.685%, 0.825% 1.66%, 0.651% 1.622%, 0.651% 1.622%, 0.538% 1.574%, 0.436% 1.522%, 0.346% 1.467%, 0.266% 1.41%, 0.197% 1.352%, 0.138% 1.296%, 0.089% 1.242%, 0.05% 1.192%, 0.02% 1.149%, 0% 1.112%);
+  overflow: hidden;
+  padding-top: 25px;
+}
+.ed-course6-sec .ed-crs6-shape-bg {
+  top: -5px;
+  left: -15px;
+  position: absolute;
 }
 .ed-course6-sec .ed-sec-title-6 .sec_title {
   color: #fff;
   font-weight: 600;
+}
+
+.ed-course6-wrap {
+  padding-top: 200px;
+  padding-bottom: 140px;
+  background-color: #103B43;
+  clip-path: polygon(0% 1.112%, 0% 100%, 100% 100%, 100% 20.853%, 97.161% 23.031%, 97.161% 23.031%, 97.009% 22.842%, 96.82% 22.627%, 96.6% 22.393%, 96.354% 22.152%, 96.087% 21.913%, 95.803% 21.685%, 95.509% 21.479%, 95.208% 21.303%, 94.907% 21.169%, 94.609% 21.084%, 94.609% 21.084%, 94.555% 21.075%, 94.5% 21.065%, 94.445% 21.057%, 94.389% 21.048%, 94.332% 21.04%, 94.274% 21.033%, 94.216% 21.025%, 94.157% 21.018%, 94.098% 21.011%, 94.038% 21.003%, 94.038% 21.003%, 94.038% 21.003%, 93.674% 20.957%, 93.29% 20.894%, 92.886% 20.799%, 92.464% 20.657%, 92.024% 20.455%, 91.569% 20.178%, 91.098% 19.811%, 90.614% 19.34%, 90.117% 18.75%, 89.609% 18.026%, 89.609% 18.026%, 89.157% 17.325%, 88.76% 16.709%, 88.417% 16.175%, 88.124% 15.718%, 87.878% 15.334%, 87.677% 15.019%, 87.519% 14.768%, 87.399% 14.579%, 87.315% 14.446%, 87.266% 14.365%, 87.266% 14.365%, 87.134% 14.363%, 86.985% 14.378%, 86.824% 14.413%, 86.659% 14.471%, 86.496% 14.558%, 86.343% 14.675%, 86.206% 14.826%, 86.093% 15.016%, 86.009% 15.247%, 85.964% 15.524%, 85.964% 15.524%, 85.906% 15.803%, 85.791% 16.042%, 85.629% 16.242%, 85.431% 16.408%, 85.206% 16.542%, 84.966% 16.646%, 84.722% 16.723%, 84.482% 16.776%, 84.259% 16.808%, 84.063% 16.821%, 82.943% 14.365%, 81.328% 14.365%, 73.828% 16.821%, 72.891% 14.365%, 70.13% 14.365%, 68.073% 11.122%, 66.198% 11.122%, 62.344% 3.476%, 62.344% 3.476%, 61.817% 3.376%, 61.19% 3.279%, 60.485% 3.191%, 59.724% 3.122%, 58.93% 3.08%, 58.124% 3.074%, 57.329% 3.111%, 56.568% 3.2%, 55.862% 3.35%, 55.234% 3.568%, 55.234% 3.568%, 55.073% 3.64%, 54.906% 3.714%, 54.734% 3.791%, 54.557% 3.871%, 54.375% 3.953%, 54.189% 4.037%, 54% 4.124%, 53.806% 4.212%, 53.61% 4.301%, 53.41% 4.393%, 53.409% 4.393%, 53.409% 4.393%, 52.674% 4.728%, 51.917% 5.071%, 51.154% 5.412%, 50.399% 5.742%, 49.666% 6.052%, 48.968% 6.334%, 48.321% 6.578%, 47.739% 6.776%, 47.234% 6.919%, 46.823% 6.997%, 46.823% 6.997%, 46.45% 7.045%, 46.071% 7.097%, 45.694% 7.152%, 45.324% 7.21%, 44.969% 7.267%, 44.633% 7.324%, 44.324% 7.377%, 44.048% 7.427%, 43.811% 7.47%, 43.62% 7.507%, 40.781% 8.665%, 40.781% 8.665%, 40.408% 8.493%, 39.971% 8.308%, 39.488% 8.122%, 38.976% 7.946%, 38.452% 7.791%, 37.935% 7.669%, 37.442% 7.591%, 36.989% 7.57%, 36.595% 7.615%, 36.276% 7.739%, 36.276% 7.739%, 36.009% 7.898%, 35.758% 8.041%, 35.525% 8.169%, 35.31% 8.283%, 35.115% 8.382%, 34.941% 8.466%, 34.79% 8.536%, 34.661% 8.593%, 34.557% 8.636%, 34.479% 8.665%, 24.479% 2.178%, 23.568% 4.634%, 19.818% 3.197%, 19.818% 3.197%, 19.77% 3.061%, 19.706% 2.918%, 19.625% 2.777%, 19.529% 2.65%, 19.417% 2.544%, 19.291% 2.47%, 19.15% 2.438%, 18.995% 2.457%, 18.827% 2.537%, 18.646% 2.688%, 18.646% 2.688%, 18.353% 2.945%, 17.95% 3.233%, 17.442% 3.534%, 16.838% 3.833%, 16.146% 4.113%, 15.372% 4.356%, 14.525% 4.546%, 13.611% 4.667%, 12.638% 4.702%, 11.615% 4.634%, 11.615% 4.634%, 11.389% 4.567%, 11.124% 4.468%, 10.832% 4.335%, 10.522% 4.167%, 10.204% 3.963%, 9.891% 3.722%, 9.591% 3.443%, 9.316% 3.124%, 9.075% 2.765%, 8.88% 2.363%, 8.88% 2.363%, 8.881% 2.151%, 8.872% 1.912%, 8.852% 1.657%, 8.817% 1.398%, 8.767% 1.147%, 8.698% 0.915%, 8.61% 0.715%, 8.499% 0.557%, 8.364% 0.454%, 8.203% 0.417%, 8.203% 0.417%, 8.017% 0.414%, 7.813% 0.407%, 7.597% 0.396%, 7.374% 0.381%, 7.151% 0.365%, 6.933% 0.347%, 6.725% 0.328%, 6.534% 0.31%, 6.365% 0.293%, 6.224% 0.278%, 6.042% 0%, 4.531% 1.622%, 4.531% 1.622%, 4.159% 1.641%, 3.732% 1.66%, 3.27% 1.677%, 2.792% 1.691%, 2.316% 1.701%, 1.863% 1.704%, 1.45% 1.699%, 1.098% 1.685%, 0.825% 1.66%, 0.651% 1.622%, 0.651% 1.622%, 0.538% 1.574%, 0.436% 1.522%, 0.346% 1.467%, 0.266% 1.41%, 0.197% 1.352%, 0.138% 1.296%, 0.089% 1.242%, 0.05% 1.192%, 0.02% 1.149%, 0% 1.112%);
 }
 
 .ed-course6-item {
@@ -16594,6 +16604,744 @@ select:visited {
   font-size: 22px;
   max-width: 165px;
   font-weight: 500;
+}
+
+.ed-crs-bottom {
+  z-index: 1;
+  position: relative;
+}
+.ed-crs-bottom:before {
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.1215686275);
+}
+.ed-crs-bottom p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 40px;
+  border-radius: 35px;
+  position: relative;
+  display: inline-block;
+  background-color: #1d535e;
+}
+.ed-crs-bottom p:before, .ed-crs-bottom p:after {
+  top: 16px;
+  width: 14px;
+  content: "";
+  height: 14px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #F4BF00;
+}
+.ed-crs-bottom p:before {
+  left: -5px;
+}
+.ed-crs-bottom p:after {
+  right: -5px;
+}
+.ed-crs-bottom p a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/*---------------------------------------------------- */
+/*Cta  area*/
+/*----------------------------------------------------*/
+.ed-cta6-sec {
+  z-index: 1;
+}
+.ed-cta6-sec:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  content: "";
+  z-index: -1;
+  height: 89.5%;
+  margin: 0 auto;
+  max-width: 672px;
+  position: absolute;
+  background-color: #EFF4F2;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.ed-cta6-text {
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.ed-cta6-img {
+  z-index: 1;
+  position: relative;
+  margin-top: -25px;
+}
+
+.ed-cta6-shape {
+  right: 0;
+  top: 110px;
+  z-index: -2;
+  position: absolute;
+}
+
+.ed-cta6-count {
+  width: 241px;
+  height: 217px;
+  position: absolute;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1098039216) inset;
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1098039216) inset;
+}
+.ed-cta6-count h3 {
+  font-size: 45px;
+  padding-bottom: 8px;
+  color: var(--ed-prime-c9);
+}
+.ed-cta6-count h3 span {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 0.75;
+  color: var(--ed-tt-color-2);
+}
+.ed-cta6-count h3 b {
+  color: var(--ed-tt-color-2);
+}
+.ed-cta6-count p {
+  font-size: 20px;
+  max-width: 145px;
+}
+.ed-cta6-count:is(.ver_1) {
+  left: 0;
+  top: 20%;
+  background-color: #F5EFE7;
+}
+.ed-cta6-count:is(.ver_2) {
+  left: 150px;
+  bottom: 40px;
+  background-color: #FEE7EB;
+}
+.ed-cta6-count:is(.ver_3) {
+  top: 55%;
+  right: 0;
+  background-color: #F0E9FF;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/*---------------------------------------------------- */
+/*Program  area*/
+/*----------------------------------------------------*/
+.ed-prg6-sec .ed-prg6-top-shape {
+  top: -20px;
+  left: 0;
+}
+.ed-prg6-sec .ed-prg6-bottom-shape {
+  left: 0;
+  bottom: -20px;
+}
+.ed-prg6-sec .ed-prg6-shape1 {
+  left: 0;
+  z-index: 1;
+  top: 180px;
+}
+.ed-prg6-sec .ed-prg6-shape2 {
+  right: 0px;
+  z-index: 1;
+  bottom: 150px;
+}
+
+.ed-prg6-wrap {
+  overflow: hidden;
+  padding-top: 190px;
+  padding-bottom: 170px;
+  background-color: #F5EFE7;
+  clip-path: polygon(0% 4.821%, 0% 4.833%, 0% 95.128%, 0% 99.322%, 2.802% 99.962%, 2.802% 99.962%, 2.853% 99.951%, 3.005% 99.921%, 3.248% 99.878%, 3.577% 99.825%, 3.984% 99.767%, 4.463% 99.71%, 5.007% 99.657%, 5.608% 99.613%, 6.261% 99.584%, 6.957% 99.573%, 6.957% 99.573%, 7.696% 99.541%, 8.466% 99.456%, 9.241% 99.331%, 9.995% 99.179%, 10.703% 99.013%, 11.339% 98.847%, 11.879% 98.695%, 12.296% 98.57%, 12.564% 98.485%, 12.659% 98.453%, 12.659% 98.453%, 12.697% 98.454%, 12.798% 98.455%, 12.946% 98.458%, 13.127% 98.465%, 13.324% 98.476%, 13.52% 98.493%, 13.701% 98.516%, 13.85% 98.547%, 13.951% 98.587%, 13.988% 98.637%, 13.988% 98.637%, 14.041% 98.688%, 14.185% 98.733%, 14.397% 98.771%, 14.655% 98.804%, 14.935% 98.83%, 15.215% 98.851%, 15.473% 98.866%, 15.685% 98.877%, 15.829% 98.883%, 15.882% 98.885%, 16.986% 98.453%, 18.513% 98.453%, 26.102% 98.885%, 27.013% 98.453%, 29.026% 98.453%, 29.736% 98.453%, 31.834% 97.866%, 33.662% 97.866%, 37.519% 96.527%, 37.519% 96.527%, 37.675% 96.521%, 38.118% 96.507%, 38.808% 96.49%, 39.703% 96.476%, 40.765% 96.47%, 41.953% 96.476%, 43.228% 96.501%, 44.548% 96.549%, 45.875% 96.625%, 47.168% 96.736%, 47.168% 96.736%, 48.443% 96.855%, 49.721% 96.954%, 50.97% 97.034%, 52.157% 97.098%, 53.25% 97.148%, 54.217% 97.184%, 55.026% 97.21%, 55.643% 97.225%, 56.037% 97.234%, 56.176% 97.236%, 59.083% 97.434%, 59.083% 97.434%, 59.153% 97.428%, 59.347% 97.413%, 59.641% 97.391%, 60.014% 97.364%, 60.441% 97.335%, 60.899% 97.306%, 61.366% 97.279%, 61.817% 97.256%, 62.23% 97.241%, 62.581% 97.236%, 62.581% 97.236%, 62.912% 97.241%, 63.268% 97.256%, 63.635% 97.279%, 64% 97.306%, 64.347% 97.335%, 64.663% 97.364%, 64.934% 97.391%, 65.145% 97.413%, 65.282% 97.428%, 65.331% 97.434%, 73.72% 96.481%, 75.321% 96.296%, 76.226% 96.736%, 79.947% 96.481%, 79.947% 96.481%, 79.958% 96.473%, 79.996% 96.454%, 80.064% 96.428%, 80.166% 96.4%, 80.306% 96.376%, 80.488% 96.36%, 80.718% 96.357%, 80.997% 96.373%, 81.332% 96.413%, 81.726% 96.481%, 81.726% 96.481%, 82.229% 96.554%, 82.886% 96.612%, 83.649% 96.657%, 84.472% 96.689%, 85.31% 96.711%, 86.117% 96.725%, 86.847% 96.733%, 87.453% 96.736%, 87.891% 96.737%, 88.113% 96.736%, 88.131% 96.736%, 88.131% 96.736%, 88.227% 96.731%, 88.451% 96.717%, 88.772% 96.692%, 89.156% 96.657%, 89.571% 96.611%, 89.983% 96.553%, 90.361% 96.484%, 90.671% 96.402%, 90.882% 96.308%, 90.959% 96.201%, 90.959% 96.201%, 90.994% 96.13%, 91.094% 96.075%, 91.248% 96.033%, 91.445% 96.002%, 91.677% 95.982%, 91.931% 95.969%, 92.199% 95.963%, 92.469% 95.961%, 92.733% 95.963%, 92.979% 95.966%, 92.979% 95.966%, 93.083% 95.967%, 93.18% 95.968%, 93.269% 95.968%, 93.35% 95.969%, 93.421% 95.968%, 93.481% 95.966%, 93.53% 95.964%, 93.565% 95.96%, 93.588% 95.955%, 93.595% 95.948%, 93.595% 95.948%, 93.605% 95.939%, 93.634% 95.936%, 93.68% 95.938%, 93.741% 95.945%, 93.815% 95.955%, 93.901% 95.969%, 93.997% 95.986%, 94.101% 96.006%, 94.211% 96.027%, 94.326% 96.049%, 94.326% 96.049%, 94.439% 96.07%, 94.553% 96.092%, 94.666% 96.113%, 94.776% 96.133%, 94.883% 96.152%, 94.984% 96.168%, 95.078% 96.181%, 95.163% 96.192%, 95.238% 96.198%, 95.301% 96.201%, 98.417% 96.201%, 98.417% 96.201%, 98.639% 96.176%, 98.862% 96.107%, 99.081% 96.004%, 99.29% 95.877%, 99.483% 95.734%, 99.653% 95.586%, 99.796% 95.442%, 99.906% 95.311%, 99.975% 95.203%, 100% 95.128%, 100% 4.833%, 100% 4.821%, 100% 0.64%, 97.198% 0%, 97.198% 0%, 97.147% 0.011%, 96.995% 0.04%, 96.752% 0.084%, 96.423% 0.137%, 96.016% 0.194%, 95.537% 0.252%, 94.993% 0.305%, 94.392% 0.348%, 93.739% 0.378%, 93.043% 0.389%, 93.043% 0.389%, 92.304% 0.42%, 91.534% 0.505%, 90.759% 0.63%, 90.005% 0.783%, 89.297% 0.948%, 88.661% 1.114%, 88.121% 1.266%, 87.705% 1.392%, 87.436% 1.477%, 87.341% 1.508%, 87.341% 1.508%, 87.303% 1.508%, 87.202% 1.507%, 87.054% 1.503%, 86.873% 1.497%, 86.676% 1.485%, 86.48% 1.469%, 86.299% 1.445%, 86.15% 1.414%, 86.049% 1.374%, 86.012% 1.325%, 86.012% 1.325%, 85.959% 1.273%, 85.815% 1.228%, 85.603% 1.19%, 85.345% 1.158%, 85.065% 1.131%, 84.785% 1.111%, 84.527% 1.095%, 84.315% 1.084%, 84.171% 1.078%, 84.118% 1.076%, 83.014% 1.508%, 81.487% 1.508%, 73.898% 1.076%, 72.987% 1.508%, 70.974% 1.508%, 70.264% 1.508%, 68.166% 2.096%, 66.338% 2.096%, 62.481% 3.435%, 62.481% 3.435%, 62.325% 3.441%, 61.882% 3.454%, 61.193% 3.471%, 60.297% 3.485%, 59.235% 3.492%, 58.047% 3.486%, 56.773% 3.461%, 55.452% 3.413%, 54.125% 3.336%, 52.832% 3.225%, 52.832% 3.225%, 51.557% 3.107%, 50.279% 3.008%, 49.03% 2.927%, 47.843% 2.863%, 46.75% 2.814%, 45.783% 2.777%, 44.974% 2.752%, 44.357% 2.736%, 43.962% 2.728%, 43.824% 2.726%, 40.917% 2.528%, 40.917% 2.528%, 40.847% 2.533%, 40.653% 2.548%, 40.359% 2.57%, 39.986% 2.597%, 39.559% 2.627%, 39.101% 2.656%, 38.634% 2.683%, 38.183% 2.705%, 37.77% 2.72%, 37.419% 2.726%, 37.419% 2.726%, 37.089% 2.72%, 36.733% 2.705%, 36.365% 2.683%, 36% 2.656%, 35.653% 2.627%, 35.337% 2.597%, 35.066% 2.57%, 34.855% 2.548%, 34.718% 2.533%, 34.669% 2.528%, 26.28% 3.48%, 24.679% 3.666%, 23.774% 3.225%, 20.053% 3.48%, 20.053% 3.48%, 20.042% 3.488%, 20.004% 3.507%, 19.936% 3.533%, 19.835% 3.561%, 19.694% 3.586%, 19.512% 3.602%, 19.282% 3.604%, 19.003% 3.588%, 18.668% 3.548%, 18.274% 3.48%, 18.274% 3.48%, 17.77% 3.407%, 17.114% 3.349%, 16.351% 3.305%, 15.528% 3.272%, 14.689% 3.25%, 13.883% 3.236%, 13.153% 3.228%, 12.547% 3.225%, 12.109% 3.225%, 11.887% 3.225%, 11.887% 3.225%, 11.884% 3.225%, 11.882% 3.225%, 11.879% 3.225%, 11.877% 3.225%, 11.875% 3.225%, 11.874% 3.225%, 11.872% 3.225%, 11.871% 3.225%, 11.87% 3.225%, 11.869% 3.225%, 11.869% 3.225%, 11.773% 3.23%, 11.549% 3.245%, 11.228% 3.269%, 10.844% 3.305%, 10.429% 3.351%, 10.017% 3.408%, 9.639% 3.478%, 9.329% 3.559%, 9.119% 3.654%, 9.041% 3.761%, 9.041% 3.761%, 9.006% 3.831%, 8.906% 3.886%, 8.752% 3.928%, 8.555% 3.959%, 8.324% 3.98%, 8.069% 3.992%, 7.801% 3.999%, 7.531% 4%, 7.267% 3.999%, 7.021% 3.996%, 7.021% 3.996%, 6.917% 3.995%, 6.82% 3.994%, 6.731% 3.993%, 6.65% 3.993%, 6.579% 3.994%, 6.519% 3.995%, 6.47% 3.998%, 6.434% 4.001%, 6.412% 4.007%, 6.404% 4.013%, 6.404% 4.013%, 6.394% 4.022%, 6.366% 4.025%, 6.32% 4.024%, 6.259% 4.017%, 6.185% 4.006%, 6.099% 3.992%, 6.003% 3.975%, 5.899% 3.956%, 5.789% 3.935%, 5.674% 3.913%, 5.674% 3.913%, 5.674% 3.913%, 5.561% 3.891%, 5.447% 3.869%, 5.334% 3.848%, 5.224% 3.828%, 5.117% 3.81%, 5.016% 3.794%, 4.922% 3.78%, 4.837% 3.77%, 4.762% 3.763%, 4.699% 3.761%, 1.583% 3.761%, 1.583% 3.761%, 1.366% 3.785%, 1.147% 3.851%, 0.932% 3.95%, 0.727% 4.073%, 0.537% 4.212%, 0.367% 4.357%, 0.223% 4.499%, 0.11% 4.629%, 0.035% 4.74%, 0.001% 4.821%, 0% 4.821%);
+}
+
+.ed-prg6-top-content .ed-sec-title-6 {
+  max-width: 510px;
+}
+
+.ed-prg-filter-btn button {
+  padding: 0;
+  border: none;
+  font-size: 26px;
+  margin-left: 20px;
+  color: rgba(5, 5, 5, 0.32);
+  background-color: transparent;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.ed-prg-filter-btn button:is(.is-checked) {
+  color: var(--ed-prime-c9);
+}
+
+.ed-prg6-item {
+  padding: 16px;
+  max-width: 419px;
+  background-color: #fff;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.ed-prg6-item .item-text-img {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #F5EFE7;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.ed-prg6-item .item-img {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.ed-prg6-item .item-text {
+  padding: 30px 32px;
+}
+.ed-prg6-item .item-text .course_title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  padding-bottom: 14px;
+}
+.ed-prg6-item .item-text p {
+  padding-bottom: 25px;
+}
+.ed-prg6-item .item-text .crs-meta a {
+  font-size: 16px;
+  padding: 8px 20px;
+  margin-right: 12px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: var(--ed-black-color);
+}
+.ed-prg6-item .item-text .crs-meta a:last-child {
+  margin-right: 0;
+}
+.ed-prg6-item .item-arrow a {
+  margin-top: 14px;
+  position: relative;
+}
+.ed-prg6-item .item-arrow a span {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  white-space: nowrap;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.ed-prg6-item .item-arrow a svg path {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.ed-prg6-item:hover {
+  background-color: var(--ed-prime-c9);
+  -webkit-box-shadow: 16px 16px 28px 0px rgba(0, 0, 0, 0.3215686275);
+          box-shadow: 16px 16px 28px 0px rgba(0, 0, 0, 0.3215686275);
+}
+.ed-prg6-item:hover .item-text-img {
+  background-color: #fff;
+}
+.ed-prg6-item:hover .item-text .crs-meta a {
+  background-color: #F5EFE7;
+}
+.ed-prg6-item:hover .item-arrow a {
+  padding-left: 105px;
+}
+.ed-prg6-item:hover .item-arrow span {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.ed-prg6-item:hover .item-arrow svg path {
+  fill: #fff;
+}
+
+.ed-filter6-area {
+  margin: 0px -20px;
+}
+.ed-filter6-area .grid-sizer {
+  width: 33.33%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ed-filter6-area .grid-sizer {
+    width: 33.33%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed-filter6-area .grid-sizer {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .ed-filter6-area .grid-sizer {
+    width: 100%;
+  }
+}
+.ed-filter6-area .grid-item {
+  float: left;
+  padding: 16px;
+  display: inline-block;
+}
+.ed-filter6-area .grid-size-25 {
+  width: 33.33%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ed-filter6-area .grid-size-25 {
+    width: 33.33%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed-filter6-area .grid-size-25 {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .ed-filter6-area .grid-size-25 {
+    width: 100%;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Process  area*/
+/*----------------------------------------------------*/
+.ed-process6-sec {
+  padding-top: 160px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.ed-process6-sec .ed-sec-title-6 {
+  max-width: 510px;
+}
+
+.ed-process6-content {
+  gap: 32px;
+  padding-top: 235px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.ed-process6-item {
+  z-index: 1;
+  position: relative;
+}
+.ed-process6-item:before {
+  top: -35px;
+  left: -76px;
+  width: 223px;
+  content: "";
+  z-index: -1;
+  height: 178px;
+  position: absolute;
+  border: 1px solid rgba(22, 73, 82, 0.4);
+  border-bottom: none;
+}
+.ed-process6-item span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #F8941F;
+}
+.ed-process6-item .inner-item {
+  padding: 50px 30px 45px;
+  border: 1px solid #F8941F;
+  background-color: #fff;
+}
+.ed-process6-item .inner-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+.ed-process6-item .inner-item p {
+  font-size: 16px;
+}
+.ed-process6-item:nth-child(1) {
+  -webkit-transform: translateY(-335px);
+          transform: translateY(-335px);
+}
+.ed-process6-item:nth-child(2) {
+  -webkit-transform: translateY(-225px);
+          transform: translateY(-225px);
+}
+.ed-process6-item:nth-child(2) span {
+  background-color: #8E56FF;
+}
+.ed-process6-item:nth-child(2) .inner-item {
+  border: 1px solid #8E56FF;
+}
+.ed-process6-item:nth-child(3) {
+  -webkit-transform: translateY(-112px);
+          transform: translateY(-112px);
+}
+.ed-process6-item:nth-child(3) span {
+  background-color: #1AB69D;
+}
+.ed-process6-item:nth-child(3) .inner-item {
+  border: 1px solid #1AB69D;
+}
+.ed-process6-item:nth-child(4):before {
+  display: none;
+}
+.ed-process6-item:nth-child(4) span {
+  background-color: var(--ed-prime-c9);
+}
+.ed-process6-item:nth-child(4) .inner-item {
+  border: 1px solid var(--ed-prime-c9);
+}
+
+.ed-process6-bottom {
+  right: 0;
+  bottom: 0;
+  max-width: 495px;
+  text-align: right;
+  position: absolute;
+}
+.ed-process6-bottom .shape-img2 {
+  top: 0;
+  right: -160px;
+  position: absolute;
+}
+
+/*---------------------------------------------------- */
+/*Testimonial  area*/
+/*----------------------------------------------------*/
+.ed-tst6-sec .ed-tst6-shape {
+  left: 0;
+  bottom: 120px;
+}
+
+.ed-tst6-content {
+  gap: 30px 20px;
+}
+
+.ed-tst6-text-wrap {
+  max-width: 432px;
+}
+.ed-tst6-text-wrap .ed-ab5-client li {
+  width: 56px;
+  height: 56px;
+}
+.ed-tst6-text-wrap .ed-ab5-client li span {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--ed-prime-c9);
+}
+.ed-tst6-text-wrap .ed-ab5-cl-text {
+  margin-top: 15px;
+}
+.ed-tst6-text-wrap .ed-ab5-cl-text h3 {
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: var(--ed-tt-color-2);
+}
+.ed-tst6-text-wrap .ed-ab5-cl-text p {
+  max-width: 165px;
+}
+
+.ed-tst6-slider-wrap {
+  max-width: 870px;
+}
+
+.ed-tst6-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ed-tst6-item .inner-item-wrap {
+  gap: 30px 40px;
+}
+.ed-tst6-item .item-img-degi {
+  width: 100%;
+  max-width: 408px;
+}
+.ed-tst6-item .item-img-degi .item-img {
+  width: 364px;
+  height: 364px;
+  overflow: hidden;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1000ms cubic-bezier(0.5, -0.1, 0.3, 1.1);
+  transition: 1000ms cubic-bezier(0.5, -0.1, 0.3, 1.1);
+}
+.ed-tst6-item .item-img-degi .item-degi {
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  opacity: 0;
+  width: 164px;
+  height: 164px;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+  transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+}
+.ed-tst6-item .item-img-degi .item-degi:before, .ed-tst6-item .item-img-degi .item-degi:after {
+  top: 0;
+  width: 100%;
+  content: "";
+  z-index: -1;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fff;
+  -webkit-transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+  transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+}
+.ed-tst6-item .item-img-degi .item-degi:before {
+  right: 30px;
+}
+.ed-tst6-item .item-img-degi .item-degi:after {
+  background-color: #F4BF00;
+}
+.ed-tst6-item .item-img-degi .item-degi h3 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+.ed-tst6-item .item-img-degi .item-degi span {
+  font-size: 14px;
+}
+.ed-tst6-item .item-text {
+  max-width: 420px;
+  padding-top: 35px;
+}
+.ed-tst6-item .item-text ul {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+  transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+}
+.ed-tst6-item .item-text li {
+  color: #FFAE00;
+  font-size: 18px;
+}
+.ed-tst6-item .item-text p {
+  opacity: 0;
+  font-size: 22px;
+  line-height: 1.64;
+  padding-top: 15px;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+  transition: 1000ms cubic-bezier(0.5, -0.75, 0.3, 1.5);
+}
+
+.ed-tst6-nav {
+  right: 25%;
+  z-index: 2;
+  width: 100%;
+  bottom: 55px;
+  max-width: 215px;
+  position: absolute;
+}
+.ed-tst6-nav .ed-tst6-next,
+.ed-tst6-nav .ed-tst6-prev {
+  width: 56px;
+  height: 56px;
+  color: #050505;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #F5EFE7;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.ed-tst6-nav .ed-tst6-next:hover,
+.ed-tst6-nav .ed-tst6-prev:hover {
+  color: #fff;
+  background-color: var(--ed-prime-c9);
+}
+
+.ed-tst6-pagi {
+  max-width: 70px;
+  text-align: center;
+}
+.ed-tst6-pagi .swiper-pagination-bullet {
+  width: 6px;
+  opacity: 1;
+  height: 6px;
+  border-radius: 100%;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  background-color: rgba(5, 5, 5, 0.24);
+}
+.ed-tst6-pagi .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--ed-prime-c9);
+}
+
+.swiper-slide-active .ed-tst6-item .item-img-degi .item-degi {
+  opacity: 1;
+  -webkit-transform: translateX(0px) scale(1);
+          transform: translateX(0px) scale(1);
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms;
+}
+.swiper-slide-active .ed-tst6-item .item-img-degi .item-degi:before {
+  right: -8px;
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+.swiper-slide-active .ed-tst6-item .item-img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+.swiper-slide-active .ed-tst6-item .item-text ul {
+  opacity: 1;
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+.swiper-slide-active .ed-tst6-item .item-text p {
+  opacity: 1;
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+/*---------------------------------------------------- */
+/*Contact  area*/
+/*----------------------------------------------------*/
+.ed-cont6-sec {
+  overflow: hidden;
+  background-color: #900824;
+}
+.ed-cont6-sec:before {
+  top: 0;
+  right: 0;
+  content: "";
+  width: 46%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  clip-path: polygon(3.099% 99.67%, 3.099% 100%, 100% 100%, 100% 0%, 1.69% 0%, 1.69% 2.967%, 0.141% 4.066%, 0.986% 4.396%, 0.986% 5.275%, 0% 5.824%, 0.563% 5.934%, 0.563% 7.253%, 0% 7.473%, 2.817% 9.011%, 2.817% 10.769%, 2.394% 10.879%, 2.394% 12.198%, 3.099% 12.527%, 3.099% 12.747%, 2.254% 12.747%, 2.394% 13.736%, 5.07% 15.275%, 5.211% 15.934%, 5.352% 16.703%, 5.07% 16.923%, 5.07% 18.022%, 5.352% 18.022%, 5.352% 19.89%, 5.07% 20.33%, 4.789% 20.33%, 4.789% 22.198%, 5.07% 22.198%, 5.07% 24.725%, 2.958% 25.714%, 2.817% 26.923%, 1.972% 27.582%, 1.69% 28.681%, 1.127% 29.89%, 1.127% 30.989%, 0.845% 31.099%, 0.845% 31.648%, 1.127% 31.978%, 1.127% 33.187%, 2.254% 33.626%, 2.254% 34.725%, 1.972% 35.385%, 2.535% 36.154%, 2.535% 37.143%, 2.817% 37.802%, 3.38% 38.132%, 3.38% 38.791%, 2.535% 39.56%, 2.535% 40.879%, 3.099% 41.099%, 3.099% 41.758%, 2.254% 41.978%, 2.254% 43.516%, 3.662% 45.275%, 3.662% 46.374%, 3.099% 46.703%, 3.944% 47.033%, 3.944% 47.473%, 3.38% 47.912%, 3.38% 49.121%, 3.521% 50.549%, 2.958% 50.549%, 2.958% 51.978%, 3.38% 52.198%, 3.38% 53.956%, 2.535% 54.176%, 2.817% 54.505%, 2.817% 55.165%, 1.972% 55.165%, 1.831% 56.044%, 2.676% 56.923%, 2.535% 57.363%, 2.254% 57.473%, 2.254% 59.231%, 2.676% 59.56%, 2.254% 59.56%, 2.254% 60%, 2.535% 60%, 2.676% 60.659%, 3.662% 60.879%, 3.944% 61.868%, 3.38% 61.868%, 3.239% 62.418%, 3.944% 62.967%, 3.944% 63.297%, 3.38% 63.516%, 3.38% 63.956%, 4.225% 64.615%, 4.225% 65.714%, 3.662% 65.934%, 4.789% 66.374%, 5.07% 67.253%, 4.225% 67.912%, 4.225% 68.352%, 4.789% 68.352%, 4.789% 69.011%, 3.944% 70.33%, 3.944% 71.648%, 5.07% 72.088%, 5.07% 72.747%, 5.352% 72.747%, 5.352% 73.407%, 4.366% 73.736%, 4.507% 74.945%, 4.225% 74.945%, 2.817% 77.473%, 3.944% 78.681%, 3.944% 79.121%, 2.817% 80.33%, 2.817% 80.879%, 0.282% 83.187%, 1.408% 84.286%, 1.408% 84.725%, 0.845% 85.385%, 1.549% 85.934%, 1.549% 86.703%, 0.845% 86.703%, 0.845% 89.121%, 1.972% 89.89%, 1.972% 91.978%, 1.972% 93.187%, 2.535% 93.297%, 2.535% 93.627%, 1.972% 93.846%, 3.38% 94.505%, 3.38% 95.495%, 2.535% 96.154%, 2.676% 98.022%, 3.38% 98.572%, 3.38% 99.67%, 3.099% 99.67%);
+}
+.ed-cont6-sec .ed-cont6-side {
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  clip-path: polygon(3.099% 99.67%, 3.099% 100%, 100% 100%, 100% 0%, 1.69% 0%, 1.69% 2.967%, 0.141% 4.066%, 0.986% 4.396%, 0.986% 5.275%, 0% 5.824%, 0.563% 5.934%, 0.563% 7.253%, 0% 7.473%, 2.817% 9.011%, 2.817% 10.769%, 2.394% 10.879%, 2.394% 12.198%, 3.099% 12.527%, 3.099% 12.747%, 2.254% 12.747%, 2.394% 13.736%, 5.07% 15.275%, 5.211% 15.934%, 5.352% 16.703%, 5.07% 16.923%, 5.07% 18.022%, 5.352% 18.022%, 5.352% 19.89%, 5.07% 20.33%, 4.789% 20.33%, 4.789% 22.198%, 5.07% 22.198%, 5.07% 24.725%, 2.958% 25.714%, 2.817% 26.923%, 1.972% 27.582%, 1.69% 28.681%, 1.127% 29.89%, 1.127% 30.989%, 0.845% 31.099%, 0.845% 31.648%, 1.127% 31.978%, 1.127% 33.187%, 2.254% 33.626%, 2.254% 34.725%, 1.972% 35.385%, 2.535% 36.154%, 2.535% 37.143%, 2.817% 37.802%, 3.38% 38.132%, 3.38% 38.791%, 2.535% 39.56%, 2.535% 40.879%, 3.099% 41.099%, 3.099% 41.758%, 2.254% 41.978%, 2.254% 43.516%, 3.662% 45.275%, 3.662% 46.374%, 3.099% 46.703%, 3.944% 47.033%, 3.944% 47.473%, 3.38% 47.912%, 3.38% 49.121%, 3.521% 50.549%, 2.958% 50.549%, 2.958% 51.978%, 3.38% 52.198%, 3.38% 53.956%, 2.535% 54.176%, 2.817% 54.505%, 2.817% 55.165%, 1.972% 55.165%, 1.831% 56.044%, 2.676% 56.923%, 2.535% 57.363%, 2.254% 57.473%, 2.254% 59.231%, 2.676% 59.56%, 2.254% 59.56%, 2.254% 60%, 2.535% 60%, 2.676% 60.659%, 3.662% 60.879%, 3.944% 61.868%, 3.38% 61.868%, 3.239% 62.418%, 3.944% 62.967%, 3.944% 63.297%, 3.38% 63.516%, 3.38% 63.956%, 4.225% 64.615%, 4.225% 65.714%, 3.662% 65.934%, 4.789% 66.374%, 5.07% 67.253%, 4.225% 67.912%, 4.225% 68.352%, 4.789% 68.352%, 4.789% 69.011%, 3.944% 70.33%, 3.944% 71.648%, 5.07% 72.088%, 5.07% 72.747%, 5.352% 72.747%, 5.352% 73.407%, 4.366% 73.736%, 4.507% 74.945%, 4.225% 74.945%, 2.817% 77.473%, 3.944% 78.681%, 3.944% 79.121%, 2.817% 80.33%, 2.817% 80.879%, 0.282% 83.187%, 1.408% 84.286%, 1.408% 84.725%, 0.845% 85.385%, 1.549% 85.934%, 1.549% 86.703%, 0.845% 86.703%, 0.845% 89.121%, 1.972% 89.89%, 1.972% 91.978%, 1.972% 93.187%, 2.535% 93.297%, 2.535% 93.627%, 1.972% 93.846%, 3.38% 94.505%, 3.38% 95.495%, 2.535% 96.154%, 2.676% 98.022%, 3.38% 98.572%, 3.38% 99.67%, 3.099% 99.67%);
+}
+.ed-cont6-sec .ed-cont6-side:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.84);
+}
+.ed-cont6-sec .ed-cont6-side img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ed-cont6-form-area {
+  max-width: 635px;
+}
+.ed-cont6-form-area .ed-sec-title-6 .sec_title {
+  color: #fff;
+}
+.ed-cont6-form-area .ed-sec-title-6 p {
+  color: #fff;
+}
+
+.ed-cont6-form {
+  margin-top: 50px;
+}
+.ed-cont6-form .info-input {
+  position: relative;
+  margin-bottom: 35px;
+}
+.ed-cont6-form .info-input label {
+  top: -9px;
+  left: 16px;
+  color: #fff;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 8px;
+  position: absolute;
+  background-color: #900824;
+  text-transform: uppercase;
+}
+.ed-cont6-form .info-input input, .ed-cont6-form .info-input textarea {
+  width: 100%;
+  height: 60px;
+  border-radius: 4px;
+  padding-left: 25px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.48);
+}
+.ed-cont6-form .info-input input::-webkit-input-placeholder, .ed-cont6-form .info-input textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+.ed-cont6-form .info-input input::-moz-placeholder, .ed-cont6-form .info-input textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+.ed-cont6-form .info-input input:-ms-input-placeholder, .ed-cont6-form .info-input textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+.ed-cont6-form .info-input input::-ms-input-placeholder, .ed-cont6-form .info-input textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+.ed-cont6-form .info-input input::placeholder, .ed-cont6-form .info-input textarea::placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+.ed-cont6-form .info-input textarea {
+  height: 156px;
+  padding-top: 20px;
+}
+.ed-cont6-form button {
+  border: none;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--ed-prime-c9);
+}
+.ed-cont6-form button span {
+  font-size: 16px;
+  margin-right: 5px;
 }
 
 /*---------------------------------------------------- */
