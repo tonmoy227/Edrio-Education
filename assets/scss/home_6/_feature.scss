@@ -1,6 +1,13 @@
 .ed-ft6-item {
 	padding: 40px 40px 35px;
 	border: 1px solid #05050533;
+	@media #{$lg,$md,$sm,$xs} {
+		padding: 40px 20px 35px;
+	}
+	@media #{$md,$sm,$xs} {
+		margin-bottom: 15px;
+		padding: 40px 30px 35px;
+	}
 	.item-icon {
 		position: relative;
 		padding-left: 36px;
@@ -50,6 +57,9 @@
 		&:nth-child(1) {
 			.ed-ft6-item {
 				transform: translateY(-80px);
+				@media #{$md,$sm,$xs} {
+					transform: translateY(0px);
+				}
 			}
 		}
 		&:nth-child(2) {
@@ -70,6 +80,9 @@
 		&:nth-child(3) {
 			.ed-ft6-item {
 				transform: translateY(80px);
+				@media #{$md,$sm,$xs} {
+					transform: translateY(0px);
+				}
 				.item-icon {
 					&:before {
 						background-color: rgba(26, 182, 157, .4);

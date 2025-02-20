@@ -1,0 +1,78 @@
+.ed-newsletter6-sec {
+	z-index: 1;
+	overflow: hidden;
+	padding: 75px 0px;
+	background-color: #C11336;
+	.ed-news-bg {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 42%;
+		height: 100%;
+		&:before {
+			top: 0;
+			width: 100%;
+			content: '';
+			opacity: .8;
+			height: 100%;
+			position: absolute;
+			background-color: #C11336;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			mix-blend-mode: luminosity;
+		}
+	}
+	.ed-shape-img1 {
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+}
+.ed-newsletter6-text {
+	width: 100%;
+	max-width: 980px;
+	h3 {
+		color: #fff;
+		font-size: 40px;
+		font-weight: 700;
+		max-width: 502px;
+		letter-spacing: -1px;
+	}
+	form {
+		width: 100%;
+		display: flex;
+		max-width: 415px;
+		align-items: end;
+		justify-content: space-between;
+		input {
+			width: 100%;
+			height: 30px;
+			border: none;
+			font-size: 16px;
+			max-width: 280px;
+			padding-bottom: 12px;
+			background-color: transparent;
+			border-bottom: 2px solid #fff;
+			color: rgba(255, 255, 255, .72);
+			&::placeholder {
+				font-size: 16px;
+				color: rgba(255, 255, 255, .72);
+			}
+		}
+		button {
+			padding: 0;
+			color: #fff;
+			border: none;
+			font-size: 18px;
+			font-weight: 500;
+			margin-left: 30px;
+			background-color: transparent;
+			i {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
