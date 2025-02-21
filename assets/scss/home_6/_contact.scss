@@ -100,9 +100,14 @@
 		border-radius: 6px;
 		background-color: #fff;
 		color: var(--ed-prime-c9);
+		transition: all 500ms ease-in-out;
 		span {
 			font-size: 16px;
 			margin-right: 5px;
+		}
+		&:hover {
+			color: var(--ed-tt-color-2);
+			background-color: #F4BF00;
 		}
 	}
 }

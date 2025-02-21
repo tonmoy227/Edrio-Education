@@ -3637,16 +3637,77 @@ select:visited {
   background-color: #2F584F;
 }
 
+@-webkit-keyframes toLeftFromRight {
+  49% {
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+@keyframes toLeftFromRight {
+  49% {
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
 .ed-btn-6 a {
+  z-index: 1;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   padding: 16px 24px;
   border-radius: 6px;
+  position: relative;
   background-color: var(--ed-prime-c9);
 }
 .ed-btn-6 a span {
   margin-right: 3px;
+}
+.ed-btn-6 a svg path {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.ed-btn-6 a:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 0%;
+  z-index: -1;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #F4BF00;
+  -webkit-transition: 300ms var(--cube-1);
+  transition: 300ms var(--cube-1);
+}
+.ed-btn-6 a:hover {
+  color: var(--ed-tt-color-2);
+}
+.ed-btn-6 a:hover:before {
+  height: 100%;
+}
+.ed-btn-6 a:hover svg {
+  -webkit-animation: toLeftFromRight 0.5s forwards;
+          animation: toLeftFromRight 0.5s forwards;
+}
+.ed-btn-6 a:hover svg path {
+  fill: var(--ed-tt-color-2);
 }
 
 .split-line {
@@ -18082,10 +18143,16 @@ select:visited {
   border-radius: 6px;
   background-color: #fff;
   color: var(--ed-prime-c9);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .ed-cont6-form button span {
   font-size: 16px;
   margin-right: 5px;
+}
+.ed-cont6-form button:hover {
+  color: var(--ed-tt-color-2);
+  background-color: #F4BF00;
 }
 
 .ed-cont6-img-wrap {
@@ -18485,10 +18552,15 @@ select:visited {
   margin-left: 30px;
   white-space: nowrap;
   background-color: transparent;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .ed-newsletter6-text form button i {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.ed-newsletter6-text form button:hover {
+  color: #F4BF00;
 }
 
 /*---------------------------------------------------- */

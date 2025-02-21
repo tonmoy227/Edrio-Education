@@ -954,16 +954,61 @@ select:visited {
 		}
 	}
 }
+@keyframes toLeftFromRight {
+	49% {
+		-webkit-transform: translateX(20%);
+		transform: translateX(20%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translateX(-20%);
+		transform: translateX(-20%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
 .ed-btn-6 {
 	a {
+		z-index: 1;
 		color: #fff;
 		font-size: 16px;
 		font-weight: 600;
 		padding: 16px 24px;
 		border-radius: 6px;
+		position: relative;
 		background-color: var(--ed-prime-c9);
 		span {
 			margin-right: 3px;
+		}
+		svg {
+			path {
+				transition: all 500ms ease-in-out;
+			}
+		}
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			content: '';
+			height: 0%;
+			z-index: -1;
+			border-radius: 6px;
+			position: absolute;
+			background-color: #F4BF00;
+			transition: 300ms var(--cube-1);
+		}
+		&:hover {
+			color: var(--ed-tt-color-2);
+			&:before {
+				height: 100%;
+			}
+			svg {
+				animation: toLeftFromRight 0.5s forwards;
+				path {
+					fill: var(--ed-tt-color-2); 
+				}
+			}
 		}
 	}
 }

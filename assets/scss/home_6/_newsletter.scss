@@ -102,8 +102,12 @@
 			margin-left: 30px;
 			white-space: nowrap;
 			background-color: transparent;
+			transition: all 400ms ease-in-out;
 			i {
 				transform: rotate(-45deg);
+			}
+			&:hover {
+				color: #F4BF00;
 			}
 		}
 	}
