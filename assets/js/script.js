@@ -289,8 +289,16 @@ Last change:    00/00/00
 							gsap.set(el.split.words, {
 								y: 100,
 								scaleY: 0,
-								rotateX: "30deg",
+								rotateX: "180deg",
 								opacity: 0,
+							});
+						}
+						if( $(el).hasClass('agt_hero_title_3') ){
+							gsap.set(el.split.chars, {
+								x: 100,
+								scaleX: 0,
+								opacity: 0,
+								rotateX: "30deg",
 							});
 						}
 						el.anim = gsap.to(el.split.chars, {
@@ -435,24 +443,33 @@ Last change:    00/00/00
 						},
 					});
 				};
+				const EDH6 = gsap.timeline();
+				EDH6
+				.from(".ed-hero-content-6 .hero_img6", {  scale: 1.4,  opacity: 0, borderRadius: 500, duration: 1.5,  ease: "power2.inOut" })
+				.from(".ed-hero-content-6 .ed-h6-img .item-img2", {  scale: 1.5, xPercent: -50, rotate: -90,  opacity: 0, duration: 1.5,  ease: "power2.inOut" }, "<=.3")
+				.from(".ed-hero-content-6 .ed-hero-text-6 .hero-decs6 .item-text .ed-btn-6", {  scale: .5, yPercent: 50,   opacity: 0, duration: 2,  ease: "elastic.out(1,0.5)"},"<=.3")
+				.from(".ed-hero-content-6 .ed-hero-text-6 .hero-decs6 .item-img .img_1", {  scale: .5, yPercent: 50,   opacity: 0, duration: 2,  ease: "elastic.out(1,0.5)"},"<=.3")
+				.from(".ed-hero-content-6 .ed-hero-text-6 .hero-decs6 .item-img .img_2", {  scale: .5, yPercent: 50,   opacity: 0, duration: 2,  ease: "elastic.out(1,0.5)"},"<=.3")
+				.from(".ed-hero-content-6 .ed-h6-img .item-img1", {  scale: .5, yPercent: 50,   opacity: 0, duration: 2,  ease: "elastic.out(1,0.8)"}, "<=.8")
 			}, 700);
 })
 });
-// if (window.matchMedia("(min-width: 1400px)").matches) { 
-// 	var Hero_pin = document.querySelectorAll(".ed-hero-sec-6")
-// 	Hero_pin.forEach((item) => {
-// 		gsap.to(item, {
-// 			scrollTrigger: {
-// 				trigger: item,
-// 				markers: false,
-// 				pin: true,
-// 				pinSpacing: false,
-// 				start: "top -75%",
-// 				end: "bottom -137%",
-// 			},
-// 		});
-// 	});
-// }
+
+if (window.matchMedia("(min-width: 1400px)").matches) { 
+	var Hero_pin = document.querySelectorAll(".ed-hero-sec-6")
+	Hero_pin.forEach((item) => {
+		gsap.to(item, {
+			scrollTrigger: {
+				trigger: item,
+				markers: false,
+				pin: true,
+				pinSpacing: false,
+				start: "top -75%",
+				end: "bottom -137%",
+			},
+		});
+	});
+}
 if($('.ed-text').length) {
 	var edtextarea = $(".ed-text");
 
@@ -482,6 +499,38 @@ if($('.ed-text').length) {
 
 	});
 }
+var EDFt = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".ed-ft6-sec",
+		start: "top 70%",
+		toggleActions: "play reverse play reverse",
+		markers: false,
+	},
+})
+EDFt
+.from(".ed-ft6-app", {
+	yPercent: 100,
+	opacity: 0,
+	ease: "elastic.out(1,2.5)",
+	duration: 1,
+	stagger: -.3,
+})
+var EdProg = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".ed-course6-content",
+		start: "top 70%",
+		toggleActions: "play reverse play reverse",
+		markers: false,
+	},
+})
+EdProg
+.from(".ed-pg6", {
+	xPercent: 100,
+	opacity: 0,
+	ease: "back.out(2.5)",
+	duration: 1,
+	stagger: -.2,
+})
 var enrollActive = $('.ed-h-list-img')
 enrollActive.mouseover(function() {
 	enrollActive.removeClass('active');
@@ -832,9 +881,9 @@ if($(".ed-tst6-slider").length) {
 		fadeEffect: {
 			crossFade: true
 		},
-		// autoplay: {
-		// 	delay: 4000,
-		// },
+		autoplay: {
+			delay: 4000,
+		},
 		navigation: {
 			prevEl: ".ed-tst6-prev",
 			nextEl: ".ed-tst6-next",
@@ -1084,6 +1133,108 @@ if(window.innerWidth> 991){
 		IntroShape();
 	};
 };
+if(window.innerWidth> 991){
+	if ($('.ed-cta6-content').length > 0 ) {
+		function CtaShape(e) {
+			let t = (e = e || document).querySelector(".ed-cta6-content"),
+			item_1 = t.querySelectorAll(".ed-cta6-img");
+			gsap.timeline({
+				scrollTrigger: {
+					trigger: t,
+					start: "top 20%",
+					toggleActions: "play none none reverse"
+				}
+			}).from(item_1, {
+				y: 400,
+				ease: "back.out(2.5)",
+				opacity: 0,
+				duration: 1,
+				stagger: {
+					each: .05,
+					from: "end"
+				},
+			})
+
+			let item_2 = t.querySelectorAll(".ed-cta6-count.ver_2");
+			gsap.timeline({
+				scrollTrigger: {
+					trigger: t,
+					start: "top 20%",
+					toggleActions: "play none none reverse"
+				}
+			}).from(item_2, {
+				y: 310,
+				x: -260,
+				opacity: 0,
+				ease: "back.out(2.5)",
+				duration: 1,
+				stagger: {
+					each: .05,
+					from: "end"
+				},
+			})
+
+			let item_3 = t.querySelectorAll(".ed-cta6-count.ver_3");
+			gsap.timeline({
+				scrollTrigger: {
+					trigger: t,
+					start: "top 20%",
+					toggleActions: "play none none reverse"
+				}
+			}).from(item_3, {
+				y: 250,
+				x: 0,
+				opacity: 0,
+				ease: "back.out(2.5)",
+				duration: 1,
+				stagger: {
+					each: .05,
+					from: "end"
+				},
+			})
+
+			let item_4 = t.querySelectorAll(".ed-cta6-shape");
+			gsap.timeline({
+				scrollTrigger: {
+					trigger: t,
+					start: "top 20%",
+					toggleActions: "play none none reverse"
+				}
+			}).from(item_4, {
+				y: 250,
+				x: 0,
+				opacity: 0,
+				ease: "back.out(2.5)",
+				duration: 1,
+				stagger: {
+					each: .05,
+					from: "end"
+				},
+			})
+
+			let item_5 = t.querySelectorAll(".ed-cta6-count.ver_1");
+			gsap.timeline({
+				scrollTrigger: {
+					trigger: t,
+					start: "top 20%",
+					toggleActions: "play none none reverse"
+				}
+			}).from(item_5, {
+				y: 150,
+				x: -50,
+				opacity: 0,
+				ease: "back.out(2.5)",
+				duration: 1,
+				stagger: {
+					each: .05,
+					from: "end"
+				},
+			})
+
+		}
+		CtaShape();
+	};
+};
 // Animation
 if($('.ed-sec-tt-anim').length) {
 	var edtitle = $(".ed-sec-tt-anim");
@@ -1296,6 +1447,86 @@ gsap.utils.toArray(' .top_view_logo').forEach((el, index) => {
 	tlcta
 	.set(el, {transformOrigin: 'center center'})
 	.from(el, { opacity: 0, scale: .5,  y: "+=250"}, {opacity: 1, y: 0, scale: 1, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .ed_img_ani').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-ab6-sec",
+			scrub: 2,
+			start: "top 40%",
+			end: "top 5%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'left'})
+	.from(el, { opacity: 0, rotate: 45,  x: "-=250"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .ed_img_ani_2').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-ab6-sec",
+			scrub:  2,
+			start: "top 40%",
+			end: "top 5%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'right'})
+	.from(el, { opacity: 0, rotate: 45,  x: "+=250"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .ed_img_ani_3').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-ab6-sec",
+			scrub: 3,
+			start: "top 80%",
+			end: "top 5%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'center center'})
+	.from(el, { opacity: 0,   y: "+=250"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .ed_img_ani_4').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-cont6-img-wrap",
+			scrub: 2,
+			start: "top 40%",
+			end: "top 5%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'left'})
+	.from(el, { opacity: 0, rotate: 45,  x: "-=250"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
+});
+gsap.utils.toArray(' .ed_img_ani_5').forEach((el, index) => { 
+	let tlcta = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".ed-cont6-img-wrap",
+			scrub:  2,
+			start: "top 40%",
+			end: "top 5%",
+			toggleActions: "play none none reverse",
+			markers: false
+		}
+	})
+
+	tlcta
+	.set(el, {transformOrigin: 'right'})
+	.from(el, { opacity: 0, rotate: 45,  x: "+=250"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
 });
 let imageappear1 = document.querySelectorAll(".ed-image-appear1");
 imageappear1.forEach((container) => {

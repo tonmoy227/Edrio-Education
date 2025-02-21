@@ -173,7 +173,7 @@ body {
 		max-width: 1344px;
 	}
 	.ed-scrollup {
-		background: var(--ed-prime-c7);
+		background: var(--ed-prime-c9);
 		i {
 			color: #fff;
 		}
@@ -650,6 +650,22 @@ select:visited {
 		font-size: 48px;
 		font-weight: 600;
 		color: var(--ed-tt-color-2);
+		@media #{$xl} {
+			font-size: 45px;
+		}
+		@media #{$lg,$md} {
+			font-size: 40px;
+		}
+		@media #{$xs} {
+			font-size: 36px;
+		}
+		@media #{$xxs} {
+			font-size: 32px;
+		} 
+		.has-dot {
+			color: #F4BF00;
+			display: inline;
+		}
 	}
 	p {
 		color: #050505;

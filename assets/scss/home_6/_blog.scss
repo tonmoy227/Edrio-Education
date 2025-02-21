@@ -6,6 +6,7 @@
 	}
 }
 .ed-blog6-item {
+	margin-bottom: 30px;
 	.item-img {
 		margin-bottom: 22px;
 		.inner-img {
@@ -14,6 +15,9 @@
 			border-bottom-right-radius: 12px;
 			border-bottom: 4px solid #CECECE;
 			transition: all 500ms ease-in-out;
+			@media #{$xs} {
+				max-height: 320px;
+			}
 			img {
 				width: 100%;
 				height: 100%;

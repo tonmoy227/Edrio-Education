@@ -79,7 +79,7 @@
 			color: #fff;
 			font-size: 68px;
 			font-weight: 700;
-			line-height: 1.05;
+			line-height: 1;
 			letter-spacing: -1px;
 			@media #{$md,$sm,$xs} {
 				font-size: 60px;
@@ -97,6 +97,9 @@
 				color: #F4BF00;
 				display: inline;
 			}
+			.split-line {
+				padding-bottom: 5px;
+			}
 		}
 		.hero-decs6 {
 			gap: 15px 28px;
@@ -109,7 +112,9 @@
 				width: 134px;
 				height: 107px;
 				position: relative;
-				span {
+				.img_1 {
+				}
+				.img_2 {
 					left: 0;
 					bottom: 0;
 					z-index: -1;

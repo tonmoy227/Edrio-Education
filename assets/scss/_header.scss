@@ -1163,6 +1163,11 @@
 				padding: 0px 16px;
 				position: absolute;
 				background-color: var(--ed-prime-c9);
+				transition: all 500ms ease-in-out;
+				&:hover {
+					background-color: #F4BF00;
+					color: var(--ed-tt-color-2);
+				}
 			}
 		}
 		.ed-top-action {
