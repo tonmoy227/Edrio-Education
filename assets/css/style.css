@@ -16942,6 +16942,14 @@ select:visited {
   overflow: hidden;
   border-radius: 6px;
 }
+.ed-ab6-client .ed-ab5-client li {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.ed-ab6-client .ed-ab5-client li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 
 .ed-ab6-ft-wrap {
   border-top: 1px solid rgba(5, 5, 5, 0.24);

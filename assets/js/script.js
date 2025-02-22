@@ -314,6 +314,7 @@ Last change:    00/00/00
 							opacity: 1,
 							duration: 1,
 							stagger: .03,
+							rotateX: "0",
 							delay: .1,
 							ease: "power3.inOut",
 						});
