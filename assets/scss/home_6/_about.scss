@@ -5,6 +5,13 @@
 		padding-top: 0;
 		overflow: hidden;
 	}
+	.ed-ab6-shape {
+		right: 0;
+		top: 30px;
+		@media #{$lg,$md,$sm,$xs} {
+			display: none;
+		}
+	}
 }
 .ed-ab6-text-wrap {
 	@media #{$lg,$md,$sm,$xs} {

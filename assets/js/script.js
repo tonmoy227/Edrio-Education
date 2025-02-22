@@ -29,23 +29,6 @@ Last change:    00/00/00
 	}
 	requestAnimationFrame(raf);
 
-	document.addEventListener("mousemove", function e(t) {
-		try {
-			t.target;
-			gsap.timeline({
-				defaults: {
-					x: t.clientX,
-					y: t.clientY
-				}
-			}).to(".cursor1", {
-				ease: "power2.out"
-			}).to(".cursor2", {
-				ease: "power2.out"
-			}, "-=0.4")
-		} catch (o) {
-			console.log(o)
-		}
-	});
 	if($('.wow').length){
 		var wow = new WOW({
 			boxClass:     'wow',
@@ -1452,8 +1435,8 @@ gsap.utils.toArray(' .top_view_logo').forEach((el, index) => {
 	let tlcta = gsap.timeline({
 		scrollTrigger: {
 			trigger: ".ed-footer5-sec",
-			scrub: 2,
-			start: "top 100%",
+			scrub: 1,
+			start: "top 50%",
 			end: "top 0%",
 			toggleActions: "play none none reverse",
 			markers: false
@@ -1462,7 +1445,7 @@ gsap.utils.toArray(' .top_view_logo').forEach((el, index) => {
 
 	tlcta
 	.set(el, {transformOrigin: 'center center'})
-	.from(el, { opacity: 0, scale: .5,  y: "+=250"}, {opacity: 1, y: 0, scale: 1, duration: 1, immediateRender: false})
+	.from(el, { opacity: 0, scale: .5,  y: "+=500"}, {opacity: 1, y: 0, scale: 1, duration: 1, immediateRender: false})
 });
 gsap.utils.toArray(' .ed_img_ani').forEach((el, index) => { 
 	let tlcta = gsap.timeline({

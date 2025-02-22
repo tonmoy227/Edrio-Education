@@ -1127,7 +1127,13 @@
 		margin-right: 10px;
 		border-radius: 8px;
 		position: relative;
+		@media #{$xxs} {
+			width: 80px;
+			height: 80px;
+		}
 		a {
+			width: 100%;
+			height: 100%;
 			&:before {
 				top: 0;
 				left: 0;
