@@ -464,8 +464,8 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 				markers: false,
 				pin: true,
 				pinSpacing: false,
-				start: "top -81%",
-				end: "bottom -144%",
+				start: "top -85%",
+				end: "bottom -148%",
 			},
 		});
 	});
