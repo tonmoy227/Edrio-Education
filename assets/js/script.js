@@ -479,7 +479,7 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 				markers: false,
 				pin: true,
 				pinSpacing: false,
-				start: "top -20%",
+				start: "top -35%",
 				end: "bottom 0%",
 			},
 		});
