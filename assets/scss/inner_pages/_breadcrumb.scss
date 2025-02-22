@@ -1,0 +1,72 @@
+.ed-breadcrumb-content {
+	padding-top: 248px;
+	padding-bottom: 205px;
+	@media #{$lg} {
+		padding-top: 180px;
+		padding-bottom: 120px;
+	}
+	@media #{$md,$sm,$xs} {
+		padding-top: 160px;
+		padding-bottom: 80px;
+	}
+	@media #{$xxs} {
+		padding-top: 130px;
+		padding-bottom: 60px;
+	}
+	.bread_title {
+		color: #171616;
+		line-height: 1;
+		font-size: 80px;
+		font-weight: 800;
+		margin-bottom: 25px;
+		@media #{$md,$sm,$xs} {
+			font-size: 60px;
+			margin-bottom: 15px;
+		}
+		@media #{$xxs} {
+			font-size: 45px;
+		}
+	}
+	ul {
+		padding: 13px 25px;
+		border-radius: 40px;
+		display: inline-block;
+		border: 2px solid transparent;
+		box-shadow: 0 4px 0 0 var(--ed-tt-color);
+		background: linear-gradient(#fff, #fff) padding-box, linear-gradient(-90deg, rgba(1, 240, 233, 0.6) 0%, rgba(0, 255, 180, 0.6) 100%) border-box;
+		@media #{$xxs} {
+			padding: 10px 18px;
+		}
+		li {
+			color: #1716167A;
+			font-weight: 700;
+			margin-right: 35px;
+			position: relative;
+			@media #{$xxs} {
+				font-size: 16px;
+			}
+			&:before {
+				top: 7px;
+				right: -30px;
+				width: 20px;
+				content: '';
+				height: 20px;
+				position: absolute;
+				background-image: url(../img/icon/arrow-7.svg);
+				@media #{$xxs} {
+					top: 3px;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+				&:before {
+					display: none;
+				}
+			}
+			a {
+				color: #1D1D1D;
+			}
+		}
+	}
+}
+

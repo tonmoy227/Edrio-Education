@@ -1661,4 +1661,45 @@ gsap.utils.toArray(' .rotate_view').forEach((el, index) => {
 	.set(el, {transformOrigin: 'center center'})
 	.from(el, { opacity: 0,  x: "+=300", y: "-150", rotate: "-90deg"}, {opacity: 1, x: 0, y: 0, duration: 1, rotate: "-90deg" })
 });
+if(window.innerWidth> 1200){
+	if ($(".ed-view-btns").length) {
+		const products = $(".products");
+		const allButtons = $(".ed-view-btn button");
+		const grid3Button = $(".grid-3");
+		const listViewButton = $(".list-view");
+		allButtons.each(function () {
+			const $this = $(this);
+			$this.on("click", function (e) {
+				e.preventDefault();
+				$this.addClass("active").siblings().removeClass("active");
+			});
+		});
+		grid3Button.on("click", function () {
+			products.removeClass("default-column list-view").addClass("three-column");
+		});
+		listViewButton.on("click", function () {
+			products.removeClass("default-column two-column").addClass("list-view");
+		});
+	}
+};
+if ($('.gt-check-list ul li').length > 5) {
+	$('.gt-check-list ul li:gt(4)').hide();
+	$('.show-more').show();
+}
+$('.gt-check-list .show-more').on('click', function() {
+	$('.gt-check-list ul li:gt(4)').toggle();
+	$(this).text() === 'Show more ' ? $(this).text('Show less') : $(this).text('Show more ');
+});
+if ($('.gt-check-list_2 ul li').length > 5) {
+	$('.gt-check-list_2 ul li:gt(4)').hide();
+	$('.show-more').show();
+}
+$('.gt-check-list_2 .show-more').on('click', function() {
+	$('.gt-check-list_2 ul li:gt(4)').toggle();
+	$(this).text() === 'Show more ' ? $(this).text('Show less') : $(this).text('Show more ');
+});
+$(".gt-check-list ul li, .gt-check-list_2 ul li, .gt-check-wrap ul li").click(function () {
+	$(".gt-check-list ul li, .gt-check-list_2 ul li, .gt-check-wrap ul li").removeClass("active");
+	$(this).addClass("active");   
+});
 })(jQuery);

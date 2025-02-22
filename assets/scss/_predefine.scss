@@ -1,3 +1,5 @@
+/*Global  area*/
+/*-------------------------*/
 @media (prefers-reduced-motion: no-preference) {
 	:root {
 		scroll-behavior: inherit;
@@ -48,6 +50,8 @@ body {
 		border-radius: 30px;
 	}
 }
+/*Home Set Up  area*/
+/*-------------------------*/
 .home-1::-webkit-scrollbar-thumb {
 	background: var(--ed-gradient);
 	background-size: 200%, 1px;
@@ -182,6 +186,8 @@ body {
 		background: var(--ed-prime-c7);
 	}
 }
+/*Reset  area*/
+/*-------------------------*/
 .ul-li ul {
 	margin: 0;
 	padding: 0;
@@ -438,6 +444,8 @@ select:visited {
 		color: #fff;
 	}
 }
+/*Section Title  area*/
+/*-------------------------*/
 .ed-sec-title {
 	.rate-slug {
 		padding-bottom: 10px;
@@ -672,6 +680,8 @@ select:visited {
 		padding-top: 20px;
 	}
 }
+/*Button  area*/
+/*-------------------------*/
 @keyframes rightarrow {
 	0% { -webkit-transform: translateX(0); opacity: 0.5 }
 	100% { -webkit-transform: translateX(0.4em); opacity: 1 }
@@ -1014,6 +1024,36 @@ select:visited {
 }
 .split-line {
 	overflow: hidden;
+}
+/*Pagination  area*/
+/*-------------------------*/
+.ed-pagination {
+	ul {
+		padding: 8px;
+		background: #E7E7E7;
+		border-radius: 100px;
+		display: inline-block;
+		li {
+			gap: 0px 4px;
+			a {
+				width: 43px;
+				height: 43px;
+				display: flex;
+				color: #171616;
+				font-size: 15px;
+				font-weight: 600;
+				align-items: center;
+				border-radius: 100%;
+				justify-content: center;
+				background-color: #fff;
+				transition: all 500ms ease-in-out;
+				&:hover {
+					background-color: #00FFB4;
+					box-shadow: 0 3px 0 0 var(--ed-tt-color);
+				}
+			}
+		}
+	}
 }
 // txa-common-css-start
 
