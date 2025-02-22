@@ -464,8 +464,23 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 				markers: false,
 				pin: true,
 				pinSpacing: false,
-				start: "top -75%",
-				end: "bottom -137%",
+				start: "top -81%",
+				end: "bottom -144%",
+			},
+		});
+	});
+}
+if (window.matchMedia("(min-width: 1400px)").matches) { 
+	var CTA_Pin = document.querySelectorAll(".ed-cta6-sec")
+	CTA_Pin.forEach((item) => {
+		gsap.to(item, {
+			scrollTrigger: {
+				trigger: item,
+				markers: false,
+				pin: true,
+				pinSpacing: false,
+				start: "top -20%",
+				end: "bottom 0%",
 			},
 		});
 	});
