@@ -167,7 +167,10 @@
 				white-space: nowrap;
 				padding: 16px 30px 13px;
 				color: var(--ed-black-color);
-				@media #{$xl,$lg,$md,$sm} {
+				@media #{$xl,$lg} {
+					padding: 16px 10px 13px;
+				}
+				@media #{$md,$sm} {
 					padding: 16px 20px 13px;
 				}
 				&:hover {
