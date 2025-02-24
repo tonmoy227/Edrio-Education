@@ -1702,4 +1702,16 @@ $(".gt-check-list ul li, .gt-check-list_2 ul li, .gt-check-wrap ul li").click(fu
 	$(".gt-check-list ul li, .gt-check-list_2 ul li, .gt-check-wrap ul li").removeClass("active");
 	$(this).addClass("active");   
 });
+if ($('.blog-item-img-slide').length > 0 ) {
+	var blog_Slider = new Swiper(".blog-item-img-slide", {
+		loop: true,
+		slidesPerView: 1,
+		centeredSlides: true,
+		speed: 1000,
+		navigation: {
+			nextEl: ".log-blog-button-prev",
+			prevEl: ".log-blog-button-next",
+		},
+	});
+}
 })(jQuery);
