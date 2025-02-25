@@ -1714,4 +1714,13 @@ if ($('.blog-item-img-slide').length > 0 ) {
 		},
 	});
 }
+if ($('.ed-gallery-feed').length > 0 ) {
+	var $grid = $('.ed-gallery-feed').imagesLoaded( function() {
+		$grid.masonry({
+			percentPosition: true,
+			itemSelector: '.grid-item',
+			columnWidth: '.grid-sizer'
+		}); 
+	});
+}
 })(jQuery);

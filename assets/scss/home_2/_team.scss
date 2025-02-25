@@ -33,6 +33,9 @@
 		background-color: var(--ed-black-color);
 		.inner-text {
 			padding: 28px 35px 28px 50px;
+			@media #{$lg,$md,$sm,$xs} {
+				padding: 28px 15px 28px 20px;
+			}
 			@media #{$xxs} {
 				padding-left: 30px;
 			}
@@ -42,6 +45,9 @@
 				font-size: 30px;
 				font-weight: 800;
 				padding-bottom: 5px;
+				@media #{$lg,$md,$sm,$xs} {
+					font-size: 26px;
+				}
 				@media #{$xxs} {
 					font-size: 24px;
 				}
@@ -72,13 +78,17 @@
 		}
 	}
 	.social-link {
-		left: 0;
+		right: 64px;
 		bottom: 120px;
 		display: flex;
 		text-align: center;
 		position: absolute;
 		transition: all 500ms ease-in-out;
 		clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+		@media #{$lg,$md,$sm,$xs} {
+			left: 0;
+			right: auto;
+		}
 		a {
 			width: 70px;
 			height: 70px;
